@@ -10,8 +10,8 @@ title: The Urban Energy & Environment Lab
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Website of the Urban Energy & Environment.
-baseurl: ""
-url: ""
+baseurl: "/UE2lab"
+url: "https://UE2lab.github.io"
 
 include:
   - .htaccess
