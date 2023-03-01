@@ -1,0 +1,40 @@
+- name: Wei Liao
+  photo: Wei Liao.jpg
+  info: PhD graduation
+  email: wlager@scut.edu.cn
+  number_educ: 2
+  education1: Post-doctoral Fellow in the School of Architecture, South China University of Technology
+  education2: Dissertation Title, "A new simplified vector-based model to support solar energy planning at urban scale"
+
+- name: Verena M. Barthelmes
+  photo: Verena M. Barthelmes.jpg
+  info: PhD graduation
+  email: verena.barthelmes@epfl.ch
+  number_educ: 2
+  education1: Postdoctoral Fellow at EPFL – École polytechnique fédérale de Lausanne 
+  education2: Dissertation Title, "Impact of occupant behaviour on building energy use and thermal comfort"
+
+- name: Hyeong Seok Lee
+  photo: Hyeong Seok Lee.jpg
+  info: Master graduation
+  email: hyeongseoklee@korea.ac.kr
+  number_educ: 2
+  education1: PhD program at Purdue University
+  education2: Thesis Title, "적용 가능성에 중점을 둔 주거용 유닛 대상 단순 데이터 기반 모델 예측 제어"
+
+- name: Jiwook Byun
+  photo: Jiwook Byun.jpg
+  info: Master graduation
+  email: bgg0514@korea.ac.kr
+  number_educ: 2
+  education1: Samsung Electronics Co., Ltd
+  education2: Thesis Title, "주거 커뮤니티를 위한 연료전지 기반 복합 신재생에너지 네트워크 설계 및 분석"
+
+- name: Jaehyun Go
+  photo: Jaehyun Go.jpg
+  info: Master graduation
+  email: oiuty@korea.ac.kr
+  number_educ: 2
+  education1: PhD program at Purdue University
+  education2: Thesis Title, "Battery-hydrogen storage system for maximizing PV self-sufficiency in residential community"
+

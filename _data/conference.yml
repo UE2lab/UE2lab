@@ -1,0 +1,301 @@
+- title: Design and analysis of a renewable energy network based on fuel cells in a residential community
+  image:
+  description: 2021
+  authors: Byun J. and Heo Y.	
+  link:
+    url: http://urbane-squared.korea.ac.kr/
+    display: IBPSA Conference
+  highlight: 0
+
+- title: Effect of limited controller and sensor datasets on the performance of data-driven model predictive control for residential buildings
+  image:
+  description: 2021
+  authors: Lee H. and Heo Y.	
+  link:
+    url: http://urbane-squared.korea.ac.kr/
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	The design of distributed control system for a hybrid energy supply network in a residential community
+  image:
+  description: 2021
+  authors: Go J. and Heo Y.	
+  link:
+    url: http://urbane-squared.korea.ac.kr/
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	Spatio-temporal data analysis for development of microclimate prediction models
+  image:
+  description: 2021
+  authors: Hong T. and Heo Y.	
+  link:
+    url: http://urbane-squared.korea.ac.kr/
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	The effect of urban spatial characteristics on microclimate
+  image:
+  description: 2018
+  authors: Liao W. and Heo Y.	
+  link:
+    url: http://www.ibpsa.org/proceedings/BSO2018/6B-5.pdf
+    display: IBPSA-England BSO Conference
+  highlight: 0
+  
+- title: Towards a comprehensive model of window control behaviour, a survey-based investigation on interdisciplinary drivers in Danish dwellings
+  image:
+  description: 2018
+  authors: Barthelmes V., Heo Y., Andersen R.K., Knudsen H., Fabi V., and Corgnati S.P.
+  link:
+    url: http://www.ibpsa.org/proceedings/BSO2018/6C-1.pdf
+    display: IBPSA-England BSO Conference
+  highlight: 0
+  
+- title: Evaluation of temperature dependent models for PV yield prediction
+  image:
+  description: 2018
+  authors: Liao W., Heo Y., and Xu S.	
+  link:
+    url: http://www.ibpsa.org/proceedings/BSO2018/3A-3.pdf
+    display: IBPSA-England BSO Conference
+  highlight: 0
+  
+- title: Introducing thermal comfort attitudes, psychological, social and contextual drivers in occupant behaviour modelling with Bayesian Networks
+  image:
+  description: 2018
+  authors: Barthelmes V., Andersen R.K., Heo Y., Knudsen H., Fabi V., and Corgnati S.P.
+  link:
+    url: http://windsorconference.com/proceedings/
+    display: 10th Windsor Conference, Rethinking Comfort
+  highlight: 0
+  
+- title: A simplified vector-based method for irradiance prediction at urban scale
+  image:
+  description: 2017
+  authors: Liao W. and Heo Y.
+  link:
+    url: http://www.ibpsa.org/proceedings/BS2017/BS2017_665.pdf
+    display: IBPSA Conference
+
+  highlight: 0
+  
+- title:	Efficiency and reliability of Bayesian calibration of energy supply system models
+  image:
+  description: 2017
+  authors: Menberg K., Heo Y., and Choudhary R.	
+  link:
+    url: http://www.ibpsa.org/proceedings/BS2017/BS2017_315.pdf
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	A functional principal components model for internal loads in building energy simulation
+  image:
+  description: 2017
+  authors: Ward R., Choudhary R., Heo Y., and Aston J.	
+  link:
+    url: http://www.ibpsa.org/proceedings/BS2017/BS2017_032.pdf
+    display: IBPSA Conference
+  highlight: 0
+  
+- title: Exergy analysis of a ground-source heat pump system
+  image:
+  description: 2017
+  authors: Menberg K., Heo Y., Choi W., Ooka R., Choudhary R., and Shukuya M.	
+  link:
+    url: http://www.ibpsa.org/proceedings/BS2017/BS2017_437.pdf
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	Monitoring and stimulating energy behavioural change in university buildings towards post carbon cities
+  image:
+  description: 2017
+  authors: Fabi V., Barthelmes V., Heo Y., and Corgnati S.P.
+  link:
+    url: http://www.ibpsa.org/proceedings/BS2017/BS2017_111.pdf
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	Investigating an adequate level of modelling for energy analysis of domestic buildings
+  image:
+  description: 2016
+  authors: Heo Y., Ren G., and Sunikka-Blank M.
+  link:
+    url: http://www.repository.cam.ac.uk/handle/1810/274070
+    display: IBPSA-Asia Conference
+
+  highlight: 0
+  
+- title: New extension of Morris method for sensitivity analysis of building energy models
+  image:
+  description: 2016
+  authors: Menberg K., Heo Y., Augenbroe G., and Choudhary R.	
+  link:
+    url: http://www.researchgate.net/profile/Kathrin_Menberg/publication/308119619_New_extension_of_Morris_method_for_sensitivity_analysis_of_building_energy_models/links/57daaa7c08ae4e6f18437536.pdf
+    display: IBPSA-England BSO Conference
+  highlight: 0
+  
+- title: Data driven bottom-up approach for modelling internal loads in building energy simulation using functional principal components
+  image:
+  description: 2016
+  authors: Ward R.M., Choudhary R., Heo Y., and Guillas S.	
+  link:
+    url: http://www.ibpsa.org/proceedings/BSO2016/p1115.pdf
+    display: IBPSA-England BSO Conference
+  highlight: 0
+  
+- title:	Data driven model for rooftop excess electricity generation
+  image:
+  description: 2015
+  authors: Kiguchi Y., Heo Y., and Choudhary R.	
+  link:
+    url: http://www.ibpsa.org/proceedings/BS2015/p2632.pdf
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	Parameterisation of internal loads in assessment of building energy performance
+  image:
+  description: 2015
+  authors: Ward R.M., Choudhary R., Heo Y., and Rysanek A.	
+  link:
+    url: http://www.ibpsa.org/proceedings/BS2015/p2448.pdf
+    display: IBPSA Conference
+
+  highlight: 0
+  
+- title:	High resolution energy simulations at city scale
+  image:
+  description: 2015
+  authors: Tian W., Rysanek A., Choudhary R., and Heo Y.	
+  link:
+    url: http://www.ibpsa.org/proceedings/BS2015/p2756.pdf
+    display: IBPSA Conference
+  highlight: 0
+  
+- title: Variable importance analysis for urban building energy assessment in the presence of correlated factors
+  image:
+  description: 2015
+  authors: Yang S., Tian W., Heo Y., Meng Q., and Wei L.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S1877705815027976
+    display: ISHVAC-COBEE Conference
+  highlight: 0
+  
+- title:	Evaluation of calibration efficacy under different levels of uncertainty
+  image:
+  description: 2013
+  authors: Heo Y., Graziano D., Guzowski L., and Muehleisen R.T.	
+  link:
+    url: http://www.ibpsa.org/proceedings/bs2013/p_1035.pdf
+    display: IBPSA Conference
+
+  highlight: 0
+  
+- title:	Cost-effective measurement and verification method for determining energy-savings under uncertainty
+  image:
+  description: 2013
+  authors: Heo Y., Graziano D., Zavala V.M., Dickinson P., Kamrath M., and Kirshenbaum M.	
+  link:
+    url: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.714.5789&rep=rep1&type=pdf
+    display: ASHRAE Conference
+  highlight: 0
+  
+- title:	Stochastic energy simulation for risk analysis of energy retrofits
+  image:
+  description: 2013
+  authors: Muehleisen R.T., Heo Y., Graziano D., and Guzowski L.B.	
+  link:
+    url: http://ascelibrary.org/doi/abs/10.1061/9780784412909.088
+    display: 2013 Architectural Engineering Institute Conference
+  highlight: 0
+  
+- title:	Scalable methodology for energy efficiency retrofit decision analysis	
+  image:
+  description: 2012
+  authors: Heo Y., Zhao F., Lee S., Sun Y., Kim J., Augenbroe G., Graziano D., Guzowski L.B., and Muehleisen R.T.	
+  link:
+    url: http://ibpsa-usa.org/index.php/ibpusa/article/view/470
+    display: IBPSA-USA Conference
+  highlight: 0
+  
+- title:	Testing a streamlined project evaluation tool for risk-conscious decision making, the Chicago Loop energy efficiency retrofit initiative
+  image:
+  description: 2012
+  authors: Guzowski L., Graziano D., Heo Y., and Muehleisen R.T.	
+  link:
+    url: http://www.researchgate.net/profile/Ralph_Muehleisen/publication/266593746_Testing_a_Streamlined_Project_Evaluation_Tool_for_Risk-Conscious_Decision_Making_The_Chicago_Loop_Energy_Efficiency_Retrofit_Initiative/links/546e60bf0cf29806ec2eb2dc/Testing-a-St
+    display: ACEEE Summer Study on Energy Efficiency in Buildings
+  highlight: 0
+  
+- title:	Risk analysis of energy-efficiency projects based on Bayesian calibration of building energy models
+  image:
+  description: 2011
+  authors: Heo Y., Augenbroe G., and Choudhary R.	
+  link:
+    url: http://ibpsa.org/proceedings/BS2011/P_1799.pdf
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	Uncertainty quantification of microclimate variables in building energy simulation	
+  image:
+  description: 2011
+  authors: Sun Y., Heo Y., Xie H., Tan M., Wu J., and Augenbroe G.	
+  link:
+    url: http://ibpsa.org/proceedings/BS2011/P_1758.pdf
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	Analysis methodology for large organizations investment in energy retrofit of buildings
+  image:
+  description: 2011
+  authors: Heo Y., Augenbroe G., and Choudhary R.	
+  link:
+    url: http://oaktrust.library.tamu.edu/handle/1969.1/128821
+    display: ICEBO Conference
+  highlight: 0
+  
+- title:	HVAC design informed by organizational simulation
+  image:
+  description: 2009
+  authors: Li Z., Heo Y., and Augenbroe G.	
+  link:
+    url: http://www.researchgate.net/profile/Zhengwei_Li2/publication/254422976_HVAC_design_informed_by_organizational_simulation/links/00b495350ac76dd58a000000.pdf
+    display: IBPSA Conference
+  highlight: 0
+  
+- title:	Harmonizing the client’s processes with space planning decisions
+  image:
+  description: 2009
+  authors: Li Z., Heo Y., and Augenbroe G.	
+  link:
+    url: http://www.arcc-journal.org/index.php/repository/index
+    display: 2009 Annual ARCC Research Conference
+  highlight: 0
+  
+- title:	A modeling approach for estimating the impact of spatial configuration on nurses’ movement
+  image:
+  description: 2009
+  authors: Heo Y., Choudhary R., Bafna S., Hendrich A., and Chow M.P.	
+  link:
+    url: http://www.researchgate.net/profile/Sonit_Bafna/publication/254854592_A_Modeling_Approach_for_Estimating_the_Impact_of_Spatial_Configuration_on_Nurses'_Movement/links/0f317534d88fd8d41f000000.pdf
+    display: International Space Syntax Symposium
+  highlight: 0
+  
+- title:	Lessons from an advanced building simulation course
+  image:
+  description: 2008
+  authors: Augenbroe G., Brown J., Heo Y., Kim S.H., Li Z., McManus S., and Zhao F.	
+  link:
+    url: http://www.ibpsa-usa.org/index.php/ibpusa/article/view/262
+    display: IBPSA-USA Conference
+  highlight: 0
+  
+- title:	A study of variations among Mies’ courtyard houses by a combined set of visual and environmental properties
+  image:
+  description: 2007
+  authors: Choudhary R., Heo Y., and Bafna S.	
+  link:
+    url: http://s3.amazonaws.com/academia.edu.documents/46718382/A_STUDY_OF_VARIATIONS_AMONG_MIESS_COURT20160622-4311-7yg2v6.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1552635122&Signature=JSrMvNDdUbRbz1Sz%2Fs9f6whU4Yo%3D&response-content-disposition=inline%
+    display: International Space Syntax Symposium
+  highlight: 0
+  
