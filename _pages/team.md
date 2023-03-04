@@ -12,7 +12,7 @@ permalink: /team/
  If you are interested, please contact Dr. Yeonsook Heo (yeonsookheo@korea.ac.kr)
 
 
-Jump to [Ph.D.](#Ph.D.), [master](#master), [master](#undergraduate), [alumni](#alumni), [lab visitors](#lab-visitors).
+Jump to [Ph.D.](#Ph.D.), [master](#master), [undergraduate](#undergraduate), [alumni](#alumni), [lab visitors](#lab-visitors).
 
 
 ## Ph.D.
