@@ -8,8 +8,8 @@ permalink: /team/
 
 # Lab Members
 
- **The Urbane2 Lab is looking for Master & PhD students who have initiative and ambition in research and development.**<br>
- **If you are interested, please contact Dr. Yeonsook Heo (yeonsookheo@korea.ac.kr)**
+ The Urbane2 Lab is looking for Master & PhD students who have initiative and ambition in research and development.<br>
+ If you are interested, please contact Dr. Yeonsook Heo (yeonsookheo@korea.ac.kr)
 
 
 Jump to [Ph.D.](#Ph.D.), [master](#master), [alumni](#alumni), [lab visitors](#lab-visitors).

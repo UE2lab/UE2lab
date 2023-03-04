@@ -1,23 +1,17 @@
 ---
-title: "Allan Lab - Pictures"
+title: "UE2 Lab - Pictures"
 layout: piclay
-excerpt: "Allan Lab -- Pictures"
+excerpt: "UE2 Lab -- Pictures"
 permalink: /pictures/
 ---
 
 # Pictures
-Jump to: [Leiden](#leiden), [ETHZ](#ethz), [Cornell](#cornell), [St Andrews](#st-andrews)
+Jump to: [Presentations](#presentation), [Congratulations](#congratulations), [Events](#events)
 
 
-## Leiden
-
-#### Timelapse of our STM assembling [(see LION news item)](https://www.physics.leidenuniv.nl/index.php?id=11573&news=867&type=lion&ln=EN):
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3iKvUMv1h5A" frameborder="0" allowfullscreen></iframe>
-
-#### Gallery
-(Right-click *'view image'* to see a larger image.)
+### Presentations
 {% assign number_printed = 0 %}
-{% for pic in site.data.pictures_Leiden %}
+{% for pic in site.data.Pictures_Presentations %}
 
 {% assign even_odd = number_printed | modulo: 4 %}
 
@@ -26,7 +20,8 @@ Jump to: [Leiden](#leiden), [ETHZ](#ethz), [Cornell](#cornell), [St Andrews](#st
 {% endif %}
 
 <div class="col-sm-3 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/Gallery/{{ pic.image }}" class="img-responsive" width="95%" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/activities/Presentations/{{ pic.image }}" class="img-responsive" width="95%" style="float: left; margin:5px; padding: 0;" />
+<p align="center" style="margin: 0; padding: 0; font-size:13px">**{{ pic.image | split: '_' | first }}**<br>{{ pic.image | split: '.' | first | split: '_' | last }}</p>
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
@@ -53,26 +48,84 @@ Jump to: [Leiden](#leiden), [ETHZ](#ethz), [Cornell](#cornell), [St Andrews](#st
 
 <p> &nbsp; </p>
 
-First advertisement.
-<figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/WebpageLeiden_red.jpg" width="60%" >
-</figure>
+
+### Congratulations
+{% assign number_printed = 0 %}
+{% for pic in site.data.Pictures_Congratulations %}
+
+{% assign even_odd = number_printed | modulo: 4 %}
+
+{% if even_odd == 0 %}
+<div class="row">
+{% endif %}
+
+<div class="col-sm-3 clearfix">
+<img src="{{ site.url }}{{ site.baseurl }}/images/activities/Congratulations/{{ pic.image }}" class="img-responsive" width="95%" style="float: left; margin:5px; padding: 0;" />
+<p align="center" style="margin: 0; padding: 0; font-size:13px">**{{ pic.image | split: '_' | first }}**<br>{{ pic.image | split: '.' | first | split: '_' | last }}</p>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd > 2 %}
+</div>
+{% endif %}
 
 
-## ETHZ
-From the [group of Andreas Wallraff](http://www.qudev.ethz.ch/).
-<figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/WebpageETH_red.jpg" width="60%">
-</figure>
+{% endfor %}
 
-## Cornell
-From the [group of Seamus JC Davis](http://davisgroup.lassp.cornell.edu).
-<figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/WebpageCornell_red.jpg" width="60%">
-</figure>
+{% assign even_odd = number_printed | modulo: 4 %}
+{% if even_odd == 1 %}
+</div>
+{% endif %}
 
-## St Andrews
-From the [group of Felix Baumberger](http://dqmp.unige.ch/baumberger/) (now at University of Geneva).
-<figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/WebpageSTA_red.jpg" width="60%">
-</figure>
+{% if even_odd == 2 %}
+</div>
+{% endif %}
+
+{% if even_odd == 3 %}
+</div>
+{% endif %}
+
+<p> &nbsp; </p>
+
+
+### Events
+{% assign number_printed = 0 %}
+{% for pic in site.data.Pictures_Events %}
+
+{% assign even_odd = number_printed | modulo: 4 %}
+
+{% if even_odd == 0 %}
+<div class="row">
+{% endif %}
+
+<div class="col-sm-3 clearfix">
+<img src="{{ site.url }}{{ site.baseurl }}/images/activities/Events/{{ pic.image }}" class="img-responsive" width="95%" style="float: left; margin:5px; padding: 0;" />
+<p align="center" style="margin: 0; padding: 0; font-size:13px">**{{ pic.image | split: '_' | first }}**<br>{{ pic.image | split: '.' | first | split: '_' | last }}</p>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd > 2 %}
+</div>
+{% endif %}
+
+
+{% endfor %}
+
+{% assign even_odd = number_printed | modulo: 4 %}
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
+{% if even_odd == 2 %}
+</div>
+{% endif %}
+
+{% if even_odd == 3 %}
+</div>
+{% endif %}
+
+<p> &nbsp; </p>
+
+
