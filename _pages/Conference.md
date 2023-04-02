@@ -9,7 +9,7 @@ permalink: /Conference/
 <p class="title-center">CONFERENCE PROCEEDINGS</p>
 
 <div class="custom-container-paper">
-{% assign papers = site.data.Conference %}
+{% assign papers = site.data.conference %}
 {% assign counter = 0 %}
 {% for paper in papers %}
 {% if counter == 0 %}
