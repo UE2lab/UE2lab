@@ -18,7 +18,7 @@ permalink: /Conference/
 <div class="publication-col">
   <div class="student-image publication-image" style="position: relative; margin: 0px; padding: 0px;">
   <a href="{{ paper.link.url }}" target="_blank" style="text-decoration: none; color: inherit;">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ paper.image }}" class="img" style="width: 370px; height: 270px; object-fit: cover; object-position: top left; margin: 0px; padding: 0px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ paper.image }}" style="width: 370px; height: 270px; object-fit: cover; object-position: top left; margin: 0px; padding: 0px;">
   </a>
   </div>
 </div>
