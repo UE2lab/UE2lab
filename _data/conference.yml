@@ -1,6 +1,6 @@
 - title: Design and analysis of a renewable energy network based on fuel cells in a residential community
   number: 33
-  image: CONF33.jpg
+  image: CONF33.JPG
   description: 2021
   authors: Byun J. and Heo Y.	
   link:
@@ -10,7 +10,7 @@
 
 - title: Effect of limited controller and sensor datasets on the performance of data-driven model predictive control for residential buildings
   number: 32
-  image: CONF32.jpg
+  image: CONF32.JPG
   description: 2021
   authors: Lee H. and Heo Y.	
   link:
@@ -20,7 +20,7 @@
   
 - title:	The design of distributed control system for a hybrid energy supply network in a residential community
   number: 31
-  image: CONF31.jpg
+  image: CONF31.JPG
   description: 2021
   authors: Go J. and Heo Y.	
   link:
@@ -30,7 +30,7 @@
   
 - title:	Spatio-temporal data analysis for development of microclimate prediction models
   number: 30
-  image: CONF30.jpg
+  image: CONF30.JPG
   description: 2021
   authors: Hong T. and Heo Y.	
   link:
@@ -40,7 +40,7 @@
   
 - title:	The effect of urban spatial characteristics on microclimate
   number: 29
-  image: CONF29.jpg
+  image: CONF29.JPG
   description: 2018
   authors: Liao W. and Heo Y.	
   link:
@@ -50,7 +50,7 @@
   
 - title: Towards a comprehensive model of window control behaviour, a survey-based investigation on interdisciplinary drivers in Danish dwellings
   number: 28
-  image: CONF28.jpg
+  image: CONF28.JPG
   description: 2018
   authors: Barthelmes V., Heo Y., Andersen R.K., Knudsen H., Fabi V., and Corgnati S.P.
   link:
@@ -60,7 +60,7 @@
   
 - title: Evaluation of temperature dependent models for PV yield prediction
   number: 27
-  image: CONF27.jpg
+  image: CONF27.JPG
   description: 2018
   authors: Liao W., Heo Y., and Xu S.	
   link:
@@ -70,7 +70,7 @@
   
 - title: Introducing thermal comfort attitudes, psychological, social and contextual drivers in occupant behaviour modelling with Bayesian Networks
   number: 26
-  image: CONF26.jpg
+  image: CONF26.JPG
   description: 2018
   authors: Barthelmes V., Andersen R.K., Heo Y., Knudsen H., Fabi V., and Corgnati S.P.
   link:
@@ -80,7 +80,7 @@
   
 - title: A simplified vector-based method for irradiance prediction at urban scale
   number: 25
-  image: CONF25.jpg
+  image: CONF25.JPG
   description: 2017
   authors: Liao W. and Heo Y.
   link:
@@ -91,7 +91,7 @@
   
 - title:	Efficiency and reliability of Bayesian calibration of energy supply system models
   number: 24
-  image: CONF24.jpg
+  image: CONF24.JPG
   description: 2017
   authors: Menberg K., Heo Y., and Choudhary R.	
   link:
@@ -101,7 +101,7 @@
   
 - title:	A functional principal components model for internal loads in building energy simulation
   number: 23
-  image: CONF23.jpg
+  image: CONF23.JPG
   description: 2017
   authors: Ward R., Choudhary R., Heo Y., and Aston J.	
   link:
@@ -111,7 +111,7 @@
   
 - title: Exergy analysis of a ground-source heat pump system
   number: 22
-  image: CONF22.jpg
+  image: CONF22.JPG
   description: 2017
   authors: Menberg K., Heo Y., Choi W., Ooka R., Choudhary R., and Shukuya M.	
   link:
@@ -121,7 +121,7 @@
   
 - title:	Monitoring and stimulating energy behavioural change in university buildings towards post carbon cities
   number: 21
-  image: CONF21.jpg
+  image: CONF21.JPG
   description: 2017
   authors: Fabi V., Barthelmes V., Heo Y., and Corgnati S.P.
   link:
@@ -131,7 +131,7 @@
   
 - title:	Investigating an adequate level of modelling for energy analysis of domestic buildings
   number: 20
-  image: CONF20.jpg
+  image: CONF20.JPG
   description: 2016
   authors: Heo Y., Ren G., and Sunikka-Blank M.
   link:
@@ -142,7 +142,7 @@
   
 - title: New extension of Morris method for sensitivity analysis of building energy models
   number: 19
-  image: CONF19.jpg
+  image: CONF19.JPG
   description: 2016
   authors: Menberg K., Heo Y., Augenbroe G., and Choudhary R.	
   link:
@@ -152,7 +152,7 @@
   
 - title: Data driven bottom-up approach for modelling internal loads in building energy simulation using functional principal components
   number: 18
-  image: CONF18.jpg
+  image: CONF18.JPG
   description: 2016
   authors: Ward R.M., Choudhary R., Heo Y., and Guillas S.	
   link:
@@ -162,7 +162,7 @@
   
 - title:	Data driven model for rooftop excess electricity generation
   number: 17
-  image: CONF17.jpg
+  image: CONF17.JPG
   description: 2015
   authors: Kiguchi Y., Heo Y., and Choudhary R.	
   link:
@@ -172,7 +172,7 @@
   
 - title:	Parameterisation of internal loads in assessment of building energy performance
   number: 16
-  image: CONF16.jpg
+  image: CONF16.JPG
   description: 2015
   authors: Ward R.M., Choudhary R., Heo Y., and Rysanek A.	
   link:
@@ -183,7 +183,7 @@
   
 - title:	High resolution energy simulations at city scale
   number: 15
-  image: CONF15.jpg
+  image: CONF15.JPG
   description: 2015
   authors: Tian W., Rysanek A., Choudhary R., and Heo Y.	
   link:
@@ -193,7 +193,7 @@
   
 - title: Variable importance analysis for urban building energy assessment in the presence of correlated factors
   number: 14
-  image: CONF14.jpg
+  image: CONF14.JPG
   description: 2015
   authors: Yang S., Tian W., Heo Y., Meng Q., and Wei L.	
   link:
@@ -203,7 +203,7 @@
   
 - title:	Evaluation of calibration efficacy under different levels of uncertainty
   number: 13
-  image: CONF13.jpg
+  image: CONF13.JPG
   description: 2013
   authors: Heo Y., Graziano D., Guzowski L., and Muehleisen R.T.	
   link:
@@ -214,7 +214,7 @@
   
 - title:	Cost-effective measurement and verification method for determining energy-savings under uncertainty
   number: 12
-  image: CONF12.jpg
+  image: CONF12.JPG
   description: 2013
   authors: Heo Y., Graziano D., Zavala V.M., Dickinson P., Kamrath M., and Kirshenbaum M.	
   link:
@@ -224,7 +224,7 @@
   
 - title:	Stochastic energy simulation for risk analysis of energy retrofits
   number: 11
-  image: CONF11.jpg
+  image: CONF11.JPG
   description: 2013
   authors: Muehleisen R.T., Heo Y., Graziano D., and Guzowski L.B.	
   link:
@@ -234,7 +234,7 @@
   
 - title:	Scalable methodology for energy efficiency retrofit decision analysis	
   number: 10
-  image: CONF10.jpg
+  image: CONF10.JPG
   description: 2012
   authors: Heo Y., Zhao F., Lee S., Sun Y., Kim J., Augenbroe G., Graziano D., Guzowski L.B., and Muehleisen R.T.	
   link:
@@ -244,7 +244,7 @@
   
 - title:	Testing a streamlined project evaluation tool for risk-conscious decision making, the Chicago Loop energy efficiency retrofit initiative
   number: 9
-  image: CONF9.jpg
+  image: CONF9.JPG
   description: 2012
   authors: Guzowski L., Graziano D., Heo Y., and Muehleisen R.T.	
   link:
@@ -254,7 +254,7 @@
   
 - title:	Risk analysis of energy-efficiency projects based on Bayesian calibration of building energy models
   number: 8
-  image: CONF8.jpg
+  image: CONF8.JPG
   description: 2011
   authors: Heo Y., Augenbroe G., and Choudhary R.	
   link:
@@ -264,7 +264,7 @@
   
 - title:	Uncertainty quantification of microclimate variables in building energy simulation	
   number: 7
-  image: CONF7.jpg
+  image: CONF7.JPG
   description: 2011
   authors: Sun Y., Heo Y., Xie H., Tan M., Wu J., and Augenbroe G.	
   link:
@@ -274,7 +274,7 @@
   
 - title:	Analysis methodology for large organizations investment in energy retrofit of buildings
   number: 6
-  image: CONF6.jpg
+  image: CONF6.JPG
   description: 2011
   authors: Heo Y., Augenbroe G., and Choudhary R.	
   link:
@@ -284,7 +284,7 @@
   
 - title:	HVAC design informed by organizational simulation
   number: 5
-  image: CONF5.jpg
+  image: CONF5.JPG
   description: 2009
   authors: Li Z., Heo Y., and Augenbroe G.	
   link:
@@ -294,7 +294,7 @@
   
 - title: Harmonizing the client’s processes with space planning decisions
   number: 4
-  image: CONF4.jpg
+  image: CONF4.JPG
   description: 2009
   authors: Li Z., Heo Y., and Augenbroe G.	
   link:
@@ -304,7 +304,7 @@
   
 - title: A modeling approach for estimating the impact of spatial configuration on nurses’ movement
   number: 3
-  image: CONF3.jpg
+  image: CONF3.JPG
   description: 2009
   authors: Heo Y., Choudhary R., Bafna S., Hendrich A., and Chow M.P.	
   link:
@@ -314,7 +314,7 @@
   
 - title: Lessons from an advanced building simulation course
   number: 2
-  image: CONF2.jpg
+  image: CONF2.JPG
   description: 2008
   authors: Augenbroe G., Brown J., Heo Y., Kim S.H., Li Z., McManus S., and Zhao F.	
   link:
@@ -324,7 +324,7 @@
   
 - title: A study of variations among Mies’ courtyard houses by a combined set of visual and environmental properties
   number: 1
-  image: CONF1.jpg
+  image: CONF1.JPG
   description: 2007
   authors: Choudhary R., Heo Y., and Bafna S.	
   link:
