@@ -18,7 +18,7 @@
     display: IBPSA Conference
   highlight: 0
   
-- title:	The design of distributed control system for a hybrid energy supply network in a residential community
+- title: The design of distributed control system for a hybrid energy supply network in a residential community
   number: 31
   image: CONF31.JPG
   description: 2021
@@ -28,7 +28,7 @@
     display: IBPSA Conference
   highlight: 0
   
-- title:	Spatio-temporal data analysis for development of microclimate prediction models
+- title: Spatio-temporal data analysis for development of microclimate prediction models
   number: 30
   image: CONF30.JPG
   description: 2021
@@ -38,7 +38,7 @@
     display: IBPSA Conference
   highlight: 0
   
-- title:	The effect of urban spatial characteristics on microclimate
+- title: The effect of urban spatial characteristics on microclimate
   number: 29
   image: CONF29.JPG
   description: 2018
@@ -86,10 +86,9 @@
   link:
     url: http://www.ibpsa.org/proceedings/BS2017/BS2017_665.pdf
     display: IBPSA Conference
-
   highlight: 0
   
-- title:	Efficiency and reliability of Bayesian calibration of energy supply system models
+- title: Efficiency and reliability of Bayesian calibration of energy supply system models
   number: 24
   image: CONF24.JPG
   description: 2017
@@ -99,7 +98,7 @@
     display: IBPSA Conference
   highlight: 0
   
-- title:	A functional principal components model for internal loads in building energy simulation
+- title: A functional principal components model for internal loads in building energy simulation
   number: 23
   image: CONF23.JPG
   description: 2017
@@ -119,7 +118,7 @@
     display: IBPSA Conference
   highlight: 0
   
-- title:	Monitoring and stimulating energy behavioural change in university buildings towards post carbon cities
+- title: Monitoring and stimulating energy behavioural change in university buildings towards post carbon cities
   number: 21
   image: CONF21.JPG
   description: 2017
@@ -129,7 +128,7 @@
     display: IBPSA Conference
   highlight: 0
   
-- title:	Investigating an adequate level of modelling for energy analysis of domestic buildings
+- title: Investigating an adequate level of modelling for energy analysis of domestic buildings
   number: 20
   image: CONF20.JPG
   description: 2016
@@ -160,7 +159,7 @@
     display: IBPSA-England BSO Conference
   highlight: 0
   
-- title:	Data driven model for rooftop excess electricity generation
+- title: Data driven model for rooftop excess electricity generation
   number: 17
   image: CONF17.JPG
   description: 2015
@@ -170,7 +169,7 @@
     display: IBPSA Conference
   highlight: 0
   
-- title:	Parameterisation of internal loads in assessment of building energy performance
+- title: Parameterisation of internal loads in assessment of building energy performance
   number: 16
   image: CONF16.JPG
   description: 2015
@@ -178,10 +177,9 @@
   link:
     url: http://www.ibpsa.org/proceedings/BS2015/p2448.pdf
     display: IBPSA Conference
-
   highlight: 0
   
-- title:	High resolution energy simulations at city scale
+- title: High resolution energy simulations at city scale
   number: 15
   image: CONF15.JPG
   description: 2015
@@ -201,7 +199,7 @@
     display: ISHVAC-COBEE Conference
   highlight: 0
   
-- title:	Evaluation of calibration efficacy under different levels of uncertainty
+- title: Evaluation of calibration efficacy under different levels of uncertainty
   number: 13
   image: CONF13.JPG
   description: 2013
@@ -212,7 +210,7 @@
 
   highlight: 0
   
-- title:	Cost-effective measurement and verification method for determining energy-savings under uncertainty
+- title: Cost-effective measurement and verification method for determining energy-savings under uncertainty
   number: 12
   image: CONF12.JPG
   description: 2013
@@ -222,7 +220,7 @@
     display: ASHRAE Conference
   highlight: 0
   
-- title:	Stochastic energy simulation for risk analysis of energy retrofits
+- title: Stochastic energy simulation for risk analysis of energy retrofits
   number: 11
   image: CONF11.JPG
   description: 2013
@@ -232,7 +230,7 @@
     display: 2013 Architectural Engineering Institute Conference
   highlight: 0
   
-- title:	Scalable methodology for energy efficiency retrofit decision analysis	
+- title: Scalable methodology for energy efficiency retrofit decision analysis	
   number: 10
   image: CONF10.JPG
   description: 2012
@@ -242,7 +240,7 @@
     display: IBPSA-USA Conference
   highlight: 0
   
-- title:	Testing a streamlined project evaluation tool for risk-conscious decision making, the Chicago Loop energy efficiency retrofit initiative
+- title: Testing a streamlined project evaluation tool for risk-conscious decision making, the Chicago Loop energy efficiency retrofit initiative
   number: 9
   image: CONF9.JPG
   description: 2012
@@ -252,7 +250,7 @@
     display: ACEEE Summer Study on Energy Efficiency in Buildings
   highlight: 0
   
-- title:	Risk analysis of energy-efficiency projects based on Bayesian calibration of building energy models
+- title: Risk analysis of energy-efficiency projects based on Bayesian calibration of building energy models
   number: 8
   image: CONF8.JPG
   description: 2011
@@ -262,7 +260,7 @@
     display: IBPSA Conference
   highlight: 0
   
-- title:	Uncertainty quantification of microclimate variables in building energy simulation	
+- title: Uncertainty quantification of microclimate variables in building energy simulation	
   number: 7
   image: CONF7.JPG
   description: 2011
@@ -272,7 +270,7 @@
     display: IBPSA Conference
   highlight: 0
   
-- title:	Analysis methodology for large organizations investment in energy retrofit of buildings
+- title: Analysis methodology for large organizations investment in energy retrofit of buildings
   number: 6
   image: CONF6.JPG
   description: 2011
@@ -282,7 +280,7 @@
     display: ICEBO Conference
   highlight: 0
   
-- title:	HVAC design informed by organizational simulation
+- title: HVAC design informed by organizational simulation
   number: 5
   image: CONF5.JPG
   description: 2009
