@@ -1,0 +1,340 @@
+- title: Reliability, economic, and environmental analysis of fuel-cell-based hybrid renewable energy networks for residential communities
+  number: 34
+  image: SCIE34.jpg
+  description: 2023
+  authors: Byun J., Go J., Kim C., and Heo Y.
+  link:
+    url: https://authors.elsevier.com/c/1gr4cin8VkGVU
+    display: Energy Conversion and Management
+  highlight: 1
+
+- title: Battery-H2 storage system for self-sufficiency in residential buildings under different electric heating system scenarios
+  number: 33
+  image: SCIE33.jpg
+  description: 2023
+  authors: Go J., Byun J., Orehounig K., and Heo Y.
+  link:
+    url: https://www.sciencedirect.com/science/article/pii/S030626192300106X?casa_token=7CuqRr2By3sAAAAA:5gWVKUV6mWndw85Im8JYfz5dInkKxvGMdp8xkjGH6YUwu4ocj7oaaONhkfrweQuVC3mKlkC0D723
+    display: Applied Energy
+  highlight: 1
+
+- title: Structured probabilistic models for capturing household and temporal variations in the internal electricity load
+  number: 32
+  image: SCIE32.jpg
+  description: 2022
+  authors: Kim C., Byun J., Go J., and Heo Y.
+  link:
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0378778822008568?via%3Dihub
+    display: Energy & Buildings
+  highlight: 1
+
+- title: Weather-based operation strategy for a dynamically compartmentalized double-skin facade system
+  number: 31
+  image: SCIE31.jpg
+  description: 2022
+  authors: Yoon N. and Heo Y.
+  link:
+    url: https://www.sciencedirect.com/science/article/pii/S0360132322009854?casa_token=JVTwDdh3kRoAAAAA:ZPEywdY9q3Tyo-G0pbDss5_wOoLfIkygXqyTx2iK4q1ZfxWkif9XJeg-MKp9565uS2nZiz0cVfLr
+    display: Building and Environment
+  highlight: 0
+  
+- title: Simplified data-driven models for model predictive control of residential buildings
+  number: 30
+  image: SCIE30.jpg
+  description: 2022
+  authors: Lee H. and Heo Y.
+  link:
+    url: http://doi.org/10.1016/j.enbuild.2022.112067
+    display: Energy and Buildings
+  highlight: 0
+
+- title: Dynamic compartmentalization of double-skin facade for an office building with single-sided ventilation
+  number: 29
+  image: SCIE29.jpg
+  description: 2022
+  authors: Yoon N., Min D., and Heo Y.
+  link:
+    url: http://doi.org/10.1016/j.buildenv.2021.108624
+    display: Building and Environment
+  highlight: 0
+
+- title: Multi-objective optimization of the multi-story residential building with passive design strategy in South Korea
+  number: 28
+  image: SCIE28.jpg
+  description: 2021
+  authors: Jung Y., Heo Y., and Lee H.
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0360132321004637
+    display: Building and Environment
+  highlight: 0
+
+- title:	Evaluation of model fidelity for solar analysis in the context of distributed PV integration at urban scale
+  number: 27
+  image: SCIE27.jpg
+  description: 2021
+  authors: Liao W., Xu S., and Heo Y.
+  link:
+    url: http://link.springer.com/article/10.1007/s12273-021-0810-y
+    display: Building Simulation
+  highlight: 0
+
+- title:	The effect of spatial heterogeneity in urban morphology on surface urban heat islands
+  number: 26
+  image: SCIE26.jpg
+  description: 2021
+  authors: Liao W., Hong T., and Heo Y.
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S037877882100311X
+    display: Energy and Buildings
+  highlight: 0
+
+- title: Scrutinizing modeling and analysis methods for evaluating overheating risks in passive houses
+  number: 25
+  image: SCIE25.jpg
+  description: 2021
+  authors: Goncalves V., Ogunjimi Y., and Heo Y.
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0378778820334873
+    display: 	Energy and Buildings
+  highlight: 0
+
+- title:	Effective and scalable modelling of existing non-domestic buildings with radiator system under uncertainty
+  number: 24
+  image: SCIE24.jpg
+  description: 2020
+  authors: Li Q., Choudhary R., Heo Y., and Augenbroe G.
+  link:
+    url: http://www.tandfonline.com/doi/full/10.1080/19401493.2020.1817148
+    display: Journal of Building Performance Simulation
+  highlight: 0
+
+- title:	Investigating an adequate level of modelling for retrofit decision-making, A case study of a British semi-detached house
+  number: 23
+  image: SCIE23.jpg
+  description: 2019
+  authors: Ren G., Heo Y., and Sunikka-Blank M.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S2352710219304206
+    display: Journal of Building Engineering
+  highlight: 0
+
+- title: Simplified vector-based model tailored for urban-scale prediction of solar irradiance	
+  number: 22
+  image: SCIE22.jpg
+  description: 2019
+  authors: Liao W., Heo Y., and Xu S.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0038092X19302397
+    display: Solar Energy
+  highlight: 0
+
+- title: A data-centric bottom-up model for generation of stochastic internal load profiles based on space-use type
+  number: 21
+  image: SCIE21.jpg
+  description: 2019
+  authors: Ward R.M., Choudhary R., Heo Y., and Aston J.A.D.
+  link:
+    url: http://www.tandfonline.com/doi/full/10.1080/19401493.2019.1583287
+    display: Journal of Building Performance Simulation
+  highlight: 0
+
+- title:	Predicting intra-day profiles under time-of-use tariffs using smart meter data
+  number: 20
+  image: SCIE20.jpg
+  description: 2019
+  authors: Kiguchi Y., Heo Y., Weeks M., and Choudhary R.
+  link:
+    url: http://sciencedirect.com/science/article/pii/S0360544219300398
+    display: Energy
+  highlight: 0
+
+- title: Influence of error terms in Bayesian calibration of energy system models
+  number: 19
+  image: SCIE19.jpg
+  description: 2018
+  authors: Menberg K., Heo Y., and Choudhary R.	
+  link:
+    url: http://www.tandfonline.com/doi/abs/10.1080/19401493.2018.1475506
+    display: Journal of Building Performance Simulation
+  highlight: 0
+
+- title:	A review of uncertainty analysis methods in building energy assessment
+  number: 18
+  image: SCIE18.jpg
+  description: 2018
+  authors: 	Tian W., Heo Y., de Wilde P., Li Z., Yan D., Park C.S., Feng X., and Augenbroe G.
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S136403211830368X
+    display: Renewable & Sustainable Energy Reviews
+  highlight: 0
+
+- title: Bayesian inference of structural error in inverse models of thermal response tests
+  number: 17
+  image: SCIE17.jpg
+  description: 2018
+  authors: 	Choi W., Menberg K., Kikumoto H., Heo Y., Choudhary R., and Ooka R.
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0306261918310171
+    display: Applied Energy
+  highlight: 0
+
+- title:	Exploration of the Bayesian Network framework for modelling window control behaviour
+  number: 16
+  image: SCIE16.jpg
+  description: 2017
+  authors: Barthelmes V.M., Heo Y., Fabi V., and Corgnati S.P.
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0360132317304663
+    display: Building and Environment
+  highlight: 0
+
+- title:	Exergy analysis of a hybrid ground-source heat pump system
+  number: 15
+  image: SCIE15.jpg
+  description: 2017
+  authors: Menberg K., Heo Y., Choi W., Ooka R., Choudhary R., and Shukuya M.
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0306261917308255
+    display: Applied Energy
+  highlight: 0
+
+- title: Sensitivity analysis methods for building energy models, comparing computational costs and extractable information
+  number: 14
+  image: SCIE14.jpg
+  description: 2016
+  authors: Menberg K., Heo Y., and Choudhary R.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0378778816311112
+    display: Energy and Buildings
+  highlight: 0
+
+- title: Exploring the impact of different parameterisations of occupant-related internal loads in building energy simulation
+  number: 13
+  image: SCIE13.jpg
+  description: 2016
+  authors: Ward R., Choudhary R., Heo Y., and Rysanek A.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S037877881630305X
+    display: Energy and Buildings
+  highlight: 0
+
+- title: Efficient energy modelling of heterogeneous building portfolios	
+  number: 12
+  image: SCIE12.jpg
+  description: 2016
+  authors: Pacheco-Torres R., Heo Y., and Choudhary R.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S2210670716301913
+    display: Sustainable Cities and Society
+  highlight: 0
+
+- title: Relative importance of factors influencing building energy in urban environment	
+  number: 11
+  image: SCIE11.jpg
+  description: 2016
+  authors: Tian W., Liu Y., Heo Y., Yan D., Li Z., An J., and Yang S.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0360544216307253
+    display: Energy
+  highlight: 0
+
+- title: Scalable methodology for large scale building energy improvement, relevance of calibration in model-based retrofit analysis	
+  number: 10
+  image: SCIE10.jpg
+  description: 2015
+  authors: Heo Y., Augenbroe G., Graziano D., Muehleisen R.T., and Guzowski L.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0360132314004272
+    display: Building and Environment
+  highlight: 0
+
+- title:	Evaluation of calibration efficacy under different levels of uncertainty
+  number: 9
+  image: SCIE9.jpg
+  description: 2015
+  authors: Heo Y., Graziano D., Guzowski L., and Muehleisen R.T.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0360132314004272
+    display: 	Journal of Building Performance Simulation
+  highlight: 0
+
+- title:	Measurement and verification of building systems under uncertain data, a Gaussian process modeling approach
+  number: 8
+  image: SCIE8.jpg
+  description: 2014
+  authors: Burkhart M.C., Heo Y., and Zavala V.M.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S0378778814001091
+    display: Energy and Buildings
+  highlight: 0
+
+- title:	Uncertainty quantification of microclimate variables in building energy simulation
+  number: 7
+  image: SCIE7.jpg
+  description: 2014
+  authors: Sun Y., Heo Y., Xie H., Tan M., Wu J., and Augenbroe G.	
+  link:
+    url: http://www.tandfonline.com/doi/abs/10.1080/19401493.2012.757368
+    display: Journal of Building Performance Simulation
+  highlight: 0
+
+- title: MPC-based appliance scheduling for residential building energy management controller
+  number: 6
+  image: SCIE6.jpg
+  description: 2013
+  authors: Chen C., Wang J., Heo Y., and Kishore S.	
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/6575202?casa_token=y_C-PJjzSDkAAAAA:1a9kkYdS_C4RVudD-zlwkxPT6AM1FEBvhZZFvYWYCjDw1ETezhAbJ9Yo--DyLXjEO7p5Og
+    display: IEEE Transaction on Smart Grid
+  highlight: 0
+
+- title:	Quantitative risk management for energy retrofit projects
+  number: 5
+  image: SCIE5.jpg
+  description: 2013
+  authors: Heo Y., Augenbroe G., and Choudhary R.
+  link:
+    url: http://www.tandfonline.com/doi/abs/10.1080/19401493.2012.706388
+    display: Journal of Building Performance Simulation
+  highlight: 0
+
+- title: Gaussian process modeling for measurement and verification of building energy savings
+  number: 4
+  image: SCIE4.jpg
+  description: 2012
+  authors: Heo Y., and Zavala V.M.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S037877881200312X
+    display: Energy and Buildings
+  highlight: 0
+
+- title: Calibration of building energy models for retrofit analysis under uncertainty
+  number: 3
+  image: SCIE3.jpg
+  description: 2012
+  authors: Heo Y., Choudhary R., and Augenbroe G.	
+  link:
+    url: http://www.sciencedirect.com/science/article/pii/S037877881100644X
+    display: Energy and Buildings
+
+  highlight: 0
+
+- title: A predictive model for computing the influence of space layouts on nurses’ movement in hospital units
+  number: 2
+  image: SCIE2.jpg
+  description: 2010
+  authors: Choudhary R., Bafna S., Heo Y., Hendrich A., and Chow M.	
+  link:
+    url: http://www.tandfonline.com/doi/abs/10.1080/19401490903174280
+    display: Journal of Building Performance Simulation
+  highlight: 0
+
+- title: Unit-related factors that affect nursing time with patients, applying spatial analysis to the nurses’ time and motion study	
+  number: 1
+  image: SCIE1.jpg
+  description: 2009
+  authors: Hendrich A., Chow M. P., Bafna S., Choudhary R., Heo Y., and Skierczynski B.	
+  link:
+    url: http://journals.sagepub.com/doi/abs/10.1177/193758670900200202
+    display: Health Environments Research & Design Journal
+  highlight: 0

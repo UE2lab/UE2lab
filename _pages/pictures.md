@@ -5,127 +5,62 @@ excerpt: "UE2 Lab -- Pictures"
 permalink: /pictures/
 ---
 
-# Pictures
-Jump to: [Presentations](#presentation), [Congratulations](#congratulations), [Events](#events)
+<p class="title-center"><b>A</b>CTIVITIES</p>
 
-
-### Presentations
-{% assign number_printed = 0 %}
-{% for pic in site.data.Pictures_Presentations %}
-
-{% assign even_odd = number_printed | modulo: 4 %}
-
-{% if even_odd == 0 %}
-<div class="row">
+<div class="custom-container-student">
+{% assign pictures = site.data.Photos %}
+{% assign counter = 0 %}
+{% for picture in pictures %}
+{% if counter == 0 %}
+<div class="student-row">
 {% endif %}
-
-<div class="col-sm-3 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/activities/Presentations/{{ pic.image }}" class="img-responsive" width="95%" style="float: left; margin:5px; padding: 0;" />
-<p align="center" style="margin: 0; padding: 0; font-size:13px">**{{ pic.image | split: '_' | first }}**<br>{{ pic.image | split: '.' | first | split: '_' | last }}</p>
+<div class="student-col">
+  <div class="student-image" style="position: relative; margin: 0px; padding: 0px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="img" style="width: 250px; height: 300px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;">
+  <div class="photos-info">
+  <p style="text-align: center;">{{ picture.title }}</p>
+  <p style="text-align: center;">{{ picture.date }}</p>
+  </div>
+  </div>
 </div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd > 2 %}
+{% assign counter = counter | plus: 1 %}
+{% if counter == 3 %}
 </div>
+{% assign counter = 0 %}
 {% endif %}
-
-
 {% endfor %}
-
-{% assign even_odd = number_printed | modulo: 4 %}
-{% if even_odd == 1 %}
+{% if counter != 0 %}
 </div>
 {% endif %}
-
-{% if even_odd == 2 %}
-</div>
-{% endif %}
-
-{% if even_odd == 3 %}
-</div>
-{% endif %}
-
-<p> &nbsp; </p>
-
-
-### Congratulations
-{% assign number_printed = 0 %}
-{% for pic in site.data.Pictures_Congratulations %}
-
-{% assign even_odd = number_printed | modulo: 4 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-3 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/activities/Congratulations/{{ pic.image }}" class="img-responsive" width="95%" style="float: left; margin:5px; padding: 0;" />
-<p align="center" style="margin: 0; padding: 0; font-size:13px">**{{ pic.image | split: '_' | first }}**<br>{{ pic.image | split: '.' | first | split: '_' | last }}</p>
 </div>
 
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd > 2 %}
-</div>
-{% endif %}
-
-
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 4 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% if even_odd == 2 %}
-</div>
-{% endif %}
-
-{% if even_odd == 3 %}
-</div>
-{% endif %}
-
-<p> &nbsp; </p>
-
-
-### Events
-{% assign number_printed = 0 %}
-{% for pic in site.data.Pictures_Events %}
-
-{% assign even_odd = number_printed | modulo: 4 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-3 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/activities/Events/{{ pic.image }}" class="img-responsive" width="95%" style="float: left; margin:5px; padding: 0;" />
-<p align="center" style="margin: 0; padding: 0; font-size:13px">**{{ pic.image | split: '_' | first }}**<br>{{ pic.image | split: '.' | first | split: '_' | last }}</p>
-</div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd > 2 %}
-</div>
-{% endif %}
-
-
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 4 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% if even_odd == 2 %}
-</div>
-{% endif %}
-
-{% if even_odd == 3 %}
-</div>
-{% endif %}
-
-<p> &nbsp; </p>
-
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var studentImages = document.getElementsByClassName('student-image');
+    for (var i = 0; i < studentImages.length; i++) {
+      studentImages[i].addEventListener('mouseover', function() {
+        this.style.opacity = '0.8';
+        this.getElementsByClassName('photos-info')[0].style.display = 'block';
+        this.style.transition = 'transform 0.3s ease-in-out';
+      });
+      studentImages[i].addEventListener('mouseout', function() {
+        this.style.opacity = '1.0';
+        this.getElementsByClassName('photos-info')[0].style.display = 'none';
+        this.style.transition = 'transform 0.3s ease-in-out';
+      });
+    }
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    var publicationImages = document.getElementsByClassName('student-image');
+    for (var i = 0; i < publicationImages.length; i++) {
+      publicationImages[i].addEventListener('mouseover', function() {
+      this.style.transform = 'scale(1.02)';
+      this.style.zIndex = '1000';
+      });
+      publicationImages[i].addEventListener('mouseout', function() {
+        this.style.transform = 'scale(1.0)';
+        this.style.zIndex = '1';
+      });
+    }
+  });
+</script>

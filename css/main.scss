@@ -3,15 +3,47 @@
     
 @import "bootstrap";
 
-img { margin-bottom: 24px; 
-     margin-top: 17px; 
-    border-radius:2%;
-}
-
+img {
+    margin: 0px; 
+    border-radius:0%;
+}  
 
 body {
-	padding-top: 70px;
+	padding-top: 100px;
 }
+
+table {
+    line-height: 2;
+  }  
+
+table th {
+    color: rgb(55, 81, 111);
+  }
+  
+
+.title-center {
+  font-family: "Oswald";
+  color: rgb(55, 81, 111);
+  text-align: center;
+  font-weight: bold;  
+  font-size: 44px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.title-center::first-letter {
+  font-size: 48px;
+}
+
+.title2-center {
+  font-family: "Oswald";
+  color: rgb(55, 81, 111);
+  text-align: center;
+  font-weight: bold;  
+  font-size: 48px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
 
 figcaption {
     text-align: right;
@@ -32,39 +64,11 @@ p.byline {
 	margin-bottom: 48px;
 }
 
-
-pubtit {
-	font-weight: bold;
-}
-
-firstp {
-}
-
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1000px; /* or 950px */
+  max-width: 1200px; /* or 950px */
 }
-
-/* Home, News */
-#newsid p {
-	text-align: left;
-}
-
-#homeidtmp h1 {
-	text-align: center;
-}
-
-#newsid img {
-	margin-top: 6px;
-	margin-bottom: 6px;
-}
-
-/* Team & Publications */
-#gridid img { margin: 16px 22px 6px 0; border-radius:10%; box-shadow: 2px 2px 5px #888888 }
-#homeid img { margin: 0 0 0 0; border-radius:5%; box-shadow: 0px 0px 0px #888888 }
-#picid img { margin: 6px 3px 60px 6px; border-radius:1%; box-shadow: 2px 2px 5px #888888 }
-#gridid .row { margin-bottom: 24px; }
 
 
 /* Grid overrides */
@@ -76,10 +80,16 @@ firstp {
 
 /* Grid overrides */
 .col-sm-4 {
-	padding-left: 26px;
-	padding-right: 26px;
+	padding-left: 10px;
+	padding-right: 10px;
+  border: 1px;
+  border-color:black;
 }
 
+.row .col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 /* Carusel */
 
@@ -91,3 +101,182 @@ firstp {
     margin-right: 30px;
 }
 
+.carousel-inner img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+.navbar {
+    background-color: white;
+    font-size: 16px;
+  }
+  
+.navbar-nav > li > a {
+    margin-top: 16px;
+    color: black;
+}
+
+.dropdown-menu > li > a {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+}
+
+.dropdown-menu {
+    background-color: white;
+    border-color: transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.paper-info {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.photos-info {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: -3%;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.photos-info p {
+  font-size: 14px;
+  background-color: transparent;
+  color: black;
+  opacity: 1;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8), -1px -1px 4px rgba(255, 255, 255, 0.8), 1px -1px 4px rgba(255, 255, 255, 0.8), -1px 1px 4px rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+}
+
+.paper-info p {
+  font-size: 14px;
+  color: black;
+  opacity: 1;
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 90%;
+}
+
+.student-image {
+  position: relative;
+}
+
+.student-image:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.student-info {
+  font-size: 14px;
+  position: absolute;
+  top: 67%;
+  left: 0%;
+  color: white;
+  padding-left: 20px;
+  display: none;
+}
+
+.student-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.student-col {
+  flex: 0 0 calc(33.333333% - 0px);
+  margin-bottom: 0px;
+  margin-right: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+}
+
+.student-col:last-child {
+  margin-right: 0;
+}
+.student-row:last-child {
+  margin-bottom: 30px;
+}
+
+.publication-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.publication-col {
+  flex: 0 0 calc(33.333% - 200px);
+  margin-bottom: 0px;
+  margin-right: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+}
+
+.publication-col:last-child {
+  margin-right: 0;
+}
+.publication-row:last-child {
+  margin-bottom: 30px;
+}
+
+
+.custom-container-student {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+.custom-container-paper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+.job-title, .job-date {
+  display: inline-block;
+}
+
+.job-title {
+  width: calc(50% - 10px); 
+}
+
+.job-date {
+  width: 150px;
+  text-align: right;
+}
+
+hr {
+  color: 0.05px solid grey;
+  margin: 0 0 10px 0;
+}
+
+.project-cell {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+}
