@@ -6,7 +6,7 @@ sitemap: false
 permalink: /alumni/
 ---
 
-<p class="title-center">ALUMNI / LAB VISITORS</p>
+<p class="title-center">ALUMNI</p>
 
 <div class="custom-container-student">
 {% assign students = site.data.Alumni %}

@@ -1,12 +1,10 @@
 ---
 title: "UE2 Lab - Professor"
-layout: gridlay
+layout: gridlay_professor
 excerpt: "UE2 Lab: Professor"
 sitemap: false
 permalink: /professor/
 ---
-
-![]({{ site.url }}{{ site.baseurl }}/images/teampic/Yeonsook Heo2.jpg){: style="height: 500px; float: left; margin: 10px  30px"}
 
 <p style="margin-bottom: 20px;">
   <strong style="font-size: 26px;">Yeonsook Heo</strong><br>

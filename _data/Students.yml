@@ -36,6 +36,28 @@
   number_educ: 1
   education1: Passive building design, indoor environment, natural ventilation
 
+- name: Seungho Shin
+  photo: Seungho Shin.jpg
+  info: Master program
+  email: sstiger0406@naver.com
+  number_educ: 1
+  education1: 
+
+
+- name: Hanjoo Kim
+  photo: Hanjoo Kim.jfif
+  info: Master program
+  email: joo0970@korea.ac.kr
+  number_educ: 1
+  education1: 
+
+- name: Dohun Kwon
+  photo: Dohun Kwon.jpg
+  info: Master program
+  email: bluehope97@hanmail.net
+  number_educ: 1
+  education1: 
+
 - name: Hyungbin Joo
   photo: Hyungbin Joo.jpg
   info: Undergraduate

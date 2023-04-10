@@ -5,9 +5,9 @@ excerpt: "UE2 Lab -- Pictures"
 permalink: /pictures/
 ---
 
-<p class="title-center"><b>A</b>CTIVITIES</p>
+<p class="title-center">ACTIVITIES</p>
 
-<div class="custom-container-student">
+<div class="custom-container-activities">
 {% assign pictures = site.data.Photos %}
 {% assign counter = 0 %}
 {% for picture in pictures %}
@@ -16,7 +16,7 @@ permalink: /pictures/
 {% endif %}
 <div class="student-col">
   <div class="student-image" style="position: relative; margin: 0px; padding: 0px;">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="img" style="width: 250px; height: 300px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="img" style="width: 380px; height: 450px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;">
   <div class="photos-info">
   <p style="text-align: center;">{{ picture.title }}</p>
   <p style="text-align: center;">{{ picture.date }}</p>
