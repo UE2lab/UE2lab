@@ -66,11 +66,12 @@ permalink: /pictures/
   // Get the image and insert it inside the modal - use its "alt" text as a caption
   var images = document.querySelectorAll(".img");
   var modalImg = document.querySelector(".modal-content");
+  var imageContainers = document.querySelectorAll(".student-image");
 
-  for (var i = 0; i < images.length; i++) {
-    images[i].addEventListener("click", function () {
+  for (var i = 0; i < imageContainers.length; i++) {
+    imageContainers[i].addEventListener("click", function () {
       modal.style.display = "block";
-      modalImg.src = this.src;
+      modalImg.src = this.querySelector(".img").src;
 
       // Disable scrolling while the modal is open
       document.body.style.overflow = "hidden";
