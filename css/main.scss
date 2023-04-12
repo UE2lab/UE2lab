@@ -146,18 +146,18 @@ p.byline {
   border: none;
 }
 
-
 .dropdown-menu > li > a {
     background-color: rgba(255, 255, 255);
     color: black;
     text-align: left;
     font-size: 18px;
 }
-
+  
 .dropdown-menu {
     border-color: transparent;
     background-color: transparent;
 }
+
 .navbar-nav > li > .dropdown-menu {
   left: 0;
   right: auto;
@@ -351,7 +351,6 @@ hr {
 .modal-content {
   margin: auto;
   display: block;
-  height: 100%;
   max-height: 500px;
   height: auto;
 }
@@ -369,10 +368,10 @@ hr {
 
 @media (max-width: 968px) {
   .activity-image-size{
-    width: 30vw; height: 33.33vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
+    width: 28vw; height: 34vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
   }
   .student-image-size{
-    width: 30vw; height: 33.6vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
+    width: 28vw; height: 34vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
   } 
   .student-image {
     position: relative;
@@ -386,20 +385,57 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30vw;
-    height: 33.6vw;
+    width: 28vw;
+    height: 34vw;
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
   .student-info {
-    font-size: 13px;
+    font-size: 10px;
     position: absolute;
     top: 10%;
     left: 0%;
+    width: 28vw;
     color: white;
     padding-left: 5%;
     display: none;
     padding-right: 5%;
+    word-wrap: break-word;
     }
+  .photos-info p {
+      font-size: 10px;
+      background-color: transparent;
+      color: black;
+      width: 28vw;
+      opacity: 1;
+      text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8), -1px -1px 4px rgba(255, 255, 255, 0.8), 1px -1px 4px rgba(255, 255, 255, 0.8), -1px 1px 4px rgba(255, 255, 255, 0.8);
+      font-weight: bold;
+      word-wrap: break-word;
+    }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 15%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    height: 100%;
+    max-width: 60vw;
+  }
+  
+  .close {
+    color: black;
+    float: right;
+    cursor: pointer;
+  }
+    
 }

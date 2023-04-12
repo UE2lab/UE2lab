@@ -20,9 +20,9 @@ permalink: /team/
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="student-image-size">
   <div class="overlay"></div>
   <div class="student-info">
-  <p>• {{ member.name }}</p>
-  <p>• {{ member.info }}</p>
-  <p>• {{ member.email }}</p>
+  <p>{{ member.name }}</p>
+  <p>{{ member.info }}</p>
+  <p>{{ member.email }}</p>
   </div>
   </div>
 </div>
