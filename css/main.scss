@@ -53,6 +53,11 @@ figcaption {
 
 /* Top navigation bar */
 
+@media (max-width: 928px) {
+  .navbar-toggle {
+    display: block;
+  }
+}
 
 p.byline {
 	text-align: center;
