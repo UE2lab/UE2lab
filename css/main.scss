@@ -53,12 +53,6 @@ figcaption {
 
 /* Top navigation bar */
 
-@media (max-width: 928px) {
-  .navbar-toggle {
-    display: block;
-  }
-}
-
 p.byline {
 	text-align: center;
 	font-size: 18px;
@@ -113,7 +107,7 @@ p.byline {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255);
     font-size: 18px;
     height: 90px;
   }
@@ -124,8 +118,37 @@ p.byline {
     color: black;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+
+.navbar-default .navbar-nav .dropdown-menu li a {
+  color: #000000;
+  background-color: white;
+}
+
+.navbar-default {
+    border: none;
+    font-family: arial;
+    color: black;
+}
+
+.navbar-collapse {
+  font-size: 18px;
+  color: black;
+  background-color: rgba(255, 255, 255);
+}
+
+.in {
+  border: transparent;
+}
+.navbar-collapse.in {
+  border: none;
+}
+
+
 .dropdown-menu > li > a {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255);
     color: black;
     text-align: left;
     font-size: 18px;
@@ -134,6 +157,10 @@ p.byline {
 .dropdown-menu {
     border-color: transparent;
     background-color: transparent;
+}
+.navbar-nav > li > .dropdown-menu {
+  left: 0;
+  right: auto;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -183,6 +210,18 @@ p.byline {
 
 .student-image {
   position: relative;
+  cursor: pointer;
+}
+.activity-image {
+  position: relative;
+  cursor: pointer;
+}
+
+.student-image-size {
+  width: 250px; height: 300px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
+}
+.activity-image-size {
+  width: 380px; height: 450px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
 }
 
 .student-image:hover .overlay {
@@ -208,6 +247,7 @@ p.byline {
   color: white;
   padding-left: 20px;
   display: none;
+  padding-right: 5%;
 }
 
 .student-row {
@@ -323,4 +363,43 @@ hr {
   font-weight: bold;
   cursor: pointer;
   margin-right: 10px;
+}
+
+
+
+@media (max-width: 968px) {
+  .activity-image-size{
+    width: 30vw; height: 33.33vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
+  }
+  .student-image-size{
+    width: 30vw; height: 33.6vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
+  } 
+  .student-image {
+    position: relative;
+    cursor: pointer;
+  }
+  .activity-image {
+    position: relative;
+    cursor: pointer;
+  } 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 33.6vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .student-info {
+    font-size: 13px;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    color: white;
+    padding-left: 5%;
+    display: none;
+    padding-right: 5%;
+    }
 }

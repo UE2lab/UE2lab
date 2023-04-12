@@ -6,7 +6,7 @@ sitemap: false
 permalink: /professor/
 ---
 
-<p style="margin-bottom: 18px;">
+<p style="margin-bottom: 18px; margin-top: 20px;">
   <strong style="font-size: 26px;">Yeonsook Heo</strong><br>
   <strong style="font-size: 22px;">Associate Professor</strong><br><br>
   <span style="font-size: 18px;">School of Civil, Architectural, and Environmental Engineering, Korea University<br>
@@ -15,8 +15,8 @@ permalink: /professor/
 </p>
 
 <hr>
-<p style="font-size: 18px;">
-<strong style="font-size: 18px;">Professional Experience</strong><br>
+<p style="font-size: 16px;">
+<strong style="font-size: 16px;">Professional Experience</strong><br>
 <span class="job-title"><b>Korea University</b>, Seoul, Korea</span><span class="job-date">Sep. 2018 - Present</span><br>
 Associate Professor, School of Civil, Architectural, and Environmental Engineering<br>
 <span class="job-title"><b>University of Cambridge</b>, Cambridge, UK</span><span class="job-date">Oct. 2013 - Jun. 2018</span><br>
@@ -25,8 +25,8 @@ Assistant Professor, Department of Architecture<br>
 Postdoctoral Fellow<br>
 </p>
 
-<p style="font-size: 18px;">
-<strong style="font-size: 18px;">Education</strong><br>
+<p style="font-size: 16px;">
+<strong style="font-size: 16px;">Education</strong><br>
 <span class="job-title"><b>Georgia Institute of Technology</b>, Atlanta, Georgia, USA</span><span class="job-date">Dec. 2011</span><br>
 Ph.D., College of Architecture (Building Technology)<br>
 

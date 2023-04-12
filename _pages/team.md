@@ -17,7 +17,7 @@ permalink: /team/
 {% endif %}
 <div class="student-col">
   <div class="student-image" style="position: relative; margin: 0px; padding: 0px;">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img" style="width: 250px; height: 300px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="student-image-size">
   <div class="overlay"></div>
   <div class="student-info">
   <p>• {{ member.name }}</p>

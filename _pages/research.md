@@ -31,7 +31,7 @@ permalink: /research/
 
 <p class="title-center">LIST</p>
 {% for project in site.data.Projects %}
-<h5 id="project-{{ project.number }}">**{{ project.number }}. {{ project.title }}**</h5>
+<h4 id="project-{{ project.number }}">**{{ project.number }}. {{ project.title }}**</h4>
 {{ project.introduction }}
 <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" width="700px"></p>
 

@@ -20,8 +20,8 @@ permalink: /pictures/
 <div class="student-row">
 {% endif %}
 <div class="student-col">
-  <div class="student-image" style="position: relative; margin: 0px; padding: 0px;">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="img" style="width: 380px; height: 450px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;">
+  <div class="activity-image" style="position: relative; margin: 0px; padding: 0px;">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="activity-image-size">
   <div class="photos-info">
   <p style="text-align: center;">{{ picture.title }}</p>
   <p style="text-align: center;">{{ picture.date }}</p>
@@ -46,7 +46,7 @@ permalink: /pictures/
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var studentImages = document.getElementsByClassName('student-image');
+    var studentImages = document.getElementsByClassName('activity-image');
     for (var i = 0; i < studentImages.length; i++) {
       studentImages[i].addEventListener('mouseover', function() {
         this.style.opacity = '0.8';
@@ -64,14 +64,14 @@ permalink: /pictures/
   var modal = document.querySelector(".modal");
 
   // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var images = document.querySelectorAll(".img");
+  var images = document.querySelectorAll(".activity-image-size");
   var modalImg = document.querySelector(".modal-content");
-  var imageContainers = document.querySelectorAll(".student-image");
+  var imageContainers = document.querySelectorAll(".activity-image");
 
   for (var i = 0; i < imageContainers.length; i++) {
     imageContainers[i].addEventListener("click", function () {
       modal.style.display = "block";
-      modalImg.src = this.querySelector(".img").src;
+      modalImg.src = this.querySelector(".activity-image-size").src;
 
       // Disable scrolling while the modal is open
       document.body.style.overflow = "hidden";
