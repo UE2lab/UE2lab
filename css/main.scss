@@ -216,6 +216,9 @@ p.byline {
   position: relative;
   cursor: pointer;
 }
+.research-image {
+  width: 1000px;;
+}
 
 .student-image-size {
   width: 250px; height: 300px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
@@ -436,5 +439,7 @@ hr {
     float: right;
     cursor: pointer;
   }
-    
+  .research-image {
+    width: 80vw;
+  }  
 }
