@@ -16,7 +16,7 @@ permalink: /Conference/
 </style>
 
 <hr style="width: 1200px; border-width: 2px;">
-<table style="width: 1200px; font-size: 15px;">
+<table style="width: 1200px; font-size: 18px;">
   <tr style="font-size: 20px; font-family: Arial">
     <th>No.<hr></th><th>Paper Title<hr></th><th>Year<hr></th><th>Authors<hr></th><th>Journal<hr></th>
   </tr>

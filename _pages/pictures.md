@@ -7,6 +7,11 @@ permalink: /pictures/
 
 <p class="title-center">ACTIVITIES</p>
 
+<div class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content">
+</div>
+
 <div class="custom-container-activities">
 {% assign pictures = site.data.Photos %}
 {% assign counter = 0 %}
@@ -33,6 +38,11 @@ permalink: /pictures/
 </div>
 {% endif %}
 </div>
+<style>
+  .student-image {
+    cursor: pointer;
+  }
+</style>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -50,17 +60,36 @@ permalink: /pictures/
       });
     }
   });
-  document.addEventListener('DOMContentLoaded', function() {
-    var publicationImages = document.getElementsByClassName('student-image');
-    for (var i = 0; i < publicationImages.length; i++) {
-      publicationImages[i].addEventListener('mouseover', function() {
-      this.style.transform = 'scale(1.02)';
-      this.style.zIndex = '1000';
-      });
-      publicationImages[i].addEventListener('mouseout', function() {
-        this.style.transform = 'scale(1.0)';
-        this.style.zIndex = '1';
-      });
-    }
-  });
+  // Get the modal
+  var modal = document.querySelector(".modal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var images = document.querySelectorAll(".img");
+  var modalImg = document.querySelector(".modal-content");
+
+  for (var i = 0; i < images.length; i++) {
+    images[i].addEventListener("click", function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+
+      // Disable scrolling while the modal is open
+      document.body.style.overflow = "hidden";
+    });
+  }
+
+  // Get the <span> element that closes the modal
+  var closeBtn = document.querySelector(".close");
+
+  // When the user clicks on <span> (x) or the modal, close the modal
+  closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", closeModal);
+
+  function closeModal() {
+    modal.style.display = "none";
+
+    // Enable scrolling again after the modal is closed
+    document.body.style.overflow = "auto";
+  }
+
 </script>
+

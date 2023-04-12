@@ -57,8 +57,23 @@
   number_educ: 1
   education1: 
 
+- name: Frans Michael
+  photo: Frans Michael.jpg
+  info: Master program
+  email: fransmichaels@korea.ac.kr
+  number_educ: 1
+  education1: 
+
+- name: Kim Hee-Su
+  photo: Someone.png
+  info: Assistant Researcher
+  email: creeep04@gmail.com
+  number_educ: 1
+  education1: 
+
 - name: Hyungbin Joo
   photo: Hyungbin Joo.jpg
   info: Undergraduate
-  email: 
+  email: spok61@naver.com
   number_educ: 0
+
