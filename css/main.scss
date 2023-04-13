@@ -13,15 +13,14 @@ body {
   font-size: 18px;
 }
 
-table {
-    line-height: 2;
-  }  
-
 table th {
     color: black;
   }
   
-
+table td {
+    line-height: 1.2;
+  }
+  
 .title-center {
   font-family: "Arial";
   color: black;
@@ -335,8 +334,8 @@ hr {
 }
 
 .project-cell {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 17px;
+  padding-bottom: 2px;
   padding-right: 20px;
 }
 

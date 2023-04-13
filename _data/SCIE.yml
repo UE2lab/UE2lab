@@ -1,3 +1,23 @@
+- title: An intelligent HVAC control strategy for supplying comfortable and energy-efficient school environment
+  number: 36
+  image: 
+  description: 2023
+  authors: Cho J, Heo Y, Moon J
+  link: 
+    url: https://www.sciencedirect.com/science/article/pii/S147403462300023X
+    display: Advanced Engineering Informatics
+  highlight: 1
+
+- title: Assessing the Spatiotemporal Characteristics, Factor Importance, and Health Impacts of Air Pollution in Seoul by Integrating Machine Learning into Land-Use Regression Modeling at High Spatiotemporal Resolutions
+  number: 35
+  image: 
+  description: 2023
+  authors: Li Y, Hong T, Gu Y, Li Z, Huang T, Lee H, Heo Y, and Yim S
+  link:
+    url: https://pubs.acs.org/doi/full/10.1021/acs.est.2c03027
+    display: Environmental Science and Technology
+  highlight: 1
+
 - title: Reliability, economic, and environmental analysis of fuel-cell-based hybrid renewable energy networks for residential communities
   number: 34
   image: SCIE34.JPG
