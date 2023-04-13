@@ -1,3 +1,11 @@
+- name: Someone
+  photo: Tageui Hong.jpg
+  info: Integrated Master & PhD program
+  email: tageui@korea.ac.kr
+  number_educ: 2
+  education1: Urban climate, building energy simulation, energy systems
+  education2: BSc at Korea University
+
 - name: Tageui Hong
   photo: Tageui Hong.jpg
   info: Integrated Master & PhD program
