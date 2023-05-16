@@ -16,7 +16,7 @@ permalink: /professor/
 
 <hr>
 <p style="font-size: 16px;">
-<strong style="font-size: 16px;">Professional Experience</strong><br>
+<strong style="font-size: 16px; color: darkblue;">PROFESSIONAL EXPERIENCE</strong><br>
 <span class="job-title"><b>Korea University</b>, Seoul, Korea</span><span class="job-date">Sep. 2018 - Present</span><br>
 Associate Professor, School of Civil, Architectural, and Environmental Engineering<br>
 <span class="job-title"><b>University of Cambridge</b>, Cambridge, UK</span><span class="job-date">Oct. 2013 - Jun. 2018</span><br>
@@ -26,7 +26,7 @@ Postdoctoral Fellow<br>
 </p>
 
 <p style="font-size: 16px;">
-<strong style="font-size: 16px;">Education</strong><br>
+<strong style="font-size: 16px;">EDUCATION</strong><br>
 <span class="job-title"><b>Georgia Institute of Technology</b>, Atlanta, Georgia, USA</span><span class="job-date">Dec. 2011</span><br>
 Ph.D., College of Architecture (Building Technology)<br>
 
