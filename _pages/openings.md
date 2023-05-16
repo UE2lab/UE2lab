@@ -1,9 +1,9 @@
 ---
-title: "Allan Lab - Vacancies"
+title: "Graduate Student Recruitments"
 layout: textlay
 excerpt: "Openings"
 sitemap: false
-permalink: /vacancies
+permalink: /recruitments
 ---
 
 <style>
