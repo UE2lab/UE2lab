@@ -2,10 +2,10 @@
   number: 35
   image: CONF35.jpg
   description: 2023
-  authors: Eftekhar F., Yoon, N., and Heo Y.	
+  authors: Eftekhar F., Yoon N., and Heo Y.	
   link:
     url: https://www.e3s-conferences.org/articles/e3sconf/abs/2023/33/e3sconf_iaqvec2023_02040/e3sconf_iaqvec2023_02040.html
-    display: E3S Web of Conferences
+    display: E3S Web of Conferences - IAQVEC2023
   highlight: 0
   
 - title: Energy performance of a hybrid DSF-inspired solar heating façade for office buildings
@@ -15,7 +15,7 @@
   authors: Bang S., Yoon N., and Heo Y.	
   link:
     url: https://www.e3s-conferences.org/articles/e3sconf/abs/2023/33/e3sconf_iaqvec2023_02009/e3sconf_iaqvec2023_02009.html
-    display: E3S Web of Conferences
+    display: E3S Web of Conferences - IAQVEC2023
   highlight: 0
 
 - title: Design and analysis of a renewable energy network based on fuel cells in a residential community
@@ -336,7 +336,7 @@
   description: 2008
   authors: Augenbroe G., Brown J., Heo Y., Kim S.H., Li Z., McManus S., and Zhao F.	
   link:
-    url: http://www.ibpsa-usa.org/index.php/ibpusa/article/view/262
+    url: http://www.ibpsa.org/proceedings/SB2008/SB08-DOC-IS06-Augenbroe.pdf
     display: IBPSA-USA Conference
   highlight: 0
   
@@ -346,7 +346,7 @@
   description: 2007
   authors: Choudhary R., Heo Y., and Bafna S.	
   link:
-    url: http://s3.amazonaws.com/academia.edu.documents/46718382/A_STUDY_OF_VARIATIONS_AMONG_MIESS_COURT20160622-4311-7yg2v6.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1552635122&Signature=JSrMvNDdUbRbz1Sz%2Fs9f6whU4Yo%3D&response-content-disposition=inline%
+    url: http://spacesyntaxistanbul.itu.edu.tr/papers/longpapers/096%20-%20Choudhary%20Heo%20Bafna.pdf
     display: International Space Syntax Symposium
   highlight: 0
   
