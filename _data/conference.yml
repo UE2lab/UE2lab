@@ -1,10 +1,30 @@
+- title: Design and analysis of a window-integrated passive system (WIPS) with the use of solar heat gains
+  number: 35
+  image: CONF35.jpg
+  description: 2023
+  authors: Eftekhar F., Yoon, N., and Heo Y.	
+  link:
+    url: https://www.e3s-conferences.org/articles/e3sconf/abs/2023/33/e3sconf_iaqvec2023_02040/e3sconf_iaqvec2023_02040.html
+    display: E3S Web of Conferences
+  highlight: 0
+  
+- title: Energy performance of a hybrid DSF-inspired solar heating façade for office buildings
+  number: 34
+  image: CONF34.jpg
+  description: 2023
+  authors: Bang S., Yoon N., and Heo Y.	
+  link:
+    url: https://www.e3s-conferences.org/articles/e3sconf/abs/2023/33/e3sconf_iaqvec2023_02009/e3sconf_iaqvec2023_02009.html
+    display: E3S Web of Conferences
+  highlight: 0
+
 - title: Design and analysis of a renewable energy network based on fuel cells in a residential community
   number: 33
   image: CONF33.JPG
   description: 2021
   authors: Byun J. and Heo Y.	
   link:
-    url: http://urbane-squared.korea.ac.kr/
+    url: https://publications.ibpsa.org/proceedings/bs/2021/papers/bs2021_30884.pdf
     display: IBPSA Conference
   highlight: 0
 
@@ -14,7 +34,7 @@
   description: 2021
   authors: Lee H. and Heo Y.	
   link:
-    url: http://urbane-squared.korea.ac.kr/
+    url: https://publications.ibpsa.org/proceedings/bs/2021/papers/bs2021_30750.pdf
     display: IBPSA Conference
   highlight: 0
   
@@ -24,7 +44,7 @@
   description: 2021
   authors: Go J. and Heo Y.	
   link:
-    url: http://urbane-squared.korea.ac.kr/
+    url: https://publications.ibpsa.org/proceedings/bs/2021/papers/bs2021_30891.pdf
     display: IBPSA Conference
   highlight: 0
   
@@ -34,7 +54,7 @@
   description: 2021
   authors: Hong T. and Heo Y.	
   link:
-    url: http://urbane-squared.korea.ac.kr/
+    url: https://publications.ibpsa.org/proceedings/bs/2021/papers/bs2021_30781.pdf
     display: IBPSA Conference
   highlight: 0
   
