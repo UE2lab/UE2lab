@@ -8,7 +8,7 @@ permalink: /
 
 The Urbane2 Lab is looking for Master & PhD students who have initiative and ambition in research and development. If you are interested, please contact Dr. Yeonsook Heo (yeonsookheo@korea.ac.kr) [(more info)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
 
-<div style="display: flex; justify-content: center;">
+<div style="justify-content: center;">
   <img src="{{ site.url }}{{ site.baseurl }}/images/final website diagram-01.png" style="max-width: 80%; height: auto;">
 </div>
 
