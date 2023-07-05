@@ -41,7 +41,7 @@
   introduction: This project was R&D project with the BuildingIQ company specialized in energy management systems and funded by the U.S. Department of Energy.
   description: This project developed a Gaussian process (GP) modeling framework that can reliably determine energy savings and uncertainty levels for measurement and verification practices. Existing measurement and verification guidelines provide savings calculation procedures based on linear regression techniques that are limited in their predictive and uncertainty estimation capabilities. Unlike linear regression models, GP models can capture nonlinear energy behavior, multivariable interactions, and time correlations while quantifying uncertainty associated with predictions. Furthermore, the project has demonstrated the applicability of this modeling method for a model predictive control system integrated into existing energy management systems for optimizing HVAC set points.
 
-- title: B-bem: The Bayesian Building Energy Management
+- title: B-bem. The Bayesian Building Energy Management
   number: P3
   image: P1.jpg
   year: 2014-2017
