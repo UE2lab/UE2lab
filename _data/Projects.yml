@@ -60,7 +60,7 @@
 - title: B.bem. the Bayesian Building Energy Management
   number: P1
   image: P1.jpg
-  year: 2014-2017
+  year: 2014-20XX
   funding: Engineering and Physical Sciences Research Council (EPSRC)
   introduction: B.bem is being developed in a 3 year project, funded by the Engineering and Physical Sciences Research Council (EPSRC).
   description: The ambition of the B.bem project is to transform conventional energy analysis processes to support the future energy management of existing non-domestic buildings - whether to assist in small-scale changes to building operations or deep energy retrofits. The aim is to quantify stochastic and operational uncertainties influencing building energy use, and to propagate those uncertainties through simulation models. B.bem, the Bayesian building energy management portal, uses computer simulation of building energy consumption to help energy managers understand the risk associated with energy management decisions.
