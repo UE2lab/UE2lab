@@ -1,5 +1,5 @@
 # Current projects
-- title: 3D urban microclimate prediction system
+- title: 3D Urban Microclimate Prediction System
   number: C3
   image: C3.png
   year: 2020-2025
@@ -25,7 +25,7 @@
 
 
 # Past projects
-- title: A Living-lab-based Occupant-responsive housing welfare service for the Elderly
+- title: A Living-lab-based Occupant-responsive Housing Welfare Service for The Elderly
   number: P5
   image: P5.png
   year: 2019-2022
@@ -37,11 +37,11 @@
   number: P4
   image: P4.jpg
   year: 2012-2013
-  funding: Department of Energy (DOE)
+  funding: United States Department of Energy (DOE)
   introduction: This project was R&D project with the BuildingIQ company specialized in energy management systems and funded by the U.S. Department of Energy.
   description: This project developed a Gaussian process (GP) modeling framework that can reliably determine energy savings and uncertainty levels for measurement and verification practices. Existing measurement and verification guidelines provide savings calculation procedures based on linear regression techniques that are limited in their predictive and uncertainty estimation capabilities. Unlike linear regression models, GP models can capture nonlinear energy behavior, multivariable interactions, and time correlations while quantifying uncertainty associated with predictions. Furthermore, the project has demonstrated the applicability of this modeling method for a model predictive control system integrated into existing energy management systems for optimizing HVAC set points.
 
-- title: B.bem. the Bayesian Building Energy Management
+- title: B-bem: The Bayesian Building Energy Management
   number: P3
   image: P1.jpg
   year: 2014-2017
@@ -53,7 +53,7 @@
   number: P2
   image: P3.jpg
   year: 2011-2013
-  funding: Department of Energy (DOE)
+  funding: United States Department of Energy (DOE)
   introduction: This research project was funded by the U.S. Department of Energy.
   description: This project developed a scalable analysis methodology that supports retrofit decision-making at the individual and aggregate levels. The methodology is based on a light-weight quasi-steady-state model and Bayesian calibration. The methodology allows decision makers to evaluate policy and planning options in the context of the actual building portfolio and informs individual building stakeholders of specific retrofit strategies suited to their buildings by assessing performance risk associated with retrofit technologies. s to provide objective and transparent benchmarking and assessment. The methodology was applied to a set of commercial buildings in the Chicago Loop to support Chicago Climate Action Plan by reducing energy consumption from the building sector through energy retrofit.
 
@@ -61,6 +61,6 @@
   number: P1
   image: P2.jpg
   year: 2011-2013
-  funding: Department of Energy (DOE)
+  funding: United States Department of Energy (DOE)
   introduction: This research project was funded by the Department of Energy, U.S.
   description: This project developed a new calibration method based on a Bayesian approach that can update model parameter values in a simulation model while quantifying uncertainty in the model. The Bayesian approach enables probabilistic outputs from the energy model, which are used to quantify risks associated with investing in energy efficiency measures in existing buildings. This research project demonstrated the efficacy of Bayesian calibration under different levels of uncertainty in the simulation model and delivered an automated process for probabilistic model calibration for implementation in an energy modeling and simulation platform (OpenStudio).
