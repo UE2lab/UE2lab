@@ -13,7 +13,7 @@ permalink: /research/
   }
 </style>
 
-<p class="title-center">PROJECTS</p>
+<p class="title-center">PROJECT LIST</p>
 
 <hr style="width: 1200px; border-width: 2px;">
 <table style="width: 1200px; font-size: 18px;">
@@ -29,7 +29,7 @@ permalink: /research/
 <hr style="width: 1200px; border-width: 2px; margin-bottom: 140px;">
 
 
-<p class="title-center">LIST</p>
+<p class="title-center">PROJECT DETAIL</p> 
 {% for project in site.data.Projects %}
 <h4 id="project-{{ project.number }}">**{{ project.number }}. {{ project.title }}**</h4>
 <div style="background-color:transparent; padding-top: 10px; padding-right: 20px; padding-bottom: 0.1px; padding-left: 20px;">{{ project.introduction }}
