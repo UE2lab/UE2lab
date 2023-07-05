@@ -1,6 +1,14 @@
 # Current projects
-- title: 3D Urban Microclimate Prediction System
+- title: Plus Energy Building Innovative Technology Research
   number: C3
+  image: C1.png
+  year: 2020-2027
+  funding: National Research Foundation of Korea (NRF)
+  introduction: The 3D urban microclimate prediction system is being developed in a 5-year project (2020~2025), funded by the National Research Foundation of Korea (NRF).
+  description: The aim of this project is to develop the 3D urban microclimate prediction system on the basis of model-based big data analytics. Beyond the existing urban climate models on the basis of urban average density measures, the project will develop a new microclimate prediction model that allows for predicting the thermal environment in the city by location and height with a full consideration of complex urban morphology. The project will develop a Bayesian spatio-temporal model that can fully exploit both urban microclimate data and existing urban climate models. The resulting microclimate prediction system will be applied to establish effective microclimate mitigation plans at urban/building scales.
+
+- title: 3D Urban Microclimate Prediction System
+  number: C2
   image: C3.png
   year: 2020-2025
   funding: National Research Foundation of Korea (NRF)
@@ -8,20 +16,12 @@
   description: This project aims to develop advanced technologies for passive design, energy generation, and storage systems integrated to buildings. This project is being carried out in collaboration with the Department of Mechanical Engineering (Korea University), Korea Institute of Energy Research, and Korea Institute of Construction Technology. In this project, our role is to develop advanced passive design systems, particularly double-skin facade and total window systems that exploit the potentials of passive heating, cooling and natural ventilation. In the later stage, occupant-responsive control algorithms will be developed to optimize the performance of passive design systems under dynamic weather conditions and stochastic occupant behavior. In addition, a comprehensive assessment system will be delivered as a tool to support design of plus energy buildings in practice.
 
 - title: Hydrogen-based Energy Network Design and Operation
-  number: C2
+  number: C1
   image: C2.png
   year: 2020-2023
   funding: 	Korea Agency for Infrastructure Technology Advancement (KAIA)
   introduction: This project  is being developed in a 4-year project (2020-2024), funded by the KAIA (Korea Agency for Infrastructure Technology Advancement).
   description: This project aims to advance and demonstrate renewable energy supply systems based on hydrogen and prosumer buildings for local energy communities. The project is being carried out in collaboration with Korea Institute of Energy Research, LH Institute, KEPCO E&C, and Korea Institute of Construction Technology. In this project, we are developing guidelines to optimize design and operation of hydrogen-based energy networks for various types and scales of communities. In addition, we will develop new business models and necessary policies to accelerate adoption of hydrogen-based energy networks in local communities.
-
-- title: Plus Energy Building Innovative Technology Research
-  number: C1
-  image: C1.png
-  year: 2020-2027
-  funding: National Research Foundation of Korea (NRF)
-  introduction: The 3D urban microclimate prediction system is being developed in a 5-year project (2020~2025), funded by the National Research Foundation of Korea (NRF).
-  description: The aim of this project is to develop the 3D urban microclimate prediction system on the basis of model-based big data analytics. Beyond the existing urban climate models on the basis of urban average density measures, the project will develop a new microclimate prediction model that allows for predicting the thermal environment in the city by location and height with a full consideration of complex urban morphology. The project will develop a Bayesian spatio-temporal model that can fully exploit both urban microclimate data and existing urban climate models. The resulting microclimate prediction system will be applied to establish effective microclimate mitigation plans at urban/building scales.
 
 
 # Past projects
