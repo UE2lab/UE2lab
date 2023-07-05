@@ -50,7 +50,7 @@
   description: The ambition of the B.bem project is to transform conventional energy analysis processes to support the future energy management of existing non-domestic buildings - whether to assist in small-scale changes to building operations or deep energy retrofits. The aim is to quantify stochastic and operational uncertainties influencing building energy use, and to propagate those uncertainties through simulation models. B.bem, the Bayesian building energy management portal, uses computer simulation of building energy consumption to help energy managers understand the risk associated with energy management decisions.
 
 - title: Chicago Loop Retrofit
-  number: P2
+  number: P2 
   image: P2.jpg
   year: 2011-2013
   funding: Department of Energy (DOE)
