@@ -33,22 +33,22 @@
   introduction: A Living-lab-based Occupant-responsive housing welfare service for the Elderly is being developed in a 3-year project (2019~2022), funded by the National Research Foundation of Korea (NRF).
   description: To develop occupant-responsive housing welfare service especially for the elderly, we formed the multidisciplinary research group that consists of researchers in the field of elderly welfare, architectural engineering, and interior design. We are using a variety of research methods to deliver a new welfare system based on IoT(Internet of Things), particularly for the elderly. Using Living Lab methodology as a social innovation model, social welfare researchers are defining welfare needs for the elderly and developing a home-based welfare model. In parallel, engineering researchers are developing algorithms and systems on the basis of IoT sensors and devices and testing them through an IoT-based living lab. Our ambition is to extend the functionality of smart home technologies to offer extensive welfare services for the elderly, including optimal control of indoor environments and management of health conditions and dashboard interface tailored to make various welfare services easily accessible to the elderly. We aim to deliver a new system that addresses current housing welfare problems for the elderly through Living Lab formed by service providers, researchers, and the elderly.
 
-- title: Proactive Energy Management for High-performance Buildings
-  number: P4
-  image: P4.jpg
-  year: 2012-2013
-  funding: United States Department of Energy (DOE)
-  introduction: This project was R&D project with the BuildingIQ company specialized in energy management systems and funded by the U.S. Department of Energy.
-  description: This project developed a Gaussian process (GP) modeling framework that can reliably determine energy savings and uncertainty levels for measurement and verification practices. Existing measurement and verification guidelines provide savings calculation procedures based on linear regression techniques that are limited in their predictive and uncertainty estimation capabilities. Unlike linear regression models, GP models can capture nonlinear energy behavior, multivariable interactions, and time correlations while quantifying uncertainty associated with predictions. Furthermore, the project has demonstrated the applicability of this modeling method for a model predictive control system integrated into existing energy management systems for optimizing HVAC set points.
-
 - title: B-bem. The Bayesian Building Energy Management
-  number: P3
+  number: P4
   image: P1.jpg
   year: 2014-2017
   funding: Engineering and Physical Sciences Research Council (EPSRC)
   introduction: B.bem is being developed in a 3 year project, funded by the Engineering and Physical Sciences Research Council (EPSRC).
   description: The ambition of the B.bem project is to transform conventional energy analysis processes to support the future energy management of existing non-domestic buildings - whether to assist in small-scale changes to building operations or deep energy retrofits. The aim is to quantify stochastic and operational uncertainties influencing building energy use, and to propagate those uncertainties through simulation models. B.bem, the Bayesian building energy management portal, uses computer simulation of building energy consumption to help energy managers understand the risk associated with energy management decisions.
 
+- title: Proactive Energy Management for High-performance Buildings
+  number: P3
+  image: P4.jpg
+  year: 2012-2013
+  funding: United States Department of Energy (DOE)
+  introduction: This project was R&D project with the BuildingIQ company specialized in energy management systems and funded by the U.S. Department of Energy.
+  description: This project developed a Gaussian process (GP) modeling framework that can reliably determine energy savings and uncertainty levels for measurement and verification practices. Existing measurement and verification guidelines provide savings calculation procedures based on linear regression techniques that are limited in their predictive and uncertainty estimation capabilities. Unlike linear regression models, GP models can capture nonlinear energy behavior, multivariable interactions, and time correlations while quantifying uncertainty associated with predictions. Furthermore, the project has demonstrated the applicability of this modeling method for a model predictive control system integrated into existing energy management systems for optimizing HVAC set points.
+ 
 - title: Chicago Loop Retrofit
   number: P2
   image: P3.jpg
