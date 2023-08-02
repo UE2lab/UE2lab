@@ -1,8 +1,28 @@
+- title: Exploring the impact of urban factors on land surface temperature and outdoor air temperature: A case study in Seoul, Korea
+  number: 38
+  image: SCIE38.jpg
+  description: 2023
+  authors: Hong T. and Heo Y.
+  link: 
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0360132323006728
+    display: Building and Environment
+  highlight: 1
+  
+  - title: A plan to build a net zero energy building in hydrogen and electricity-based energy scenario in South Korea
+  number: 37
+  image: SCIE37.jpg
+  description: 2023
+  authors: Jung Y., Heo Y., Cho H., Kang Y. T., Kim Y., and Lee H.
+  link: 
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0959652623006959
+    display: Journal of Cleaner Production
+  highlight: 1
+
 - title: An intelligent HVAC control strategy for supplying comfortable and energy-efficient school environment
   number: 36
   image: 
   description: 2023
-  authors: Cho J, Heo Y, Moon J
+  authors: Cho J., Heo Y. and Moon J.
   link: 
     url: https://www.sciencedirect.com/science/article/pii/S147403462300023X
     display: Advanced Engineering Informatics
@@ -12,7 +32,7 @@
   number: 35
   image: 
   description: 2023
-  authors: Li Y, Hong T, Gu Y, Li Z, Huang T, Lee H, Heo Y, and Yim S
+  authors: Li Y., Hong T., Gu Y., Li Z., Huang T., Lee H., Heo Y. and Yim S.
   link:
     url: https://pubs.acs.org/doi/full/10.1021/acs.est.2c03027
     display: Environmental Science and Technology
