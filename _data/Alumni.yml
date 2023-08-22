@@ -1,14 +1,22 @@
 - name: Suyeon Bang
   photo: Suyeon Bang.jpg
-  info: Master graduation
+  info: Master graduation in 2023
   email: waterlily_24@korea.ac.kr
   number_educ: 2
   education1: Passive building design, Building energy simulation
   education2: Thesis Title, "Development of Solar-based Passive Systems for Zero Energy Buildings"
 
+- name: Jaehyun Go
+  photo: Jaehyun Go.jpg
+  info: Master graduation in 2022
+  email: oiuty@korea.ac.kr
+  number_educ: 2
+  education1: PhD program at Purdue University
+  education2: Thesis Title, "Battery-hydrogen storage system for maximizing PV self-sufficiency in residential community"
+  
 - name: Hyeong Seok Lee
   photo: Hyeong Seok Lee.jpg
-  info: Master graduation
+  info: Master graduation in 2022
   email: hyeongseoklee@korea.ac.kr
   number_educ: 2
   education1: PhD program at Purdue University
@@ -16,23 +24,16 @@
 
 - name: Jiwook Byun
   photo: Jiwook Byun.jpg
-  info: Master graduation
+  info: Master graduation in 2022
   email: bgg0514@korea.ac.kr
   number_educ: 2
   education1: Samsung Electronics Co., Ltd
   education2: Thesis Title, "주거 커뮤니티를 위한 연료전지 기반 복합 신재생에너지 네트워크 설계 및 분석"
 
-- name: Jaehyun Go
-  photo: Jaehyun Go.jpg
-  info: Master graduation
-  email: oiuty@korea.ac.kr
-  number_educ: 2
-  education1: PhD program at Purdue University
-  education2: Thesis Title, "Battery-hydrogen storage system for maximizing PV self-sufficiency in residential community"
 
 - name: Chulho Kim
   photo: Chulho Kim.jpg
-  info: Research Professor
+  info: Research Professor in 2020-2022
   email: kchcd@korea.ac.kr
   number_educ: 2
   education1: Research Professor at Korea University
