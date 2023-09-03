@@ -19,7 +19,7 @@ permalink: /professor/
 <strong style="font-size: 16px;">PROFESSIONAL EXPERIENCE</strong><br>
 <span class="job-title"><b>Korea University</b>, Seoul, Korea</span><span class="job-date">Sep. 2023 - Present</span><br>
 Professor, School of Civil, Architectural, and Environmental Engineering<br>
-<span class="job-title"><b>Korea University</b>, Seoul, Korea</span><span class="job-date">Sep. 2018 - Sep. 2023</span><br>
+<span class="job-title"><b>Korea University</b>, Seoul, Korea</span><span class="job-date">Sep. 2018 - Aug. 2023</span><br>
 Associate Professor, School of Civil, Architectural, and Environmental Engineering<br>
 <span class="job-title"><b>University of Cambridge</b>, Cambridge, UK</span><span class="job-date">Oct. 2013 - Jun. 2018</span><br>
 Assistant Professor, Department of Architecture<br>
