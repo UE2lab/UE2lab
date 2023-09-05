@@ -1,4 +1,12 @@
 # Current projects
+- title: Data and Analysis Framework for Energy Benchmarking Of Existing Buildings
+  number: C4
+  image: C4.png
+  year: 2023-2026
+  funding: Korea Agency for Infrastructure Technology Advancement (KAIA)
+  introduction: This project is a 4-year project  (2023-2026), funded by Korea Agency for Infrastructure Technology Advancement.
+  description: The objective of our research is to develop the analysis framework for energy benchmarking of existing buildings on the basis of public data alone. We have been developing the building benchmarking methodology that improves the reliability of benchmarking results when only public data are used. In addition, we have been developing the uncertainty quantification methodology that incorporates uncertainty due to lack of detailed data in building energy benchmarking.
+
 - title: Plus Energy Building Innovative Technology Research
   number: C3
   image: C1.png
