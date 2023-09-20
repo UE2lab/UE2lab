@@ -12,8 +12,6 @@ permalink: /position
     margin: 0 auto;
   }
 
-  
-<p class="title-center">Position Opening</p>
 
 
 <figure>
