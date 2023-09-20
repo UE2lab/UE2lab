@@ -13,6 +13,7 @@ permalink: /position
   }
 
   
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,6 +27,7 @@ permalink: /position
     <p>Current international students have received the KU Scholarship or Hyundai Chung Mong-Koo Global Scholarship in addition to the research assistantship. You are welcome to join our research lab!</p>
 </body>
 </html>
+
 
 
 
