@@ -3,7 +3,7 @@ title: "Graduate Student Recruitments"
 layout: textlay
 excerpt: "Openings"
 sitemap: false
-permalink: /vacancies
+permalink: /position
 ---
 
 <style>
