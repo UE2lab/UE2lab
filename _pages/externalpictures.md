@@ -2,7 +2,7 @@
 title: "UE2 Lab - Events & Workshop"
 layout: gridlay
 excerpt: "UE2 Lab -- Events & Workshop"
-permalink: /events/
+permalink: /externalpictures/
 ---
 
 <p class="title-center">Events & Workshops</p>
