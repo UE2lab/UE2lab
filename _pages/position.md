@@ -7,8 +7,8 @@ permalink: /position
 ---
 
 <style>
- 
-<body>
+  /* Add CSS to center the image and allow scrolling */
+  body {
     overflow-y: scroll; /* Enable vertical scrolling */
   }
 
