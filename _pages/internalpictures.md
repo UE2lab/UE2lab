@@ -5,7 +5,7 @@ excerpt: "UE2 Lab -- Internal Pictures"
 permalink: /internalpictures/
 ---
 
-<p class="title-center">INTERNAL ACTIVITIES</p>
+<p class="title-center">Gallery</p>
 
 <div class="modal">
   <span class="close">&times;</span>
