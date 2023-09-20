@@ -1,11 +1,11 @@
 ---
-title: "UE2 Lab - External Pictures"
+title: "UE2 Lab - Events & Workshop"
 layout: gridlay
-excerpt: "UE2 Lab -- External Pictures"
-permalink: /externalpictures/
+excerpt: "UE2 Lab -- Events & Workshop"
+permalink: /events/
 ---
 
-<p class="title-center">EXTERNAL ACTIVITIES</p>
+<p class="title-center">Events & Workshops</p>
 
 <div class="modal">
   <span class="close">&times;</span>
