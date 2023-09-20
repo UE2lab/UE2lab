@@ -12,7 +12,7 @@ permalink: /position
   body {
     overflow-y: scroll; /* Enable vertical scrolling */
   }
-<body>
+  
   .centered-image {
     display: block;
     margin: 0 auto; /* Center the image horizontally */
