@@ -15,7 +15,6 @@ permalink: /vacancies
 
 <figure>
 <img src="{{ site.url }}{{ site.baseurl }}/images/English Version.jpg" width="80%" class="centered-image" style="margin-bottom:100px;">
-</figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/Korean Version.jpg" width="80%" class="centered-image" style="margin-bottom:100px;">
+
 
 
