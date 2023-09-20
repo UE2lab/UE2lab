@@ -6,6 +6,7 @@ sitemap: false
 permalink: /position
 ---
 
+<body>
 <style>
   /* Add CSS to center the image and allow scrolling */
   body {
