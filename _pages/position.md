@@ -12,15 +12,12 @@ permalink: /position
     margin: 0 auto;
   }
 
-<p class="title-center">POSITION OPENING</p>
   
-</style>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRADUATE APPLICANTS</title>
+    <title>POSITION OPENING</title>
 </head>
 <body>
     <h1>GRADUATE APPLICANTS</h1>
@@ -29,6 +26,8 @@ permalink: /position
     <p>Current international students have received the KU Scholarship or Hyundai Chung Mong-Koo Global Scholarship in addition to the research assistantship. You are welcome to join our research lab!</p>
 </body>
 </html>
+
+
 
 
 <figure>
