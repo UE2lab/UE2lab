@@ -7,11 +7,8 @@ permalink: /position
 ---
 
 <style>
-  /* Add CSS to center the image and allow scrolling */
-  body {
-    overflow-y: scroll; /* Enable vertical scrolling */
-  }
 
+<body>
   .centered-image {
     display: block;
     margin: 0 auto; /* Center the image horizontally */
@@ -25,3 +22,4 @@ permalink: /position
 <figure>
   <img src="{{ site.url }}{{ site.baseurl }}/images/English Version.jpg" class="centered-image">
 </figure>
+
