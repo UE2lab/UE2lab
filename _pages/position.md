@@ -6,13 +6,13 @@ sitemap: false
 permalink: /position
 ---
 
-<body>
+
 <style>
   /* Add CSS to center the image and allow scrolling */
   body {
     overflow-y: scroll; /* Enable vertical scrolling */
   }
-
+<body>
   .centered-image {
     display: block;
     margin: 0 auto; /* Center the image horizontally */
