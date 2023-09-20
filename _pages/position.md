@@ -7,7 +7,7 @@ permalink: /position
 ---
 
 <br>
-<body>
+ </body>
 <style>
   
   .centered-image {
@@ -17,7 +17,6 @@ permalink: /position
     margin-bottom: 100px;
   }
 </style>
- </body>
 <br>
 
 <figure>
