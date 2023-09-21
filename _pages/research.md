@@ -14,7 +14,7 @@ permalink: /research/
 </style>
 
 <p class="title-center">PROJECT LIST</p>
-overflow-y: auto;
+
 <hr style="width: 1200px; border-width: 2px;">
 <table style="width: 1200px; font-size: 18px;">
   <tr style="font-size: 20px; font-family: Arial">
