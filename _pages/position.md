@@ -7,7 +7,7 @@ permalink: /position
 ---
 
 <br>
- </body>
+
 <style>
   
   .centered-image {
@@ -18,6 +18,7 @@ permalink: /position
   }
 </style>
 <br>
+
 
 <figure>
   <img src="{{ site.url }}{{ site.baseurl }}/images/English Version.jpg" class="centered-image">
