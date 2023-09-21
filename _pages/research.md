@@ -6,6 +6,7 @@ sitemap: false
 permalink: /research/
 ---
 
+overflow-y: auto;
 <style>
   hr {
     margin: 0;
