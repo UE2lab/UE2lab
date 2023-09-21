@@ -22,4 +22,3 @@ permalink: /position
 
 <figure>
   <img src="{{ site.url }}{{ site.baseurl }}/images/English Version.jpg" class="centered-image">
-</figure>
