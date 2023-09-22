@@ -13,7 +13,6 @@ permalink: /research/
   }
 </style>
 
-
 <p class="title-center">PROJECT LIST</p>
 
 <hr style="width: 1200px; border-width: 2px;">
