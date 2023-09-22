@@ -20,8 +20,15 @@ permalink: /research/
   <tr style="font-size: 20px; font-family: Arial">
     <th>No.</th><th>Project Title</th><th>Period</th><th>Funding</th>
   </tr>
-  <tr style="font-size: 20px; font-family: Arial; padding: 10px;">
+  <tr style="font-size: 20px; font-family: Arial">
     <td><hr></td><td><hr></td><td><hr></td><td><hr></td>
+  </tr>
+  <!-- Add one or more empty rows with non-breaking spaces to create vertical spacing -->
+  <tr>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
   </tr>
 {% for project in site.data.Projects %}
   <tr>
