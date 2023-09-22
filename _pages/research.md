@@ -8,7 +8,7 @@ permalink: /research/
 
 <style>
   hr {
-    margin: 2;
+    margin: 0;
     border-color: black;
   }
 </style>
