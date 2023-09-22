@@ -28,7 +28,6 @@ permalink: /research/
       <td class="project-cell" style="width: 460px;">{{ project.funding }}</td>
     </tr>
   {% endfor %}
-  <tr></tr>
 </table>
 <hr style="width: 1200px; border-width: 2px; margin-bottom: 140px;">
 
@@ -36,4 +35,7 @@ permalink: /research/
 {% for project in site.data.Projects %}
   <h4 id="project-{{ project.number }}">**{{ project.number }}. {{ project.title }}**</h4>
   <div style="background-color:transparent; padding-top: 10px; padding-right: 20px; padding-bottom: 0.1px; padding-left: 20px;">{{ project.introduction }}</div>
-  <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class='research-image
+  <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class='research-image'></p>
+  <div style="background-color:transparent; padding-top: 10px; padding-right: 20px; padding-bottom: 0.1px; padding-left: 20px;">{{ project.description }}</div><br>
+  <hr style="border-color: black;"><br><br>
+{% endfor %}
