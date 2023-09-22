@@ -11,28 +11,33 @@ permalink: /research/
     margin: 0;
     border-color: black;
   }
-  table {
-    width: 1200px;
-    font-size: 18px;
-  }
-  th {
-    font-size: 20px;
-    font-family: Arial;
-    border-top: 2px solid black; /* Add a solid black line at the top of the header row */
-  }
 </style>
 
 <p class="title-center">PROJECT LIST</p>
 
 <hr style="width: 1200px; border-width: 2px;">
-<table>
-  <tr>
-    <th>No.</th>
-    <th>Project Title</th>
-    <th>Period</th>
-    <th>Funding</th>
+<table style="width: 1200px; font-size: 18px;">
+  <tr style="font-size: 20px; font-family: Arial">
+    <th>No.</th><th>Project Title</th><th>Period</th><th>Funding</th>
   </tr>
 {% for project in site.data.Projects %}
     <tr>
       <td class="project-cell" style="width: 70px;"><a href="#project-{{ project.number }}">{{ project.number }}</a>.</td>
-      <td class="
+      <td class="project-cell">{{ project.title }}</td>
+      <td class="project-cell" style="width: 120px;">{{ project.year }}</td>
+      <td class="project-cell" style="width: 460px;">{{ project.funding }}</td>
+    </tr>
+{% endfor %}
+</table>
+<hr style="width: 1200px; border-width: 2px; margin-bottom: 140px;">
+
+
+<p class="title-center">PROJECT DETAIL</p> 
+{% for project in site.data.Projects %}
+  <h4 id="project-{{ project.number }}"><strong>{{ project.number }}. {{ project.title }}</strong></h4>
+  <div style="background-color: transparent; padding: 10px 20px;">{{ project.introduction }}</div>
+  <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
+  <div style="background-color: transparent; padding: 10px 20px;">{{ project.description }}</div>
+  <hr style="border-color: black;">
+  <br><br>
+{% endfor %}
