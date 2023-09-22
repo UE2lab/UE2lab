@@ -18,7 +18,6 @@ permalink: /research/
 <hr style="width: 1200px; border-width: 2px;">
 <table style="width: 1200px; font-size: 18px;">
   <tr style="font-size: 20px; font-family: Arial">
-  <hr  vertical-align: middle;>
     <th>No.<hr></th><th>Project Title<hr></th><th>Period<hr></th><th>Funding<hr></th>
     <br> 
   </tr>
@@ -37,9 +36,9 @@ permalink: /research/
 <p class="title-center">PROJECT DETAIL</p> 
 {% for project in site.data.Projects %}
   <h4 id="project-{{ project.number }}"><strong>{{ project.number }}. {{ project.title }}</strong></h4>
-  <div style="background-color: transparent; padding: 10px 20px;">{{ project.introduction }}</div>
+  <div style="background-color: transparent; padding: 10px 20px;">{{ project.introduction }}
   <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
-  <div style="background-color: transparent; padding: 10px 20px;">{{ project.description }}</div>
+  <div style="background-color: transparent; padding: 10px 20px;">{{ project.description }}
   <hr style="border-color: black;">
   <br><br>
 {% endfor %}
