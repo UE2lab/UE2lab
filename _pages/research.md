@@ -20,7 +20,7 @@ permalink: /research/
   <tr style="font-size: 20px; font-family: Arial">
     <th>No.</th><th>Project Title</th><th>Period</th><th>Funding</th>
   </tr>
-  {% for project in projects %}
+  {% for project site.data.Projects %}
     <tr>
       <td class="project-cell" style="width: 70px;"><a href="#project-{{ project.number }}">{{ project.number }}</a>.</td>
       <td class="project-cell">{{ project.title }}</td>
