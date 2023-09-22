@@ -24,7 +24,6 @@ permalink: /research/
     <th rowspan="2">Funding</th>
   </tr>
   <tr></tr> <!-- Empty row for spacing -->
-  <!-- Add your table rows here -->
     <td class="project-cell" style="width: 70px;"><a href="#project-{{ project.number }}">{{ project.number }}</a>.</td><td class="project-cell">{{ project.title }}</td><td class="project-cell" style="width: 120px;">{{ project.year }}</td><td class="project-cell" style="width: 460px;">{{ project.funding }}</td>
   </tr>
 {% endfor %}
