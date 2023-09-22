@@ -24,7 +24,7 @@ permalink: /research/
     <tr>
     <td class="project-cell" style="width: 70px;"><a href="#project-{{ project.number }}">{{ project.number }}</a>.</td><td class="project-cell">{{ project.title }}</td><td class="project-cell" style="width: 120px;">{{ project.year }}</td><td class="project-cell" style="width: 460px;">{{ project.funding }}</td>
   </tr>
- <tr></tr>
+{% endfor %}
 </table>
 <hr style="width: 1200px; border-width: 2px; margin-bottom: 140px;">
 
