@@ -17,13 +17,9 @@ permalink: /research/
 
 <hr style="width: 1200px; border-width: 2px;">
 <table style="width: 1200px; font-size: 18px;">
-  <tr>
-    <th rowspan="2">No.</th>
-    <th rowspan="2">Project Title</th>
-    <th rowspan="2">Period</th>
-    <th rowspan="2">Funding</th>
+  <tr style="font-size: 20px; font-family: Arial">
+    <th>No.<hr></th><th>Project Title<hr></th><th>Period<hr></th><th>Funding<hr></th>
   </tr>
-  <tr></tr> <!-- Empty row for spacing -->
     <td class="project-cell" style="width: 70px;"><a href="#project-{{ project.number }}">{{ project.number }}</a>.</td><td class="project-cell">{{ project.title }}</td><td class="project-cell" style="width: 120px;">{{ project.year }}</td><td class="project-cell" style="width: 460px;">{{ project.funding }}</td>
   </tr>
 {% endfor %}
