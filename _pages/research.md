@@ -22,10 +22,10 @@ permalink: /research/
   </tr>
 {% for project in site.data.Projects %}
     <tr>
-      <td class="project-cell" style="width: 70px;"><a href="#project-{{ project.number }}">{{ project.number }}</a>.</td>
-      <td class="project-cell">{{ project.title }}</td>
-      <td class="project-cell" style="width: 120px;">{{ project.year }}</td>
-      <td class="project-cell" style="width: 460px;">{{ project.funding }}</td>
+      <td class="project-cell" style="width: 70px; padding: 10px 0;"><a href="#project-{{ project.number }}">{{ project.number }}</a>.</td>
+      <td class="project-cell" style="padding: 10px 0;">{{ project.title }}</td>
+      <td class="project-cell" style="width: 120px; padding: 10px 0;">{{ project.year }}</td>
+      <td class="project-cell" style="width: 460px; padding: 10px 0;">{{ project.funding }}</td>
     </tr>
 {% endfor %}
 </table>
