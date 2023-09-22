@@ -18,7 +18,6 @@ permalink: /research/
 <hr style="width: 1200px; border-width: 2px;">
 <table style="width: 1200px; font-size: 18px;">
   <tr style="font-size: 20px; font-family: Arial">
-    <br> 
     <th>No.<hr></th><th>Project Title<hr></th><th>Period<hr></th><th>Funding<hr></th>
     <br> 
   </tr>
