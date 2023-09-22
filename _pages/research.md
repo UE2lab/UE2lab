@@ -15,7 +15,7 @@ permalink: /research/
 
 <p class="title-center">PROJECT LIST</p>
 
-<hr style="width: 1200px; border-width: 6px;">
+<hr style="width: 1200px; border-width: 2px;">
 <table style="width: 1200px; font-size: 18px;">
   <tr style="font-size: 20px; font-family: Arial">
     <th>No.<hr></th><th>Project Title<hr></th><th>Period<hr></th><th>Funding<hr></th>
