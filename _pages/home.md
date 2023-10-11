@@ -5,7 +5,7 @@ excerpt: "UE2 at Korea University."
 sitemap: false
 permalink: /
 ---
-<br>
+<br> 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/final website diagram-01.png" style="width: 1200px; height: auto;">
 
