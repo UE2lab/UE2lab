@@ -12,8 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Website of the Urban Energy & Environment.
 
 # If you want to work at github
-baseurl: "/UE2lab"
-url: "https://UE2lab.github.io"
+baseurl: ""
+url: "https://ue2lab.korea.ac.kr/"
 
 # If you want to work at your local copmuter
 #baseurl: ""
