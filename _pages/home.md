@@ -3,7 +3,7 @@ title: "UE2 Lab - Home"
 layout: textlay
 excerpt: "UE2 at Korea University."
 sitemap: false
-permalink: /
+permalink: 
 ---
 <br> 
 
