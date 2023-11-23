@@ -5,7 +5,7 @@ excerpt: "UE2 Lab -- Events & Workshop"
 permalink: /externalpictures/
 ---
 
-<p class="title-center">Events & Workshops</p>
+<p class="title-center">Academic Events</p>
 
 <div class="modal">
   <span class="close">&times;</span>
