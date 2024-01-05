@@ -12,10 +12,17 @@ permalink: /research/
     border-color: black;
   }
 
-  .project-detail {
-    background-color: transparent;
-    padding: 10px 20px;
-    margin-left: 20px; /* Adjust the indent as needed */
+  .project-container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the container */
+  }
+
+  .project-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
   }
 </style>
 
@@ -37,15 +44,16 @@ permalink: /research/
 </table>
 <hr style="width: 1200px; border-width: 2px; margin-bottom: 140px;">
 
-
-<p class="title-center">PROJECT DETAIL</p> 
-{% for project in site.data.Projects %}
-  <h4 id="project-{{ project.number }}"><strong>{{ project.number }}. {{ project.title }}</strong></h4>
-  <div class="project-detail">
-    {{ project.introduction }}
-    <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
-    {{ project.description }}
-    <hr style="border-color: black;">
-    <br><br>
-  </div>
-{% endfor %}
+<div class="project-container">
+  <p class="title-center">PROJECT DETAIL</p> 
+  {% for project in site.data.Projects %}
+    <div class="project-card" id="project-{{ project.number }}">
+      <h4><strong>{{ project.number }}. {{ project.title }}</strong></h4>
+      <p>{{ project.introduction }}</p>
+      <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
+      <p>{{ project.description }}</p>
+      <hr style="border-color: black;">
+      <br><br>
+    </div>
+  {% endfor %}
+</div>
