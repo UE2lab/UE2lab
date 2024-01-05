@@ -11,32 +11,58 @@ permalink: /research/
     margin: 0;
     border-color: black;
   }
+  .project-list {
+    width: 1200px;
+    font-size: 18px;
+  }
+  .project-cell {
+    font-size: 20px;
+    font-family: Arial;
+  }
+  .project-detail {
+    background-color: transparent;
+    padding: 10px 20px;
+  }
+  .research-image {
+    display: block;
+    margin: 0 auto; /* Center align the image */
+  }
 </style>
 
-<p class="title-center">PROJECT LIST</p>
+## PROJECT LIST
 
 <hr style="width: 1200px; border-width: 2px;">
-<table style="width: 1200px; font-size: 18px;">
-  <tr style="font-size: 20px; font-family: Arial">
+
+<table class="project-list">
+  <tr class="project-cell">
     <th>No.<hr></th><th>Project Title<hr></th><th>Period<hr></th><th>Funding<hr></th>
   </tr>
-{% for project in site.data.Projects %}
+  {% for project in site.data.Projects %}
     <tr>
       <td class="project-cell" style="width: 70px;"><a href="#project-{{ project.number }}">{{ project.number }}</a>.</td>
       <td class="project-cell">{{ project.title }}</td>
       <td class="project-cell" style="width: 120px;">{{ project.year }}</td>
       <td class="project-cell" style="width: 460px;">{{ project.funding }}</td>
     </tr>
-{% endfor %}
+  {% endfor %}
 </table>
+
 <hr style="width: 1200px; border-width: 2px; margin-bottom: 140px;">
 
+## PROJECT DETAIL
 
 {% for project in site.data.Projects %}
-  <h4 id="project-{{ project.number }}"><strong>{{ project.number }}. {{ project.title }}</strong></h4>
-  <div style="background-color: transparent; padding: 10px 20px;">{{ project.introduction }}
-    <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
-    <div style="background-color: transparent; padding: 10px 20px;">{{ project.description }}
+  ### {{ project.number }}. {{ project.title }}
+  
+  <div class="project-detail">
+    {{ project.introduction }}
+    
+    {% if project.image %}
+      <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
+    {% endif %}
+    
+    <div class="project-detail">
+      {{ project.description | markdownify }}
       <hr style="border-color: black;">
       <br><br>
     </div>
