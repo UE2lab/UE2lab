@@ -40,7 +40,9 @@ permalink: /research/
     ![{{ project.title }}]({{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }})
     {{ project.description }}
     <hr style="border-color: black;">
+    <br><br>
   </div>
 {% endfor %}
+
 
 
