@@ -63,9 +63,7 @@ p.byline {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px;
-  padding: 0 15px; /* Use shorthand to set both padding-left and padding-right */
-  overflow: hidden;
+  max-width: 1200px; /* or 950px */
 }
 
 
@@ -462,10 +460,9 @@ body {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
-  padding: 0 15px; /* Use shorthand to set both padding-left and padding-right */
-  overflow: hidden;
+  padding-left: 15px; /* Add left padding for consistent spacing */
+  padding-right: 15px; /* Add right padding for consistent spacing */
 }
-
 
 .title-center,
 .title2-center {
