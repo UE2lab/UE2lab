@@ -3,6 +3,35 @@
     
 @import "bootstrap";
 
+/* Existing styles above... */
+
+/* Add margin to all headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-left: 20px; /* Adjust the left margin as needed */
+  margin-right: 20px; /* Adjust the right margin as needed */
+}
+
+/* Apply margin to paragraphs as well */
+p {
+  margin-left: 20px; /* Adjust the left margin as needed */
+  margin-right: 20px; /* Adjust the right margin as needed */
+}
+
+/* Other styles... */
+
+/* Additional styles for specific content */
+.project-content {
+  /* Adjust margins as needed */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Apply the class to the specific content */
+.project-content p {
+  /* Additional styles for paragraphs within the specific content */
+  margin-bottom: 10px; /* Adjust the bottom margin as needed */
+}
+
 img {
     margin: 0px; 
     border-radius:0%;
