@@ -11,12 +11,6 @@ permalink: /research/
     margin: 0;
     border-color: black;
   }
-
-  .project-detail {
-    background-color: transparent;
-    padding: 10px 20px;
-    margin-left: 20px; /* Adjust the indent as needed */
-  }
 </style>
 
 <p class="title-center">PROJECT LIST</p>
@@ -41,11 +35,9 @@ permalink: /research/
 <p class="title-center">PROJECT DETAIL</p> 
 {% for project in site.data.Projects %}
   <h4 id="project-{{ project.number }}"><strong>{{ project.number }}. {{ project.title }}</strong></h4>
-  <div class="project-detail">
-    {{ project.introduction }}
-    <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
-    {{ project.description }}
-    <hr style="border-color: black;">
-    <br><br>
-  </div>
+  <div style="background-color: transparent; padding: 10px 20px;">{{ project.introduction }}
+  <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
+  <div style="background-color: transparent; padding: 10px 20px;">{{ project.description }}
+  <hr style="border-color: black;">
+  <br><br>
 {% endfor %}
