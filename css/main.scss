@@ -1,36 +1,10 @@
+style.css
+
+old
 ---
 ---
     
 @import "bootstrap";
-
-/* Existing styles above... */
-
-/* Add margin to all headings */
-h1, h2, h3, h4, h5, h6 {
-  margin-left: 20px; /* Adjust the left margin as needed */
-  margin-right: 20px; /* Adjust the right margin as needed */
-}
-
-/* Apply margin to paragraphs as well */
-p {
-  margin-left: 20px; /* Adjust the left margin as needed */
-  margin-right: 20px; /* Adjust the right margin as needed */
-}
-
-/* Other styles... */
-
-/* Additional styles for specific content */
-.project-content {
-  /* Adjust margins as needed */
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-/* Apply the class to the specific content */
-.project-content p {
-  /* Additional styles for paragraphs within the specific content */
-  margin-bottom: 10px; /* Adjust the bottom margin as needed */
-}
 
 img {
     margin: 0px; 
@@ -472,3 +446,82 @@ hr {
   }  
 }
 
+
+
+
+
+new 
+
+
+body {
+  padding-top: 100px;
+  font-size: 18px;
+  margin: 0; /* Reset default body margin */
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-left: 15px; /* Add left padding for consistent spacing */
+  padding-right: 15px; /* Add right padding for consistent spacing */
+}
+
+.title-center,
+.title2-center {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px; /* Adjust as needed */
+  margin-bottom: 30px; /* Adjust as needed */
+}
+
+.project-cell {
+  padding-top: 17px;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.project-detail {
+  padding: 20px;
+}
+
+.student-row,
+.publication-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.student-col,
+.publication-col {
+  flex: 0 0 calc(33.333% - 20px);
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.custom-container-student,
+.custom-container-activities,
+.custom-container-paper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px; /* Add left padding for consistent spacing */
+  padding-right: 15px; /* Add right padding for consistent spacing */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-height: 500px;
+  height: auto;
+  padding: 20px; /* Add padding for consistent spacing */
+}
+
+.research-image {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto;
+}
+
+@media (max-width: 968px) {
+  /* Add responsive styles if needed */
+}
