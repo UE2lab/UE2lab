@@ -519,23 +519,6 @@ body {
   height: auto;
 }
 
-.section {
-  margin-bottom: 20px; /* Adjust as needed */
-}
-
-/* Apply the 'section' class to elements that need consistent margin-bottom */
-.project-cell,
-.project-detail,
-.student-row,
-.publication-row,
-.custom-container-student,
-.custom-container-activities,
-.custom-container-paper {
-  @extend .section;
-}
-
-/* Add additional styling for responsiveness if needed */
 @media (max-width: 968px) {
   /* Add responsive styles if needed */
-}
 }
