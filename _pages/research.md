@@ -13,44 +13,30 @@ permalink: /research/
   }
 </style>
 
-<p class="title-center">PROJECT LIST</p>
+## PROJECT LIST
 
 <hr style="width: 1200px; border-width: 2px;">
-<table style="width: 1200px; font-size: 18px;">
-  <tr style="font-size: 20px; font-family: Arial">
-    <th>No.<hr></th><th>Project Title<hr></th><th>Period<hr></th><th>Funding<hr></th>
-  </tr>
+
+| No. | Project Title | Period | Funding |
+| --- | ------------- | ------ | ------- |
 {% for project in site.data.Projects %}
-    <tr>
-      <td class="project-cell" style="width: 70px;"><a href="#project-{{ project.number }}">{{ project.number }}</a>.</td>
-      <td class="project-cell">{{ project.title }}</td>
-      <td class="project-cell" style="width: 120px;">{{ project.year }}</td>
-      <td class="project-cell" style="width: 460px;">{{ project.funding }}</td>
-    </tr>
+| [{{ project.number }}](#project-{{ project.number }}) | {{ project.title }} | {{ project.year }} | {{ project.funding }} |
 {% endfor %}
 </table>
 <hr style="width: 1200px; border-width: 2px; margin-bottom: 140px;">
 
+## PROJECT DETAIL
 
-<p class="title-center">PROJECT DETAIL</p> 
 {% for project in site.data.Projects %}
-  <h4 id="project-{{ project.number }}"><strong>{{ project.number }}. {{ project.title }}</strong></h4>
-  <div style="background-color: transparent; padding: 10px 20px;">
-    {{ project.introduction }}
-    
-    {% if project.image %}
-      <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
-    {% endif %}
-    
-    <div style="background-color: transparent; padding: 10px 20px;">
-      {{ project.description }}
-      <hr style="border-color: black;">
-      <br><br>
-    </div>
-  </div>
+  ### {{ project.number }}. {{ project.title }}
+  
+  {{ project.introduction }}
+  
+  {% if project.image %}
+    ![{{ project.title }}]({{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }})
+  {% endif %}
+  
+  {{ project.description | markdownify }}
+  
+  ---
 {% endfor %}
-
-
-
-
-
