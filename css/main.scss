@@ -27,8 +27,8 @@ table td {
   text-align: center;
   font-weight: bold;  
   font-size: 44px;
-  margin-bottom: 40px;
-  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .title2-center {
@@ -37,8 +37,8 @@ table td {
   text-align: center;
   font-weight: bold;  
   font-size: 48px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 
@@ -63,7 +63,9 @@ p.byline {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px; /* or 950px */
+  max-width: 1200px;
+  padding: 0 15px; /* Use shorthand to set both padding-left and padding-right */
+  overflow: hidden;
 }
 
 
@@ -335,7 +337,7 @@ hr {
 
 .project-cell {
   padding-top: 17px;
-  padding-bottom: 2px;
+  padding-bottom: 20px;
   padding-right: 20px;
 }
 
@@ -443,3 +445,83 @@ hr {
   }  
 }
 
+
+
+
+
+new 
+
+
+body {
+  padding-top: 100px;
+  font-size: 18px;
+  margin: 0; /* Reset default body margin */
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding: 0 15px; /* Use shorthand to set both padding-left and padding-right */
+  overflow: hidden;
+}
+
+
+.title-center,
+.title2-center {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px; /* Adjust as needed */
+  margin-bottom: 30px; /* Adjust as needed */
+}
+
+.project-cell {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.project-detail {
+  padding: 20px;
+}
+
+.student-row,
+.publication-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.student-col,
+.publication-col {
+  flex: 0 0 calc(33.333% - 20px);
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.custom-container-student,
+.custom-container-activities,
+.custom-container-paper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px; /* Add left padding for consistent spacing */
+  padding-right: 15px; /* Add right padding for consistent spacing */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-height: 500px;
+  height: auto;
+  padding: 20px; /* Add padding for consistent spacing */
+}
+
+.research-image {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto;
+}
+
+@media (max-width: 968px) {
+  /* Add responsive styles if needed */
+}
