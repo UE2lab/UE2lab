@@ -1,444 +1,133 @@
----
----
-    
-@import "bootstrap";
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-img {
-    margin: 0px; 
-    border-radius:0%;
-}  
+/* Centered container for the entire content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+/* Global styles */
 body {
-	padding-top: 100px;
-  font-size: 18px;
+    font-size: 18px;
 }
 
-table th {
-    color: black;
-  }
-  
-table td {
-    line-height: 1.2;
-  }
-  
-.title-center {
-  font-family: "Arial";
-  color: black;
-  text-align: center;
-  font-weight: bold;  
-  font-size: 44px;
-  margin-bottom: 40px;
-  margin-top: 30px;
-}
+/* ... (other global styles) */
 
-.title2-center {
-  font-family: "Arial";
-  color: black;
-  text-align: center;
-  font-weight: bold;  
-  font-size: 48px;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-
-figcaption {
-    text-align: right;
-    margin-top: -20px;
-    margin-bottom: 20px;
-}
-
-
-
-/* Top navigation bar */
-
-p.byline {
-	text-align: center;
-	font-size: 18px;
-	line-height: 36px;
-	margin-top: -24px;
-	margin-bottom: 48px;
-}
-
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px; /* or 950px */
-}
-
-
-/* Grid overrides */
-.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
-.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-	padding-left: 16px;
-	padding-right: 16px;
-  font-family: 'Arial';
-}
-
-/* Grid overrides */
-.col-sm-4 {
-	padding-left: 10px;
-	padding-right: 10px;
-  border: 1px;
-  border-color:black;
-}
-
-.row .col-md-4 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-/* Carusel */
-
-.carousel {
-    border-radius: 3px 3px 3px 3px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.carousel-inner img {
-  width: 400px;
-  height: 200px;
-  object-fit: cover;
-  object-position: top;
-}
-
+/* Top navigation bar styles */
 .navbar {
     background-color: rgb(255, 255, 255);
     font-size: 18px;
     height: 90px;
-  }
-  
-.navbar-nav > li > a {
-    background-color: transparent;
-    margin-top: 25px;
-    color: black;
 }
 
-.navbar-default .navbar-nav > li > a {
-  color: #000000;
+/* ... (other navigation styles) */
+
+/* Paper and Photos Information styles */
+.paper-info, .photos-info {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
 
-.navbar-default .navbar-nav .dropdown-menu li a {
-  color: #000000;
-  background-color: white;
-}
+/* ... (other styles) */
 
-.navbar-default {
-    border: none;
-    font-family: arial;
-    color: black;
-}
-
-.navbar-collapse {
-  font-size: 18px;
-  color: black;
-  background-color: rgb(255, 255, 255);
-}
-
-.in {
-  border: transparent;
-}
-.navbar-collapse.in {
-  border: none;
-}
-
-.dropdown-menu > li > a {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    text-align: left;
-    font-size: 18px;
-}
-  
-.dropdown-menu {
-    border-color: transparent;
-    background-color: transparent;
-}
-
-.navbar-nav > li > .dropdown-menu {
-  left: 0;
-  right: auto;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.navbar-nav > li > a:hover {
-  background-color: transparent;
-}
-
-.paper-info {
-  display: none;
-  position: absolute;
-  top: 0%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-.photos-info {
-  display: none;
-  position: absolute;
-  top: 30%;
-  left: -3%;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-}
-
-.photos-info p {
-  font-size: 18px;
-  background-color: transparent;
-  color: black;
-  opacity: 1;
-  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8), -1px -1px 4px rgba(255, 255, 255, 0.8), 1px -1px 4px rgba(255, 255, 255, 0.8), -1px 1px 4px rgba(255, 255, 255, 0.8);
-  font-weight: bold;
-}
-
-.paper-info p {
-  font-size: 14px;
-  color: black;
-  opacity: 1;
-  padding-left: 20px;
-  padding-top: 10px;
-  width: 90%;
-}
-
-.student-image {
-  position: relative;
-  cursor: pointer;
-}
-.activity-image {
-  position: relative;
-  cursor: pointer;
-}
-.research-image {
-  width: 1000px;
-}
-
-.student-image-size {
-  width: 250px; height: 300px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
-}
-.activity-image-size {
-  width: 380px; height: 450px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
-}
-
-.student-image:hover .overlay {
-  opacity: 1;
-}
-
+/* Image overlay styles */
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 300px;
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.student-info {
-  font-size: 14px;
-  position: absolute;
-  top: 67%;
-  left: 0%;
-  color: white;
-  padding-left: 20px;
-  display: none;
-  padding-right: 5%;
-}
-
-.student-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1px;
-}
-
-.student-col {
-  flex: 0 0 calc(33.333333% - 0px);
-  margin-bottom: 0px;
-  margin-right: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-}
-
-.student-col:last-child {
-  margin-right: 0;
-}
-.student-row:last-child {
-  margin-bottom: 30px;
-}
-
-.publication-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.publication-col {
-  flex: 0 0 calc(33.333% - 200px);
-  margin-bottom: 0px;
-  margin-right: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-}
-
-.publication-col:last-child {
-  margin-right: 0;
-}
-.publication-row:last-child {
-  margin-bottom: 30px;
-}
-
-
-.custom-container-student {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-}
-.custom-container-activities {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-}
-
-.custom-container-paper {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-}
-
-.job-title, .job-date {
-  display: inline-block;
-}
-
-.job-title {
-  width: calc(70% - 10px); 
-}
-
-.job-date {
-  width: 200px;
-  text-align: right;
-}
-
-hr {
-  color: 0.05px solid grey;
-  margin: 0 0 10px 0;
-}
-
-.project-cell {
-  padding-top: 17px;
-  padding-bottom: 2px;
-  padding-right: 20px;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 15%;
-  height: 100%;
-  overflow: auto;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  max-height: 500px;
-  height: auto;
-}
-
-.close {
-  color: black;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-
-
-@media (max-width: 968px) {
-  .activity-image-size{
-    width: 28vw; height: 34vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
-  }
-  .student-image-size{
-    width: 28vw; height: 34vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
-  } 
-  .student-image {
-    position: relative;
-    cursor: pointer;
-  }
-  .activity-image {
-    position: relative;
-    cursor: pointer;
-  } 
-  .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 28vw;
-    height: 34vw;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-  }
-  .student-info {
-    font-size: 10px;
+}
+
+/* ... (other styles) */
+
+/* Student information styles */
+.student-info {
+    font-size: 14px;
     position: absolute;
-    top: 10%;
+    top: 67%;
     left: 0%;
-    width: 28vw;
     color: white;
-    padding-left: 5%;
+    padding-left: 20px;
     display: none;
     padding-right: 5%;
-    word-wrap: break-word;
-    }
-  .photos-info p {
-      font-size: 10px;
-      background-color: transparent;
-      color: black;
-      width: 28vw;
-      opacity: 1;
-      text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8), -1px -1px 4px rgba(255, 255, 255, 0.8), 1px -1px 4px rgba(255, 255, 255, 0.8), -1px 1px 4px rgba(255, 255, 255, 0.8);
-      font-weight: bold;
-      word-wrap: break-word;
+}
+
+/* ... (other styles) */
+
+/* Media query for smaller screens */
+@media (max-width: 968px) {
+    .activity-image-size, .student-image-size {
+        width: 28vw;
+        height: 34vw;
+        object-fit: cover;
+        object-position: center;
+        margin: 0;
+        padding: 0;
     }
 
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 15%;
-    height: 100%;
-    overflow: auto;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 60vw;
-  }
-  
-  .close {
-    color: black;
-    float: right;
-    cursor: pointer;
-  }
-  .research-image {
-    width: 80vw;
-  }  
+    .student-info {
+        font-size: 10px;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        width: 28vw;
+        color: white;
+        padding-left: 5%;
+        display: none;
+        padding-right: 5%;
+        word-wrap: break-word;
+    }
+
+    .photos-info p {
+        font-size: 10px;
+        background-color: transparent;
+        color: black;
+        width: 28vw;
+        opacity: 1;
+        text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8), -1px -1px 4px rgba(255, 255, 255, 0.8), 1px -1px 4px rgba(255, 255, 255, 0.8), -1px 1px 4px rgba(255, 255, 255, 0.8);
+        font-weight: bold;
+        word-wrap: break-word;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        top: 15%;
+        height: 100%;
+        overflow: auto;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60vw;
+    }
+
+    .close {
+        color: black;
+        float: right;
+        cursor: pointer;
+    }
+
+    .research-image {
+        width: 80vw;
+    }
 }
