@@ -17,7 +17,7 @@ url: "https://ue2lab.korea.ac.kr"
 
 # If you want to work at your local copmuter
 #baseurl: ""
-#url: "https://ue2lab.korea.ac.kr"
+#url: ""
 
 include:
   - .htaccess
