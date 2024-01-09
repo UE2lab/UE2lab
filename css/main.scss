@@ -1,6 +1,9 @@
----
----
-    
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://github.com/UE2lab/UE2lab/raw/gh-pages/fonts/Roboto-Regular.ttf') format('truetype');
+    /* Add more weights or styles if needed */
+}
+
 @import "bootstrap";
 
 img {
@@ -9,8 +12,9 @@ img {
 }  
 
 body {
-	padding-top: 100px;
-  font-size: 18px;
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 table th {
