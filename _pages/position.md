@@ -6,7 +6,6 @@ sitemap: false
 permalink: /position
 ---
 
-
 <style>
   .container1 {
     background-color: #841D1E;
@@ -14,40 +13,30 @@ permalink: /position
     padding: 20px;
     margin-bottom: 30px;
     text-align: justify;
-    transition: background-color 0.3s ease; /* Add transition for smooth effect */
   }
 
-  .container1:hover {
-    background-color: #6A1516; /* Change color on hover */
-  }
-
-  .container2,
-  .container3,
-  .container4 {
+  .container2 {
+    background-color: #D3C0AA;
     padding: 20px;
     margin-bottom: 30px;
-    transition: background-color 0.3s ease; /* Add transition for smooth effect */
   }
 
-  .container2:hover {
-    background-color: #C2B497;
+  .container3 {
+    background-color: #848484;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
   }
 
-  .container3:hover {
-    background-color: #696969;
-  }
-
-  .container4:hover {
-    background-color: #1E1E1E;
-  }
-
-  /* Add hover effects for links within containers */
-  .container4 a:hover {
-    color: #FFD700; /* Change link color on hover */
+  .container4 {
+    background-color: #333333; /* Darker background color */
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center; /* Center text within the container */
   }
 </style>
 
-<!-- Your container divs remain unchanged -->
 <div class="container1">
   <p style="margin-bottom: 18px; margin-top: 20px;">
     <strong style="font-size: 26px;">WE ARE RECRUITING!</strong><br> 
