@@ -35,9 +35,13 @@ permalink: /research/
 <p class="title-center">PROJECT DETAIL</p> 
 {% for project in site.data.Projects %}
   <h4 id="project-{{ project.number }}"><strong>{{ project.number }}. {{ project.title }}</strong></h4>
-  <div style="background-color: transparent; padding: 10px 20px;">{{ project.introduction }}
-  <p align="center"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" class="research-image"></p>
-  <div style="background-color: transparent; padding: 10px 20px;">{{ project.description }}
+  <div style="background-color: transparent; padding: 10px 20px;">
+  <p>{{ project.introduction }}</p>
+  <p align="center">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" alt="{{ project.title }}" class="research-image">
+  </p>
+  <p>{{ project.description }}</p>
+  </div>
   <hr style="border-color: black;">
   <br><br>
 {% endfor %}
