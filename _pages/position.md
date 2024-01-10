@@ -1,3 +1,12 @@
+---
+title: "Graduate Student Recruitments"
+layout: textlay
+excerpt: "Openings"
+sitemap: false
+permalink: /position
+---
+
+
 <style>
   .container1 {
     background-color: #841D1E;
