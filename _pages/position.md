@@ -37,7 +37,7 @@ permalink: /position
   }
 </style>
 
-</p>
+<br>
 <div class="container1">
   <p style="margin-bottom: 18px; margin-top: 20px;">
     <strong style="font-size: 26px;">WE ARE RECRUITING!</strong><br> 
