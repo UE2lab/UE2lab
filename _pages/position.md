@@ -1,6 +1,6 @@
 ---
 title: "Graduate Student Recruitments"
-layout: gridlay_professor
+layout: textlay
 excerpt: "Openings"
 sitemap: false
 permalink: /position
