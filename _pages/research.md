@@ -40,7 +40,7 @@ permalink: /research/
   <p align="center">
     <img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ project.image }}" alt="{{ project.title }}" class="research-image">
   </p>
-  <p>{{ project.description }}</p>
+  <p style="text-align: justify;">{{ project.description }}</p>
   </div>
   <hr style="border-color: black;">
   <br><br>
