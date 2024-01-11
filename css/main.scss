@@ -441,8 +441,12 @@ hr {
   .research-image {
     width: 80vw;
   }  
+}
+@import "bootstrap";
 
-	/* Default styles for larger screens */
+/* Your existing styles... */
+
+/* Default styles for larger screens */
 @media (min-width: 768px) {
   .activity-image-size {
     width: 380px;
@@ -505,5 +509,3 @@ hr {
     width: 100%; /* Adjust as needed */
   }
 }
-
-
