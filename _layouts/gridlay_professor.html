@@ -1,52 +1,11 @@
 ---
 layout: default
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- Other head elements... -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Your existing styles... */
-
-        /* Additional styles for responsiveness */
-        .row {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .col-sm-4, .col-sm-8 {
-            width: 100%;
-            padding: 10px; /* Adjust padding as needed */
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            margin: 0; /* Remove margin */
-        }
-
-        /* Media query for screens up to 600px wide */
-        @media only screen and (max-width: 600px) {
-            .col-sm-4, .col-sm-8 {
-                padding: 5px; /* Adjust padding as needed for smaller screens */
-            }
-        }
-    </style>
-    <!-- Other head elements... -->
-</head>
-
-<body>
-    <div class="row">
-        <div class="col-sm-4">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/Yeonsook Heo2.jpg" alt="Profile Image">
-        </div>
-        <div class="col-sm-8">
-            {{ content }}
-        </div>
-    </div>
-</body>
-
-</html>
+<div class="row">
+  <div class="col-sm-4">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/Yeonsook Heo2.jpg" style="height: 400px; margin: 70px 100px;">
+  </div>
+  <div class="col-sm-8" style="padding-left: 70px;">
+    {{ content }}
+  </div>
+</div>
