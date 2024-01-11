@@ -40,7 +40,7 @@ permalink: /position
 <br>
 <div class="container1">
   <p style="margin-bottom: 18px; margin-top: 20px;">
-    <strong style="font-size: 26px;">HELLO ARE RECRUITING!</strong><br> 
+    <strong style="font-size: 26px;">WE ARE RECRUITING!</strong><br> 
     <br>
     <span style="font-size: 18px;">The Urban Energy and Environment Lab at Korea University (KU) is actively recruiting graduate students for M.S/Integrated M.S.-Ph.D./Ph.D. programs. Our lab offers a dynamic, international research environment with cutting-edge projects funded by government grants and collaborations with top-tier universities (e.g., Nanyang Technological University, National University of Singapore, University of Cambridge). Current international students have received prestigious scholarships, including the KU Scholarship and Hyundai Chung Mong-Koo Global Scholarship, in addition to research assistantships. Join our research lab for exciting opportunities!</span>
   </p>
