@@ -50,7 +50,7 @@ permalink: /position
   <p style="font-size: 18px; color: #000;">
     <strong style="font-size: 18px;">CURRENT PROJECTS:</strong><br>
        <br>
-    1. Data and Analysis Framework for Energy Benchmarking of Existing Buildings<br>
+    1. Data Analysis Framework for Energy Benchmarking of Existing Buildings<br>
     2. Plus Energy Building Innovative Technology Research<br>
     3. 3D Urban Microclimate Prediction System<br>
     4.  Hydrogen-based Energy Network Design and Operation
