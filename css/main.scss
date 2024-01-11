@@ -441,4 +441,69 @@ hr {
   .research-image {
     width: 80vw;
   }  
+
+	/* Default styles for larger screens */
+@media (min-width: 768px) {
+  .activity-image-size {
+    width: 380px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .student-image-size {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .overlay {
+    width: 250px;
+    height: 300px;
+  }
+  .student-info {
+    top: 67%;
+    width: 250px;
+    padding-left: 20px;
+    display: none;
+    padding-right: 5%;
+  }
+  .photos-info p {
+    width: 250px;
+    font-size: 18px;
+  }
+  .modal-content {
+    width: 60vw;
+  }
+  .research-image {
+    width: 1000px; /* Adjust as needed */
+  }
 }
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .activity-image-size,
+  .student-image-size {
+    width: 100%;
+    height: auto;
+  }
+  .overlay,
+  .student-info {
+    width: 100%;
+  }
+  .photos-info p {
+    width: 100%;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  .modal-content {
+    width: 90vw;
+  }
+  .research-image {
+    width: 100%; /* Adjust as needed */
+  }
+}
+
+
