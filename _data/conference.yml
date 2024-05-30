@@ -2,7 +2,7 @@
   number: 35
   image: CONF35.jpg
   description: 2023
-  authors: Eftekhar F., Yoon N., and Heo Y.	
+  authors: F Eftekhar, N Yoon, Y Heo	
   link:
     url: https://www.e3s-conferences.org/articles/e3sconf/abs/2023/33/e3sconf_iaqvec2023_02040/e3sconf_iaqvec2023_02040.html
     display: E3S Web of Conferences - IAQVEC2023
@@ -12,7 +12,7 @@
   number: 34
   image: CONF34.jpg
   description: 2023
-  authors: Bang S., Yoon N., and Heo Y.	
+  authors: S Bang, N Yoon, Y Heo
   link:
     url: https://www.e3s-conferences.org/articles/e3sconf/abs/2023/33/e3sconf_iaqvec2023_02009/e3sconf_iaqvec2023_02009.html
     display: E3S Web of Conferences - IAQVEC2023
@@ -22,7 +22,7 @@
   number: 33
   image: CONF33.JPG
   description: 2021
-  authors: Byun J. and Heo Y.	
+  authors: J Byun, Y Heo
   link:
     url: https://publications.ibpsa.org/proceedings/bs/2021/papers/bs2021_30884.pdf
     display: IBPSA Conference
@@ -32,7 +32,7 @@
   number: 32
   image: CONF32.JPG
   description: 2021
-  authors: Lee H. and Heo Y.	
+  authors: H Lee, Y Heo
   link:
     url: https://publications.ibpsa.org/proceedings/bs/2021/papers/bs2021_30750.pdf
     display: IBPSA Conference
@@ -42,7 +42,7 @@
   number: 31
   image: CONF31.JPG
   description: 2021
-  authors: Go J. and Heo Y.	
+  authors: J Go, Y Heo	
   link:
     url: https://publications.ibpsa.org/proceedings/bs/2021/papers/bs2021_30891.pdf
     display: IBPSA Conference
@@ -52,7 +52,7 @@
   number: 30
   image: CONF30.JPG
   description: 2021
-  authors: Hong T. and Heo Y.	
+  authors: T Hong, Y Heo	
   link:
     url: https://publications.ibpsa.org/proceedings/bs/2021/papers/bs2021_30781.pdf
     display: IBPSA Conference
@@ -62,7 +62,7 @@
   number: 29
   image: CONF29.JPG
   description: 2018
-  authors: Liao W. and Heo Y.	
+  authors: W Liao, Y Heo
   link:
     url: http://www.ibpsa.org/proceedings/BSO2018/6B-5.pdf
     display: IBPSA-England BSO Conference
@@ -72,7 +72,7 @@
   number: 28
   image: CONF28.JPG
   description: 2018
-  authors: Barthelmes V., Heo Y., Andersen R.K., Knudsen H., Fabi V., and Corgnati S.P.
+  authors: VM Barthelmes, Y Heo, RK Andersen, H Knudsen, V Fabi, SP Corgnati
   link:
     url: http://www.ibpsa.org/proceedings/BSO2018/6C-1.pdf
     display: IBPSA-England BSO Conference
@@ -82,7 +82,7 @@
   number: 27
   image: CONF27.JPG
   description: 2018
-  authors: Liao W., Heo Y., and Xu S.	
+  authors: W Liao, Y Heo, S Xu	
   link:
     url: http://www.ibpsa.org/proceedings/BSO2018/3A-3.pdf
     display: IBPSA-England BSO Conference
@@ -92,7 +92,7 @@
   number: 26
   image: CONF26.JPG
   description: 2018
-  authors: Barthelmes V., Andersen R.K., Heo Y., Knudsen H., Fabi V., and Corgnati S.P.
+  authors: VM Barthelmes, RK Andersen, Y Heo, H Knudsen, V Fabi, SP Corgnati
   link:
     url: http://windsorconference.com/proceedings/
     display: 10th Windsor Conference, Rethinking Comfort
@@ -102,7 +102,7 @@
   number: 25
   image: CONF25.JPG
   description: 2017
-  authors: Liao W. and Heo Y.
+  authors: W Liao, Y Heo
   link:
     url: http://www.ibpsa.org/proceedings/BS2017/BS2017_665.pdf
     display: IBPSA Conference
@@ -112,7 +112,7 @@
   number: 24
   image: CONF24.JPG
   description: 2017
-  authors: Menberg K., Heo Y., and Choudhary R.	
+  authors: K Menberg, Y Heo, R Choudhary	
   link:
     url: http://www.ibpsa.org/proceedings/BS2017/BS2017_315.pdf
     display: IBPSA Conference
@@ -122,7 +122,7 @@
   number: 23
   image: CONF23.JPG
   description: 2017
-  authors: Ward R., Choudhary R., Heo Y., and Aston J.	
+  authors: RM Ward, R Choudhary, Y Heo, J Aston	
   link:
     url: http://www.ibpsa.org/proceedings/BS2017/BS2017_032.pdf
     display: IBPSA Conference
@@ -132,7 +132,7 @@
   number: 22
   image: CONF22.JPG
   description: 2017
-  authors: Menberg K., Heo Y., Choi W., Ooka R., Choudhary R., and Shukuya M.	
+  authors: K Menberg, Y Heo, W Choi, R Ooka, R Choudhary, M Shukuya
   link:
     url: http://www.ibpsa.org/proceedings/BS2017/BS2017_437.pdf
     display: IBPSA Conference
@@ -142,7 +142,7 @@
   number: 21
   image: CONF21.JPG
   description: 2017
-  authors: Fabi V., Barthelmes V., Heo Y., and Corgnati S.P.
+  authors: V Fabi, VM Barthelmes, Y Heo, SP Corgnati
   link:
     url: http://www.ibpsa.org/proceedings/BS2017/BS2017_111.pdf
     display: IBPSA Conference
@@ -152,7 +152,7 @@
   number: 20
   image: CONF20.JPG
   description: 2016
-  authors: Heo Y., Ren G., and Sunikka-Blank M.
+  authors: Y Heo, G Ren, M Sunikka-Blank
   link:
     url: http://www.repository.cam.ac.uk/handle/1810/274070
     display: IBPSA-Asia Conference
@@ -163,7 +163,7 @@
   number: 19
   image: CONF19.JPG
   description: 2016
-  authors: Menberg K., Heo Y., Augenbroe G., and Choudhary R.	
+  authors: K Menberg, Y Heo, G Augenbroe, R Choudhary
   link:
     url: http://www.researchgate.net/profile/Kathrin_Menberg/publication/308119619_New_extension_of_Morris_method_for_sensitivity_analysis_of_building_energy_models/links/57daaa7c08ae4e6f18437536.pdf
     display: IBPSA-England BSO Conference
@@ -173,7 +173,7 @@
   number: 18
   image: CONF18.JPG
   description: 2016
-  authors: Ward R.M., Choudhary R., Heo Y., and Guillas S.	
+  authors: RM Ward, R Choudhary, Y Heo, S Guillas
   link:
     url: http://www.ibpsa.org/proceedings/BSO2016/p1115.pdf
     display: IBPSA-England BSO Conference
@@ -183,7 +183,7 @@
   number: 17
   image: CONF17.JPG
   description: 2015
-  authors: Kiguchi Y., Heo Y., and Choudhary R.	
+  authors: Y Kiguchi, Y Heo, R Choudhary
   link:
     url: http://www.ibpsa.org/proceedings/BS2015/p2632.pdf
     display: IBPSA Conference
@@ -193,7 +193,7 @@
   number: 16
   image: CONF16.JPG
   description: 2015
-  authors: Ward R.M., Choudhary R., Heo Y., and Rysanek A.	
+  authors: RM Ward, R Choudhary, Y Heo, A Rysanek	
   link:
     url: http://www.ibpsa.org/proceedings/BS2015/p2448.pdf
     display: IBPSA Conference
@@ -203,7 +203,7 @@
   number: 15
   image: CONF15.JPG
   description: 2015
-  authors: Tian W., Rysanek A., Choudhary R., and Heo Y.	
+  authors: W Tian, A Rysanek, R Choudhary, Y Heo
   link:
     url: http://www.ibpsa.org/proceedings/BS2015/p2756.pdf
     display: IBPSA Conference
@@ -213,7 +213,7 @@
   number: 14
   image: CONF14.JPG
   description: 2015
-  authors: Yang S., Tian W., Heo Y., Meng Q., and Wei L.	
+  authors: S Yang, W Tian, Y Heo, Q Meng, L Wei
   link:
     url: http://www.sciencedirect.com/science/article/pii/S1877705815027976
     display: ISHVAC-COBEE Conference
@@ -223,7 +223,7 @@
   number: 13
   image: CONF13.JPG
   description: 2013
-  authors: Heo Y., Graziano D., Guzowski L., and Muehleisen R.T.	
+  authors: Y Heo, D Graziano, L Guzowski, RT Muehleisen
   link:
     url: http://www.ibpsa.org/proceedings/bs2013/p_1035.pdf
     display: IBPSA Conference
@@ -234,7 +234,7 @@
   number: 12
   image: CONF12.JPG
   description: 2013
-  authors: Heo Y., Graziano D., Zavala V.M., Dickinson P., Kamrath M., and Kirshenbaum M.	
+  authors: Y Heo, D Graziano, VM Zavala, P Dickinson, M Kamrath, M Kirshenbaum
   link:
     url: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.714.5789&rep=rep1&type=pdf
     display: ASHRAE Conference
@@ -244,7 +244,7 @@
   number: 11
   image: CONF11.JPG
   description: 2013
-  authors: Muehleisen R.T., Heo Y., Graziano D., and Guzowski L.B.	
+  authors: RT Muehleisen, Y Heo, D Graziano, LB Guzowski	
   link:
     url: http://ascelibrary.org/doi/abs/10.1061/9780784412909.088
     display: 2013 Architectural Engineering Institute Conference
@@ -254,7 +254,7 @@
   number: 10
   image: CONF10.JPG
   description: 2012
-  authors: Heo Y., Zhao F., Lee S., Sun Y., Kim J., Augenbroe G., Graziano D., Guzowski L.B., and Muehleisen R.T.	
+  authors: Y Heo, F Zhao, S Lee, Y Sun, J Kim, G Augenbroe, D Graziano, LB Guzowski, RT Muehleisen
   link:
     url: http://ibpsa-usa.org/index.php/ibpusa/article/view/470
     display: IBPSA-USA Conference
@@ -264,7 +264,7 @@
   number: 9
   image: CONF9.JPG
   description: 2012
-  authors: Guzowski L., Graziano D., Heo Y., and Muehleisen R.T.	
+  authors: L Guzowski, D Graziano, Y Heo, RT Muehleisen
   link:
     url: http://www.researchgate.net/profile/Ralph_Muehleisen/publication/266593746_Testing_a_Streamlined_Project_Evaluation_Tool_for_Risk-Conscious_Decision_Making_The_Chicago_Loop_Energy_Efficiency_Retrofit_Initiative/links/546e60bf0cf29806ec2eb2dc/Testing-a-St
     display: ACEEE Summer Study on Energy Efficiency in Buildings
@@ -274,7 +274,7 @@
   number: 8
   image: CONF8.JPG
   description: 2011
-  authors: Heo Y., Augenbroe G., and Choudhary R.	
+  authors: Y Heo, G Augenbroe, R Choudhary
   link:
     url: http://ibpsa.org/proceedings/BS2011/P_1799.pdf
     display: IBPSA Conference
@@ -284,7 +284,7 @@
   number: 7
   image: CONF7.JPG
   description: 2011
-  authors: Sun Y., Heo Y., Xie H., Tan M., Wu J., and Augenbroe G.	
+  authors: Y Sun, Y Heo, H Xie, M Tan, J Wu, G Augenbroe	
   link:
     url: http://ibpsa.org/proceedings/BS2011/P_1758.pdf
     display: IBPSA Conference
@@ -294,7 +294,7 @@
   number: 6
   image: CONF6.JPG
   description: 2011
-  authors: Heo Y., Augenbroe G., and Choudhary R.	
+  authors: Y Heo, G Augenbroe, R Choudhary
   link:
     url: http://oaktrust.library.tamu.edu/handle/1969.1/128821
     display: ICEBO Conference
@@ -304,7 +304,7 @@
   number: 5
   image: CONF5.JPG
   description: 2009
-  authors: Li Z., Heo Y., and Augenbroe G.	
+  authors: Z Li, Y Heo, G Augenbroe
   link:
     url: http://www.researchgate.net/profile/Zhengwei_Li2/publication/254422976_HVAC_design_informed_by_organizational_simulation/links/00b495350ac76dd58a000000.pdf
     display: IBPSA Conference
@@ -314,7 +314,7 @@
   number: 4
   image: CONF4.JPG
   description: 2009
-  authors: Li Z., Heo Y., and Augenbroe G.	
+  authors: Z Li, Y Heo, G Augenbroe	
   link:
     url: http://www.arcc-journal.org/index.php/repository/index
     display: 2009 Annual ARCC Research Conference
@@ -324,7 +324,7 @@
   number: 3
   image: CONF3.JPG
   description: 2009
-  authors: Heo Y., Choudhary R., Bafna S., Hendrich A., and Chow M.P.	
+  authors: Y Heo, R Choudhary, S Bafna, A Hendrich, MP Chow
   link:
     url: http://www.researchgate.net/profile/Sonit_Bafna/publication/254854592_A_Modeling_Approach_for_Estimating_the_Impact_of_Spatial_Configuration_on_Nurses'_Movement/links/0f317534d88fd8d41f000000.pdf
     display: International Space Syntax Symposium
@@ -334,7 +334,7 @@
   number: 2
   image: CONF2.JPG
   description: 2008
-  authors: Augenbroe G., Brown J., Heo Y., Kim S.H., Li Z., McManus S., and Zhao F.	
+  authors: G Augenbroe, J Brown, Y Heo, S.H. Kim, Z Li, S McManus, F Zhao	
   link:
     url: http://www.ibpsa.org/proceedings/SB2008/SB08-DOC-IS06-Augenbroe.pdf
     display: IBPSA-USA Conference
@@ -344,7 +344,7 @@
   number: 1
   image: CONF1.JPG
   description: 2007
-  authors: Choudhary R., Heo Y., and Bafna S.	
+  authors: R Choudhary, Y Heo, S Bafna
   link:
     url: http://spacesyntaxistanbul.itu.edu.tr/papers/longpapers/096%20-%20Choudhary%20Heo%20Bafna.pdf
     display: International Space Syntax Symposium
