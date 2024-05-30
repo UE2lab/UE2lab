@@ -192,7 +192,7 @@
   number: 24
   image: SCIE24.JPG
   description: 2020
-  authors: Q Li, R Choudhary, Y Heo, and G Augenbroe
+  authors: Q Li, R Choudhary, Y Heo, G Augenbroe
   link:
     url: http://www.tandfonline.com/doi/full/10.1080/19401493.2020.1817148
     display: Journal of Building Performance Simulation
@@ -202,7 +202,7 @@
   number: 23
   image: SCIE23.JPG
   description: 2019
-  authors: G Ren, Y Heo, and M Sunikka-Blank
+  authors: G Ren, Y Heo, M Sunikka-Blank
   link:
     url: http://www.sciencedirect.com/science/article/pii/S2352710219304206
     display: Journal of Building Engineering
@@ -212,7 +212,7 @@
   number: 22
   image: SCIE22.JPG
   description: 2019
-  authors: W Liao, Y Heo, and S Xu
+  authors: W Liao, Y Heo, S Xu
   link:
     url: http://www.sciencedirect.com/science/article/pii/S0038092X19302397
     display: Solar Energy
@@ -222,7 +222,7 @@
   number: 21
   image: SCIE21.JPG
   description: 2019
-  authors: RM Ward, R Choudhary, Y Heo, and JAD Aston
+  authors: RM Ward, R Choudhary, Y Heo, JAD Aston
   link:
     url: http://www.tandfonline.com/doi/full/10.1080/19401493.2019.1583287
     display: Journal of Building Performance Simulation
@@ -232,7 +232,7 @@
   number: 20
   image: SCIE20.JPG
   description: 2019
-  authors: Y Kiguchi, Y Heo, M Weeks, and R Choudhary
+  authors: Y Kiguchi, Y Heo, M Weeks, R Choudhary
   link:
     url: http://sciencedirect.com/science/article/pii/S0360544219300398
     display: Energy
@@ -242,7 +242,7 @@
   number: 19
   image: SCIE19.JPG
   description: 2018
-  authors: K Menberg, Y Heo, and R Choudhary	
+  authors: K Menberg, Y Heo, R Choudhary	
   link:
     url: http://www.tandfonline.com/doi/abs/10.1080/19401493.2018.1475506
     display: Journal of Building Performance Simulation
@@ -252,7 +252,7 @@
   number: 18
   image: SCIE18.JPG
   description: 2018
-  authors: W Tian, Y Heo, P de Wilde, Z Li, D Yan, CS Park, X Feng, and G Augenbroe
+  authors: W Tian, Y Heo, P de Wilde, Z Li, D Yan, CS Park, X Feng, G Augenbroe
   link:
     url: http://www.sciencedirect.com/science/article/pii/S136403211830368X
     display: Renewable & Sustainable Energy Reviews
@@ -262,7 +262,7 @@
   number: 17
   image: SCIE17.JPG
   description: 2018
-  authors: W Choi, K Menberg, H Kikumoto, Y Heo, R Choudhary, and R Ooka
+  authors: W Choi, K Menberg, H Kikumoto, Y Heo, R Choudhary, R Ooka
   link:
     url: http://www.sciencedirect.com/science/article/pii/S0306261918310171
     display: Applied Energy
@@ -272,7 +272,7 @@
   number: 16
   image: SCIE16.JPG
   description: 2017
-  authors: VM Barthelmes, Y Heo, V Fabi, and SP Corgnati
+  authors: VM Barthelmes, Y Heo, V Fabi, SP Corgnati
   link:
     url: http://www.sciencedirect.com/science/article/pii/S0360132317304663
     display: Building and Environment
@@ -282,7 +282,7 @@
   number: 15
   image: SCIE15.JPG
   description: 2017
-  authors: K Menberg, Y Heo, W Choi, R Ooka, R Choudhary, and M Shukuya
+  authors: K Menberg, Y Heo, W Choi, R Ooka, R Choudhary, M Shukuya
   link:
     url: http://www.sciencedirect.com/science/article/pii/S0306261917308255
     display: Applied Energy
@@ -292,7 +292,7 @@
   number: 14
   image: SCIE14.JPG
   description: 2016
-  authors: K Menberg, Y Heo, and R Choudhary
+  authors: K Menberg, Y Heo, R Choudhary
   link:
     url: http://www.sciencedirect.com/science/article/pii/S0378778816311112
     display: Energy and Buildings
@@ -302,7 +302,7 @@
   number: 13
   image: SCIE13.JPG
   description: 2016
-  authors: R Ward, R Choudhary, Y Heo, and A Rysanek
+  authors: R Ward, R Choudhary, Y Heo, A Rysanek
   link:
     url: http://www.sciencedirect.com/science/article/pii/S037877881630305X
     display: Energy and Buildings
@@ -312,7 +312,7 @@
   number: 12
   image: SCIE12.JPG
   description: 2016
-  authors: R Pacheco-Torres, Y Heo, and R Choudhary	
+  authors: R Pacheco-Torres, Y Heo, R Choudhary	
   link:
     url: http://www.sciencedirect.com/science/article/pii/S2210670716301913
     display: Sustainable Cities and Society
@@ -322,7 +322,7 @@
   number: 11
   image: SCIE11.JPG
   description: 2016
-  authors: W Tian, Y Liu, Y Heo, D Yan, Z Li, J An, and S Yang
+  authors: W Tian, Y Liu, Y Heo, D Yan, Z Li, J An, S Yang
   link:
     url: http://www.sciencedirect.com/science/article/pii/S0360544216307253
     display: Energy
@@ -332,7 +332,7 @@
   number: 10
   image: SCIE10.JPG
   description: 2015
-  authors: Y Heo, G Augenbroe, D Graziano, RT Muehleisen, and L Guzowski	
+  authors: Y Heo, G Augenbroe, D Graziano, RT Muehleisen, L Guzowski	
   link:
     url: http://www.sciencedirect.com/science/article/pii/S0360132314004272
     display: Building and Environment
@@ -342,7 +342,7 @@
   number: 9
   image: SCIE9.JPG
   description: 2015
-  authors: Y Heo, D Graziano, L Guzowski, and RT Muehleisen
+  authors: Y Heo, D Graziano, L Guzowski, RT Muehleisen
   link:
     url: http://www.sciencedirect.com/science/article/pii/S0360132314004272
     display: 	Journal of Building Performance Simulation
@@ -352,7 +352,7 @@
   number: 8
   image: SCIE8.JPG
   description: 2014
-  authors: MC Burkhart, Y Heo, and VM Zavala
+  authors: MC Burkhart, Y Heo, VM Zavala
   link:
     url: http://www.sciencedirect.com/science/article/pii/S0378778814001091
     display: Energy and Buildings
@@ -362,7 +362,7 @@
   number: 7
   image: SCIE7.JPG
   description: 2014
-  authors: Y Sun, Y Heo, H Xie, M Tan, J Wu, and G Augenbroe	
+  authors: Y Sun, Y Heo, H Xie, M Tan, J Wu, G Augenbroe	
   link:
     url: http://www.tandfonline.com/doi/abs/10.1080/19401493.2012.757368
     display: Journal of Building Performance Simulation
@@ -372,7 +372,7 @@
   number: 6
   image: SCIE6.JPG
   description: 2013
-  authors: C Chen, J Wang, Y Heo, and S Kishore	
+  authors: C Chen, J Wang, Y Heo, S Kishore	
   link:
     url: https://ieeexplore.ieee.org/abstract/document/6575202?casa_token=y_C-PJjzSDkAAAAA:1a9kkYdS_C4RVudD-zlwkxPT6AM1FEBvhZZFvYWYCjDw1ETezhAbJ9Yo--DyLXjEO7p5Og
     display: IEEE Transaction on Smart Grid
@@ -382,7 +382,7 @@
   number: 5
   image: SCIE5.JPG
   description: 2013
-  authors: Y Heo, G Augenbroe, and R Choudhary
+  authors: Y Heo, G Augenbroe, R Choudhary
   link:
     url: http://www.tandfonline.com/doi/abs/10.1080/19401493.2012.706388
     display: Journal of Building Performance Simulation
@@ -392,7 +392,7 @@
   number: 4
   image: SCIE4.JPG
   description: 2012
-  authors: Y Heo, and VM Zavala
+  authors: Y Heo, VM Zavala
   link:
     url: http://www.sciencedirect.com/science/article/pii/S037877881200312X
     display: Energy and Buildings
@@ -402,7 +402,7 @@
   number: 3
   image: SCIE3.JPG
   description: 2012
-  authors: Y Heo, R Choudhary, and G Augenbroe
+  authors: Y Heo, R Choudhary, G Augenbroe
   link:
     url: http://www.sciencedirect.com/science/article/pii/S037877881100644X
     display: Energy and Buildings
@@ -413,7 +413,7 @@
   number: 2
   image: SCIE2.JPG
   description: 2010
-  authors: R Choudhary, S Bafna, Y Heo, A Hendrich, and M Chow
+  authors: R Choudhary, S Bafna, Y Heo, A Hendrich, M Chow
   link:
     url: http://www.tandfonline.com/doi/abs/10.1080/19401490903174280
     display: Journal of Building Performance Simulation
@@ -423,7 +423,7 @@
   number: 1
   image: SCIE1.JPG
   description: 2009
-  authors: A Hendrich, MP Chow, S Bafna, R Choudhary, Y Heo, and B Skierczynski
+  authors: A Hendrich, MP Chow, S Bafna, R Choudhary, Y Heo, B Skierczynski
   link:
     url: http://journals.sagepub.com/doi/abs/10.1177/193758670900200202
     display: Health Environments Research & Design Journal
