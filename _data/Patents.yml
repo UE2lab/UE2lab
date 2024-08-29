@@ -1,17 +1,8 @@
-- title: A predictive model for computing the influence of space layouts on nurses’ movement in hospital units
-  number: 2
-  image: SCIE2.JPG
-  description: 2010
-  authors: R Choudhary, S Bafna, Y Heo, A Hendrich, M Chow
-  link:
-    url: http://www.tandfonline.com/doi/abs/10.1080/19401490903174280
-  highlight: 0
-
-- title: Unit-related factors that affect nursing time with patients, applying spatial analysis to the nurses’ time and motion study	
+- title: Internal electricity and DHW loads prediction method in residential communities using probabilistic statistical models
   number: 1
-  image: SCIE1.JPG
-  description: 2009
-  authors: A Hendrich, MP Chow, S Bafna, R Choudhary, Y Heo, B Skierczynski
+  image: 
+  description: 2022
+  authors: Y Heo, C Kim, J Byun, J Go
   link:
-    url: http://journals.sagepub.com/doi/abs/10.1177/193758670900200202
+    url: http://engpat.kipris.or.kr/engpat/biblioa.do?method=biblioFrame&start=biblio&link=N&rvtExtend=N
   highlight: 0
