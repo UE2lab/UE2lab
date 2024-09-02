@@ -6,3 +6,21 @@
   link:
     url: http://engpat.kipris.or.kr/engpat/biblioa.do?method=biblioFrame&start=biblio&link=N&rvtExtend=N
   highlight: 0
+
+- title: 동적운영에 의해 외기 및 내기의 유동제어가 가능한 냉난방 에너지 절감 시스템
+  number: 2
+  image: 
+  description: 2022
+  authors: N Yoon, Y Heo
+  link:
+    url: http://peb.korea.ac.kr/bbs/board.php?bo_table=sub3_3
+  highlight: 0
+  
+- title: 냉난방 에너지 절감을 위한 건물의 패시브 이중외피 동적구획화 시스템
+  number: 3
+  image: 
+  description: 2022
+  authors: Y Heo, N Yoon
+  link:
+    url: http://peb.korea.ac.kr/bbs/board.php?bo_table=sub3_3
+  highlight: 0
