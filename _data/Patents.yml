@@ -1,17 +1,26 @@
-- title: Internal electricity and DHW loads prediction method in residential communities using probabilistic statistical models
-  number: 1
+- title: 전환 환기 전략을 이용하는 냉난방 시스템
+  number: 6
   image: 
   description: 2022
-  authors: Y Heo, C Kim, J Byun, J Go
+  authors: J Cho, Y Heo
   link:
-    url: http://engpat.kipris.or.kr/engpat/biblioa.do?method=biblioFrame&start=biblio&link=N&rvtExtend=N
+    url: http://peb.korea.ac.kr/bbs/board.php?bo_table=sub3_3
   highlight: 0
 
-- title: 동적운영에 의해 외기 및 내기의 유동제어가 가능한 냉난방 에너지 절감 시스템
-  number: 2
+- title: 건물 차양장치 제어 시스템
+  number: 5
   image: 
   description: 2022
-  authors: N Yoon, Y Heo
+  authors: S Bang, N Yoon, J Cho, Y Heo
+  link:
+    url: http://peb.korea.ac.kr/bbs/board.php?bo_table=sub3_3
+  highlight: 0
+
+- title: 부력을 이용한 패시브 환기 시스템 및 이를 이용한 환기방법
+  number: 4
+  image: 
+  description: 2022
+  authors: F Eftekhar, N Yoon, J Cho, Y Heo
   link:
     url: http://peb.korea.ac.kr/bbs/board.php?bo_table=sub3_3
   highlight: 0
@@ -24,30 +33,21 @@
   link:
     url: http://peb.korea.ac.kr/bbs/board.php?bo_table=sub3_3
   highlight: 0
-
-- title: 부력을 이용한 패시브 환기 시스템 및 이를 이용한 환기방법
-  number: 4
+  
+- title: 동적운영에 의해 외기 및 내기의 유동제어가 가능한 냉난방 에너지 절감 시스템
+  number: 2
   image: 
   description: 2022
-  authors: 
+  authors: N Yoon, Y Heo
   link:
     url: http://peb.korea.ac.kr/bbs/board.php?bo_table=sub3_3
   highlight: 0
-
-- title: 건물 차양장치 제어 시스템
-  number: 5
+  
+- title: Internal electricity and DHW loads prediction method in residential communities using probabilistic statistical models
+  number: 1
   image: 
   description: 2022
-  authors: 
+  authors: Y Heo, C Kim, J Byun, J Go
   link:
-    url: http://peb.korea.ac.kr/bbs/board.php?bo_table=sub3_3
-  highlight: 0
-
-- title: 전환 환기 전략을 이용하는 냉난방 시스템
-  number: 6
-  image: 
-  description: 2022
-  authors: 
-  link:
-    url: http://peb.korea.ac.kr/bbs/board.php?bo_table=sub3_3
+    url: http://engpat.kipris.or.kr/engpat/biblioa.do?method=biblioFrame&start=biblio&link=N&rvtExtend=N
   highlight: 0
