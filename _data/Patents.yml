@@ -44,6 +44,7 @@
   highlight: 0
   
 - title: 확률적 통계모델을 이용한 주거 커뮤니티 전력 및 급탕 부하 수요 예측 방법
+  number: 1
   image: 
   description: 2022
   authors: Y Heo, C Kim, J Byun, J Go
