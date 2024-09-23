@@ -31,7 +31,7 @@ permalink: /Patents/
       {{ patent.number }}.
     </td>
     <td class="project-cell">{{ patent.title }}</td>
-    <td class="project-cell" style="width: 150px;">{{ patent.authors }}</td>
+    <td class="project-cell" style="width: 160px;">{{ patent.authors }}</td>
     <td class="project-cell" style="width: 80px;">{{ patent.description }}</td>
     <td class="project-cell" style="width: 250px;">{{ patent.date }}</td>
     <td class="project-cell" style="width: 250px;">{{ patent.ID }}</td>
