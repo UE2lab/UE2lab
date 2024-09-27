@@ -1,5 +1,5 @@
 - title: Integrating Doppler LiDAR and machine learning into land-use regression model for assessing contribution of vertical atmospheric processes to urban PM2.5 pollution
-  number: 45
+  number: 46
   image: SCIE45.png
   description: 2024
   authors: Y Li, T Huang, HF Lee, Y Heo, KF Ho, SHL Yim
@@ -8,6 +8,16 @@
     display: Science of The Total Environment
   highlight: 1
 
+- title: Development and evaluation of a buoyancy-driven airflow window with multioperation modes 
+  number: 45
+  image: 
+  description: 2024
+  authors: F Eftekhar, N Yoon, Y Heo
+  link: 
+    url: https://www.sciencedirect.com/science/article/pii/S0378778824009496
+    display: Energy and Buildings
+  highlight: 1
+  
 - title: Multi-criteria evaluation of poly-generation system applied to commercial buildings with various prime movers and building types
   number: 44
   image: SCIE44.png
