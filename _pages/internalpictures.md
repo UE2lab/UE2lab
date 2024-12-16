@@ -12,85 +12,120 @@ permalink: /internalpictures/
   <img class="modal-content">
 </div>
 
-<div class="custom-container-activities">
+<div class="custom-container-gallery">
 {% assign pictures = site.data.Internalphotos %}
-{% assign counter = 0 %}
 {% for picture in pictures %}
-{% if counter == 0 %}
-<div class="student-row">
-{% endif %}
-<div class="student-col">
-  <div class="activity-image" style="position: relative; margin: 0px; padding: 0px;">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="activity-image-size">
-  <div class="photos-info">
-  <p style="text-align: center;">{{ picture.title }}</p>
-  <p style="text-align: center;">{{ picture.date }}</p>
+  <div class="gallery-item">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="gallery-image" alt="{{ picture.title }}">
+    <div class="gallery-caption">
+      <h3>{{ picture.title }}</h3>
+      <p>{{ picture.date }}</p>
+    </div>
   </div>
-  </div>
-</div>
-{% assign counter = counter | plus: 1 %}
-{% if counter == 3 %}
-</div>
-{% assign counter = 0 %}
-{% endif %}
 {% endfor %}
-{% if counter != 0 %}
 </div>
-{% endif %}
-</div>
+
 <style>
-  .student-image {
+  .custom-container-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .gallery-item {
+    position: relative;
+    max-width: 300px;
     cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .gallery-item:hover .gallery-caption {
+    opacity: 1;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: #ddd;
   }
 </style>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var studentImages = document.getElementsByClassName('activity-image');
-    for (var i = 0; i < studentImages.length; i++) {
-      studentImages[i].addEventListener('mouseover', function() {
-        this.style.opacity = '0.8';
-        this.getElementsByClassName('photos-info')[0].style.display = 'block';
-        this.style.transition = 'transform 0.3s ease-in-out';
+    const modal = document.querySelector('.modal');
+    const modalImg = document.querySelector('.modal-content');
+    const closeBtn = document.querySelector('.close');
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', function() {
+        modal.style.display = 'block';
+        modalImg.src = this.querySelector('.gallery-image').src;
+
+        document.body.style.overflow = 'hidden';
       });
-      studentImages[i].addEventListener('mouseout', function() {
-        this.style.opacity = '1.0';
-        this.getElementsByClassName('photos-info')[0].style.display = 'none';
-        this.style.transition = 'transform 0.3s ease-in-out';
-      });
-    }
-  });
-  // Get the modal
-  var modal = document.querySelector(".modal");
-
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var images = document.querySelectorAll(".activity-image-size");
-  var modalImg = document.querySelector(".modal-content");
-  var imageContainers = document.querySelectorAll(".activity-image");
-
-  for (var i = 0; i < imageContainers.length; i++) {
-    imageContainers[i].addEventListener("click", function () {
-      modal.style.display = "block";
-      modalImg.src = this.querySelector(".activity-image-size").src;
-
-      // Disable scrolling while the modal is open
-      document.body.style.overflow = "hidden";
     });
-  }
 
-  // Get the <span> element that closes the modal
-  var closeBtn = document.querySelector(".close");
+    function closeModal() {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
 
-  // When the user clicks on <span> (x) or the modal, close the modal
-  closeBtn.addEventListener("click", closeModal);
-  modal.addEventListener("click", closeModal);
-
-  function closeModal() {
-    modal.style.display = "none";
-
-    // Enable scrolling again after the modal is closed
-    document.body.style.overflow = "auto";
-  }
-
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', closeModal);
+  });
 </script>
-
