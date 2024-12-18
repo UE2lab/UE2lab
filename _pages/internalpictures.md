@@ -7,9 +7,10 @@ permalink: /internalpictures/
 
 <p class="title-center">Lab Gatherings</p>
 
-<div class="modal">
+<div class="modal" style="display: none; flex; align-items: center; justify-content: center; flex-direction: column;">
   <span class="close">&times;</span>
-  <img class="modal-content">
+  <img class="modal-content" style="max-width: 80%; max-height: 80%; display: block; margin: auto;">
+  <p class="modal-caption" style="color: white; text-align: center; margin-top: 10px; font-size: 24px; font-weight: bold; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 8px; width: 80%;"></p>
 </div>
 
 <div class="custom-container-activities">
@@ -21,10 +22,9 @@ permalink: /internalpictures/
 {% endif %}
 <div class="student-col">
   <div class="activity-image" style="position: relative; margin: 0px; padding: 0px;">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="activity-image-size">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="activity-image-size" alt="{{ picture.title }}">
   <div class="photos-info">
-  <p style="text-align: center;">{{ picture.title }}</p>
-  <p style="text-align: center;">{{ picture.date }}</p>
+  <p style="text-align: center;">{{ picture.title }} {{ picture.date }}</p>
   </div>
   </div>
 </div>
@@ -38,59 +38,149 @@ permalink: /internalpictures/
 </div>
 {% endif %}
 </div>
+
 <style>
-  .student-image {
+  .custom-container-activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .student-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .student-col {
+    max-width: 300px;
+    flex: 1;
+    margin: 0 10px;
     cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .student-col:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .activity-image-size {
+    width: 100%; /* Set thumbnail width to 100% of the container */
+    height: 200px; /* Explicitly set thumbnail height */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    display: block;
+  }
+
+  .photos-info {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .activity-image:hover .photos-info {
+    opacity: 1;
+  }
+
+  .modal {
+    display: none; /* Ensure modal is hidden initially */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .modal-caption {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: #ddd;
   }
 </style>
 
+
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var studentImages = document.getElementsByClassName('activity-image');
-    for (var i = 0; i < studentImages.length; i++) {
-      studentImages[i].addEventListener('mouseover', function() {
-        this.style.opacity = '0.8';
-        this.getElementsByClassName('photos-info')[0].style.display = 'block';
-        this.style.transition = 'transform 0.3s ease-in-out';
-      });
-      studentImages[i].addEventListener('mouseout', function() {
-        this.style.opacity = '1.0';
-        this.getElementsByClassName('photos-info')[0].style.display = 'none';
-        this.style.transition = 'transform 0.3s ease-in-out';
-      });
-    }
-  });
-  // Get the modal
-  var modal = document.querySelector(".modal");
+ document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.querySelector('.modal');
+  const modalImg = document.querySelector('.modal-content');
+  const modalCaption = document.querySelector('.modal-caption');
+  const closeBtn = document.querySelector('.close');
 
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var images = document.querySelectorAll(".activity-image-size");
-  var modalImg = document.querySelector(".modal-content");
-  var imageContainers = document.querySelectorAll(".activity-image");
+  // Ensure modal is hidden on page load
+  modal.style.display = 'none';
 
-  for (var i = 0; i < imageContainers.length; i++) {
-    imageContainers[i].addEventListener("click", function () {
-      modal.style.display = "block";
-      modalImg.src = this.querySelector(".activity-image-size").src;
+  document.querySelectorAll('.activity-image').forEach(item => {
+    item.addEventListener('click', function() {
+      modal.style.display = 'flex';
+      modalImg.src = this.querySelector('.activity-image-size').src;
+ modalCaption.textContent = this.querySelector('.photos-info p:first-of-type').textContent;
 
-      // Disable scrolling while the modal is open
-      document.body.style.overflow = "hidden";
+
+      document.body.style.overflow = 'hidden'; // Disable scrolling
     });
-  }
-
-  // Get the <span> element that closes the modal
-  var closeBtn = document.querySelector(".close");
-
-  // When the user clicks on <span> (x) or the modal, close the modal
-  closeBtn.addEventListener("click", closeModal);
-  modal.addEventListener("click", closeModal);
+  });
 
   function closeModal() {
-    modal.style.display = "none";
-
-    // Enable scrolling again after the modal is closed
-    document.body.style.overflow = "auto";
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Enable scrolling again
   }
 
-</script>
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+});
 
+
+</script>
