@@ -7,10 +7,11 @@ permalink: /internalpictures/
 
 <p class="title-center">Lab Gatherings</p>
 
-<div class="modal" style="display: none; flex; align-items: center; justify-content: center; flex-direction: column;">
-  <span class="close">&times;</span>
-  <img class="modal-content" style="max-width: 80%; max-height: 80%; display: block; margin: auto;">
-  <p class="modal-caption" style="color: white; text-align: center; margin-top: 10px; font-size: 24px; font-weight: bold; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 8px; width: 80%;"></p>
+<!-- 모달 (인라인 스타일 최소화) -->
+<div class="modal" style="display: none; align-items: center; justify-content: center; flex-direction: column;">
+  <span class="close" aria-label="Close">&times;</span>
+  <img class="modal-content" alt="">
+  <p class="modal-caption"></p>
 </div>
 
 <div class="custom-container-activities">
@@ -21,11 +22,11 @@ permalink: /internalpictures/
 <div class="student-row">
 {% endif %}
 <div class="student-col">
-  <div class="activity-image" style="position: relative; margin: 0px; padding: 0px;">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="activity-image-size" alt="{{ picture.title }}">
-  <div class="photos-info">
-  <p style="text-align: center;">{{ picture.title }} {{ picture.date }}</p>
-  </div>
+  <div class="activity-image" style="position: relative; margin: 0; padding: 0;">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="activity-image-size" alt="{{ picture.title }}">
+    <div class="photos-info">
+      <p style="text-align: center;">{{ picture.title }} {{ picture.date }}</p>
+    </div>
   </div>
 </div>
 {% assign counter = counter | plus: 1 %}
@@ -72,64 +73,66 @@ permalink: /internalpictures/
   }
 
   .activity-image-size {
-    width: 100%; /* Set thumbnail width to 100% of the container */
-    height: 200px; /* Explicitly set thumbnail height */
-    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    width: 100%;
+    height: 200px;          /* 썸네일 높이 고정 */
+    object-fit: cover;      /* 중앙 자르기 */
     display: block;
   }
 
+  /* 썸네일 캡션: 이미지 아래 고정 표시 */
   .photos-info {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    position: absolute;
-    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    position: static;
+    margin-top: 6px;
     width: 100%;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  .activity-image:hover .photos-info {
     opacity: 1;
+    transition: none;
   }
+  /* 기존 hover 오버레이는 비활성화 */
+  .activity-image:hover .photos-info { opacity: 1; }
+  
 
+  /* 모달 컨테이너: 가운데 정렬 */
   .modal {
-    display: none; /* Ensure modal is hidden initially */
+    display: none;              /* JS에서 'flex'로 변경 */
     position: fixed;
+    inset: 0;
     z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    background: rgba(0,0,0,0.8);
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
   }
 
+  /* 모달 이미지: 다양한 비율 대응 + 아래 캡션 붙이기 */
   .modal-content {
-    max-width: 80%;
-    max-height: 80%;
-    margin: auto;
     display: block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    max-width: 90vw;            /* 화면 기준 */
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;        /* 전체 보이기(잘리지 않음) */
+    margin: 0 5px 10px;         /* 캡션과 간격 */
+    position: static;
   }
 
+  /* 검정 캡션 박스(이미지 바로 아래) */
   .modal-caption {
-    color: white;
+    position: static;
+    margin: 0 5px 0;
+    max-width: 90vw;
+    color: #fff;
     text-align: center;
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;            /* 필요 시 24px */
+    font-weight: 700;
+    background: rgba(0,0,0,0.6);
     padding: 10px;
     border-radius: 8px;
-    width: 80%;
   }
 
   .close {
@@ -141,46 +144,35 @@ permalink: /internalpictures/
     font-weight: bold;
     cursor: pointer;
   }
-
-  .close:hover {
-    color: #ddd;
-  }
+  .close:hover { color: #ddd; }
 </style>
 
-
 <script>
- document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   const modal = document.querySelector('.modal');
   const modalImg = document.querySelector('.modal-content');
   const modalCaption = document.querySelector('.modal-caption');
   const closeBtn = document.querySelector('.close');
 
-  // Ensure modal is hidden on page load
   modal.style.display = 'none';
 
   document.querySelectorAll('.activity-image').forEach(item => {
     item.addEventListener('click', function() {
       modal.style.display = 'flex';
       modalImg.src = this.querySelector('.activity-image-size').src;
- modalCaption.textContent = this.querySelector('.photos-info p:first-of-type').textContent;
-
-
-      document.body.style.overflow = 'hidden'; // Disable scrolling
+      modalCaption.textContent = this.querySelector('.photos-info p:first-of-type').textContent;
+      document.body.style.overflow = 'hidden';
     });
   });
 
   function closeModal() {
     modal.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Enable scrolling again
+    document.body.style.overflow = 'auto';
   }
 
   closeBtn.addEventListener('click', closeModal);
   modal.addEventListener('click', function(event) {
-    if (event.target === modal) {
-      closeModal();
-    }
+    if (event.target === modal) closeModal();
   });
 });
-
-
 </script>
