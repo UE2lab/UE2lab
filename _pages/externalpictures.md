@@ -124,7 +124,7 @@ permalink: /externalpictures/
   .modal-caption {
     color: white;
     text-align: center;
-    margin-top: 0; /* Reduce margin to bring it closer to the image */
+    margin-top: -50; /* Reduce margin to bring it closer to the image */
     font-size: 24px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.6);
