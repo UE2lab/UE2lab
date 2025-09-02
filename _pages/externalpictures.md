@@ -5,7 +5,7 @@ excerpt: "UE2 Lab -- Events & Workshop"
 permalink: /externalpictures/
 ---
 
-/*
+
 <p class="title-center">Academic Events</p>
 
 <div class="modal" style="display: none; flex; align-items: center; justify-content: center; flex-direction: column;">
@@ -13,13 +13,7 @@ permalink: /externalpictures/
   <img class="modal-content" style="max-width: 80%; max-height: 80%; display: block; margin: auto;">
   <p class="modal-caption" style="color: white; text-align: center; margin-top: 10px; font-size: 24px; font-weight: bold; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 8px; width: 80%;"*</p>
 </div>
-*/
 
-<div class="modal" style="display: none; align-items: center; justify-content: center; flex-direction: column;">
-  <span class="close">&times;</span>
-  <img class="modal-content" alt="">
-  <p class="modal-caption"></p>
-</div>
 
 
 <div class="custom-container-activities">
