@@ -8,10 +8,10 @@ permalink: /externalpictures/
 
 <p class="title-center">Academic Events</p>
 
-<div class="modal" style="display: none; flex; align-items: center; justify-content: center; flex-direction: column;">
-  <span class="close">&times;</span>
-  <img class="modal-content" style="max-width: 80%; max-height: 80%; display: block; margin: auto;">
-  <p class="modal-caption" style="color: white; text-align: center; margin-top: 10px; font-size: 24px; font-weight: bold; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 8px; width: 80%;"*</p>
+<div class="modal" style="display: none; align-items: center; justify-content: center; flex-direction: column;">
+  <span class="close" aria-label="Close">&times;</span>
+  <img class="modal-content" alt="">
+  <p class="modal-caption"></p>
 </div>
 
 
@@ -96,11 +96,11 @@ permalink: /externalpictures/
     transition: none;
   }
   
-  /*
+  
   .activity-image:hover .photos-info {
     opacity: 1;
   }
-  */
+  
 
   .modal {
     display: none; /* Ensure modal is hidden initially */
@@ -185,6 +185,46 @@ permalink: /externalpictures/
   .close:hover {
     color: #ddd;
   }
+
+  /* 모달 컨테이너 새로 추가한 부분임 */
+.modal {
+  display: none;            /* JS가 'flex'로 켭니다 */
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,.8);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 다양한 비율의 사진 대응 + 이미지 아래로 캡션 붙이기 */
+.modal-content {
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 5px 10px;   /* 이미지 아래 여백 */
+  position: static;
+}
+
+.modal-caption {
+  position: static;
+  margin: 0 5px 0;
+  max-width: 90vw;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;      /* 필요시 24px */
+  font-weight: 700;
+  background: rgba(0,0,0,.6);
+  padding: 10px;
+  border-radius: 8px;
+}
+
 </style>
 
   
