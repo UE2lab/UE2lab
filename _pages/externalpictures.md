@@ -85,15 +85,19 @@ permalink: /externalpictures/
     color: white;
     position: static;
     margin-top: 5px; 
-    bottom: 0;
+    /*bottom: 0;*/
     width: 100%;
-    opacity: 0;
-    transition: opacity 0.3s;
+    /*opacity: 0;*/
+    opacity: 1;
+    /*transition: opacity 0.3s;*/
+    transition: none;
   }
-
+  
+  /*
   .activity-image:hover .photos-info {
     opacity: 1;
   }
+  */
 
   .modal {
     display: none; /* Ensure modal is hidden initially */
