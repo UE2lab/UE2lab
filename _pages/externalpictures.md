@@ -9,8 +9,8 @@ permalink: /externalpictures/
 
 <div class="modal" style="display: none; flex; align-items: center; justify-content: center; flex-direction: column;">
   <span class="close">&times;</span>
-  <img class="modal-content" style="max-width: 80%; max-height: 80%; display: block; margin: auto;">
-  <p class="modal-caption" style="color: white; text-align: center; margin-top: 10px; font-size: 24px; font-weight: bold; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 8px; width: 80%;"></p>
+  <img class="modal-content" /*style="max-width: 80%; max-height: 80%; display: block; margin: auto;"*/>
+  <p class="modal-caption" /*style="color: white; text-align: center; margin-top: 10px; font-size: 24px; font-weight: bold; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 8px; width: 80%;"*/></p>
 </div>
 
 <div class="custom-container-activities">
@@ -108,18 +108,21 @@ permalink: /externalpictures/
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    disply: flex;
+    flex-direction:column;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    /*padding: 0;*/
   }
 
   .modal-content {
     max-width: 80%;
     max-height: 80%;
-    margin: auto 5px;
+    margin: 0 5px 10px;
     display: block;
+    position:static;
     /*
     position: relative;
     top: 50%;
@@ -127,6 +130,21 @@ permalink: /externalpictures/
   }
 
 
+   /* 모달 캡션: 이미지 바로 아래 */
+  .modal-caption {
+    position: static;
+    margin: 0 5px 0;             /* 이미지와 간격은 위에서 10px로 충분 */
+    max-width: 80%;
+    width: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0,0,0,.6);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  /*
   .modal-caption {
     color: white;
     text-align: center;
@@ -140,10 +158,13 @@ permalink: /externalpictures/
     position: static; /* relative; */
     /* Ensure it stays directly below the image */
   }
+  */
 
+  /*
   .modal-content {
     margin-bottom: 10px; /* Add a small gap between the image and caption */
   }
+  */
 
 
 
