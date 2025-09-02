@@ -83,7 +83,8 @@ permalink: /externalpictures/
     padding: 10px;
     background: rgba(0, 0, 0, 0.7);
     color: white;
-    position: absolute;
+    position: static;
+    margin-top: 5px; 
     bottom: 0;
     width: 100%;
     opacity: 0;
@@ -124,7 +125,7 @@ permalink: /externalpictures/
   .modal-caption {
     color: white;
     text-align: center;
-    margin-top: -50; /* Reduce margin to bring it closer to the image */
+    margin-top: 0; /* Reduce margin to bring it closer to the image */
     font-size: 24px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.6);
