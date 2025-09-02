@@ -133,7 +133,7 @@ permalink: /externalpictures/
   }
 
 
-   /* 모달 캡션: 이미지 바로 아래 */
+   /* 모달 캡션: 이미지 바로 아래 
   .modal-caption {
     position: static;
     margin: 0 5px 0;             /* 이미지와 간격은 위에서 10px로 충분 */
@@ -147,7 +147,8 @@ permalink: /externalpictures/
     padding: 10px;
     border-radius: 8px;
   }
-  /*
+  */
+  
   .modal-caption {
     color: white;
     text-align: center;
@@ -161,13 +162,13 @@ permalink: /externalpictures/
     position: static; /* relative; */
     /* Ensure it stays directly below the image */
   }
-  */
+  
 
-  /*
+  
   .modal-content {
-    margin-bottom: 10px; /* Add a small gap between the image and caption */
+    margin-bottom: 1px; /* Add a small gap between the image and caption */
   }
-  */
+  
 
 
 
