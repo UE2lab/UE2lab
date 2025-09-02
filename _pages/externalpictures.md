@@ -118,25 +118,27 @@ permalink: /externalpictures/
   .modal-content {
     max-width: 80%;
     max-height: 80%;
-    margin: auto;
+    margin: auto 5px;
     display: block;
+    /*
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);*/
   }
 
 
   .modal-caption {
     color: white;
     text-align: center;
-    margin-top: 0; /* Reduce margin to bring it closer to the image */
+    margin-top: 5px; /* Reduce margin to bring it closer to the image */
     font-size: 24px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
     border-radius: 8px;
     width: 80%;
-    position: relative; /* Ensure it stays directly below the image */
+    position: static; /* relative; */
+    /* Ensure it stays directly below the image */
   }
 
   .modal-content {
