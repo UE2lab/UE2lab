@@ -1,3 +1,11 @@
+- title: 구조화된 확률적 통계모델을 활용한 비주거 건축물의 전력 에너지 수요예측 방법
+  number: 11
+  authors: Y Heo, C Kim, J Go, H Kim, J Byun
+  applicationdate: 2025/11/13
+  applicationnumber: 	10-2022-0133038
+  registdate: 2025/12/01
+  registnumber: 10-2022-0133038
+
 - title: 건축 부재 일체형 상변화물질 기반 패시브 난방 시스템 설계 시스템 및 방법
   number: 10
   authors: Y Heo, J Cho, M Frans, W Kim
@@ -21,8 +29,8 @@
   authors: J Go, Y Heo, J Cho, T Hong, S Shin
   applicationdate: 2024/09/26
   applicationnumber: 	10-20240130787
-  registdate: "-"
-  registnumber: "-"
+  registdate: 2024/09/26
+  registnumber: 10-2024-0130787
 
 
 - title: 비주거 건축물의 전력 에너지 수요 예측을 위한 통계 모델 생성 방법 및 이를 실행하는 장치
