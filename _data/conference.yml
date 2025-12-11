@@ -1,3 +1,13 @@
+- title: Reducing the gap between predicted and measured urban microclimate through handling parameter uncertainty and model form uncertainty
+  number: 37
+  image: CONF37.pdf
+  description: 2025
+  authors: GR Setyantho, Y Heo
+  link:
+    url: https://publications.ibpsa.org/proceedings/bs/2025/papers/bs2025_1459.pdf
+    display: IBPSA Conference
+  highlight: 0
+
 - title: Techno-Economic Analysis of Hybrid Battery-Hydrogen Storage System for Passive and Conventional Residential Buildings
   number: 36
   image: CONF36.pdf
