@@ -61,7 +61,7 @@ permalink: /position
   <p style="font-size: 18px;">
     <strong style="font-size: 18px;">BENEFITS:</strong><br>
        <br>
-    1. Full-time monthly stipend with 6-months probation (80% of full stipend during probation).<br>
+    1. Full-time monthly stipend.<br>
     2. Potential scholarships (KU Scholarship, Hyundai Chung Mong-Koo, POSCO TJ Park, etc.).<br>
     3. Opportunities to be co-supervised by domestic & international researchers.<br>
     4. Opportunities to present and network in domestic and international conferences.
