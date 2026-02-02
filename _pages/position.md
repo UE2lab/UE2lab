@@ -57,16 +57,7 @@ permalink: /position
   </p>
 </div>
 
-<div class="container3">
-  <p style="font-size: 18px;">
-    <strong style="font-size: 18px;">BENEFITS:</strong><br>
-       <br>
-    1. Monthly stipend (M.S.: 2.1mil. KRW and Ph.D.: 2.9mil. KRW) with 6-months probation (80% of full stipend during probation).<br>
-    2. Potential scholarships (KU Scholarship, Hyundai Chung Mong-Koo, POSCO TJ Park, etc.).<br>
-    3. Opportunities to be co-supervised by domestic & international researchers.<br>
-    4. Opportunities to present and network in domestic and international conferences.
-  </p>
-</div>
+
 
 <div class="container4">
   <p style="font-size: 18px;">
