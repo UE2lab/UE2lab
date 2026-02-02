@@ -42,7 +42,7 @@ permalink: /position
   <p style="margin-bottom: 18px; margin-top: 20px;">
     <strong style="font-size: 26px;">WE ARE RECRUITING!</strong><br> 
     <br>
-    <span style="font-size: 18px;">The Urban Energy and Environment Lab at Korea University (KU) is actively recruiting graduate students for M.S/Integrated M.S.-Ph.D./Ph.D. programs. Our lab offers a dynamic, international research environment with cutting-edge projects funded by government grants and collaborations with top-tier universities (e.g., Nanyang Technological University, National University of Singapore, University of Cambridge). Current international students have received prestigious scholarships, including the KU Scholarship and Hyundai Chung Mong-Koo Global Scholarship, in addition to research assistantships. Join our research lab for exciting opportunities!</span>
+    <span style="font-size: 18px;">The Urban Energy and Environment Lab at Korea University (KU) is actively recruiting Ph.D. and Integrated M.S.-Ph.D. students. Our lab offers a dynamic, international research environment with cutting-edge projects funded by government grants and collaborations with top-tier universities (e.g., Nanyang Technological University, National University of Singapore, University of Cambridge). Current international students have received prestigious scholarships, including the KU Scholarship and Hyundai Chung Mong-Koo Global Scholarship, in addition to research assistantships. Join our research lab for exciting opportunities!</span>
   </p>
 </div>
 
@@ -57,7 +57,16 @@ permalink: /position
   </p>
 </div>
 
-
+<div class="container3">
+  <p style="font-size: 18px;">
+    <strong style="font-size: 18px;">BENEFITS:</strong><br>
+       <br>
+    1. Monthly stipend (M.S.: 2.1mil. KRW and Ph.D.: 2.9mil. KRW) with 6-months probation (80% of full stipend during probation).<br>
+    2. Potential scholarships (KU Scholarship, Hyundai Chung Mong-Koo, POSCO TJ Park, etc.).<br>
+    3. Opportunities to be co-supervised by domestic & international researchers.<br>
+    4. Opportunities to present and network in domestic and international conferences.
+  </p>
+</div>
 
 <div class="container4">
   <p style="font-size: 18px;">
