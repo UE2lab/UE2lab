@@ -1,10 +1,30 @@
-- title: "Exploration of key design questions in rule-based shading control for building energy load reduction"
+- title: "SHAP-based comparisons between the street-and roof-level urban heat islands in Seoul, Republic of Korea"
+  number: 57
+  image: SCIE45.png
+  description: 2026
+  authors: T Hong, GR Setyantho, Y Heo
+  link: 
+    url: https://www.sciencedirect.com/science/article/pii/S0360132326002878
+    display: Building and Environment
+  highlight: 1
+  
+- title: "Understanding End-Use Energy Patterns in Schools: Disaggregated EUI Analysis with Surrogate Features and Explainable Machine Learning"
+  number: 56
+  image: SCIE45.png
+  description: 2026
+  authors: H Kim, H Joo, D Kim, Y Heo
+  link: 
+    url: https://www.sciencedirect.com/science/article/pii/S2352710226006492
+    display: Journal of Building Engineering
+  highlight: 1
+
+- title: "Phased performance evaluation of hydrogen-based and electricity-driven energy systems under renewable energy expansion for plus-energy buildings"
   number: 55
   image: SCIE45.png
   description: 2026
   authors: J Jung, D Kim, Y Heo, H Lee
   link: 
-    url: https://www.sciencedirect.com/science/article/pii/S1359431126008641?casa_token=pkjyjpgnAaYAAAAA:6zg0Xf9omqu42ROl5nzpZb3qFcIApeGVZUu3TTBr7G94lJJmCTKZa3u5ci0LHxLKbtV17272
+    url: https://www.sciencedirect.com/science/article/pii/S1359431126008641
     display: Applied Thermal Engineering
   highlight: 1
 
