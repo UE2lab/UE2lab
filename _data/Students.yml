@@ -28,24 +28,10 @@
   number_educ: 1
   education1: 
 
-- name: Jang Eunjin
-  photo: Jang Eunjin.jpg
-  info: Master program
-  email: cab04092@korea.ac.kr
-  number_educ: 1
-  education1: 
-
 - name: Hyungbin Joo
   photo: Hyungbin Joo.jpg
   info:  Integrated Master & PhD program
   email: spok61@naver.com
-  number_educ: 1
-  education1: 
-
-- name: Woojae Kim
-  photo: Woojae Kim.jpg
-  info:  Master program
-  email: qtwjkim@korea.ac.kr
   number_educ: 1
   education1: 
 
