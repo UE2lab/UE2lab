@@ -1,3 +1,13 @@
+- title: "DataNet: linking multi-faceted building energy datasets for effective performance analysis at scale"
+  number: 61
+  image: SCIE45.png
+  description: 2026
+  authors: HG Kim, HR Shin, HG Chu, DH Yi, SL Park, DS Kim, HW Lim, SM Yoon, EJ Kim, JW Joe, SS Kim, HU Ahn, Y Heo, IH Yang, DW Kim
+  link: 
+    url: https://www.sciencedirect.com/science/article/pii/S0378778826009461
+    display: Energy and Buildings
+  highlight: 1
+
 - title: "Closing prediction gaps in urban canopy models through handling parameter and model-form uncertainties"
   number: 60
   image: SCIE45.png
