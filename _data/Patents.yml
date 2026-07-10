@@ -1,12 +1,11 @@
 - title: 건축 부재 일체형 상변화물질 기반 패시브 난방 시스템 설계 시스템 및 방법
-  number: 10
+  number: 9
   authors: Y Heo, J Cho, M Frans, W Kim
   applicationdate: 2025/01/23
   applicationnumber: 	10-2025-0010502
   registdate: "-"
   registnumber: "-"
-  link: 
-    url: https://www.sciencedirect.com/science/article/pii/S0378778826009461
+
 
 
 
@@ -14,18 +13,18 @@
   number: 8
   authors: J Go, Y Heo, J Cho, T Hong, S Shin
   applicationdate: 2024/09/26
-  applicationnumber: 	10-20240130787
-  registdate: 2024/09/26
-  registnumber: 10-2024-0130787
+  applicationnumber: 	10-2024-0130787
+  registdate: 2025/07/01
+  registnumber: 102827735B
 
 
-- title: 구조화된 확률적 통계모델을 활용한 비주거 건축물의 전력 에너지 수요예측 방법
+- title: 비주거 건축물의 전력 에너지 수요 예측을 위한 통계 모델 생성 방법 및 이를 실행하는 장치
   number: 7
   authors: C Kim, Y Heo, J Go, H Kim, J Byun
   applicationdate: 2022/10/17
-  applicationnumber: 10-20220133038
-  registdate: 2025/12/01
-  registnumber: 10-2022-0133038
+  applicationnumber: 10-2022-0133038
+  registdate: 2024/04/24
+  registnumber: 20240053209
 
 
 
@@ -34,7 +33,7 @@
   image: SCIE2.JPG
   authors: J Cho, Y Heo
   applicationdate: 2022/07/19
-  applicationnumber: 10-20230158807
+  applicationnumber: 10-2023-0158807
   registdate: "-"
   registnumber: "-"
 
@@ -44,7 +43,7 @@
   number: 5
   authors: S Bang, N Yoon, J Cho, Y Heo
   applicationdate: 2022/07/19
-  applicationnumber: 10-20230158804
+  applicationnumber: 10-2023-0158806
   registdate: "-"
   registnumber: "-"
 
@@ -53,7 +52,7 @@
   number: 4
   authors: F Eftekhar, N Yoon, J Cho, Y Heo
   applicationdate: 2022/07/19
-  applicationnumber: 10-20230158804
+  applicationnumber: 10-2023-0158804
   registdate: "-"
   registnumber: "-"
 
@@ -62,25 +61,27 @@
   number: 3
   authors: N Yoon, Y Heo
   applicationdate: 2022/07/19
-  applicationnumber: 10-20220088905
+  applicationnumber: 10-2022-0088905
   registdate: 2022/09/22
-  registnumber: 10-24480520000
+  registnumber: 102448052B
+  link: 
+    url: https://patents.google.com/patent/KR102448052B1/ko
 
 
 - title:	냉난방 에너지 절감을 위한 건물의 패시브 이중외피 동적구획화 시스템
   number: 2
   authors: Y Heo, N Yoon
   applicationdate: 2022/01/28
-  applicationnumber: 10-20220012957
+  applicationnumber: 10-2022-0012957
   registdate: 2022/08/22
-  registnumber: 10-24361790000
+  registnumber: 102436179B
 
 
 - title: 확률적 통계모델을 이용한 주거 커뮤니티 전력 및 급탕 부하 수요 예측 방법
   number: 1
   authors: Y Heo, C Kim, J Byun, J Go
   applicationdate: 2021/10/29
-  applicationnumber: 10-20210147208
-  registdate: 2022/11/16
-  registnumber: 10-24691950000
+  applicationnumber: 10-2021-0147208 
+  registdate: 2022/11/21
+  registnumber: 102469195B
 
