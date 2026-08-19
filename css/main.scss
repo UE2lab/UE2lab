@@ -489,10 +489,22 @@ hr {
   :target,
   [id^="project-"] { scroll-margin-top: 76px; }
 
-  .container-fluid { padding-left: 14px; padding-right: 14px; }
+  /* ---- 좌우 공통 여백(거터) 16px ----
+     Bootstrap 3는 .row 와 .navbar-header / .navbar-collapse 에
+     margin: 0 -15px 를 걸어 컨테이너의 패딩을 상쇄합니다.
+     모바일에서는 이 음수 마진을 해제해야 여백이 실제로 남습니다. */
 
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
-  .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  [class^="col-"], [class*=" col-"] {
     padding-left: 0;
     padding-right: 0;
   }
@@ -522,13 +534,21 @@ hr {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   }
 
+  /* 상단바는 메뉴 항목이 화면 전체 폭을 쓰도록 컨테이너 패딩을 두지 않고,
+     로고와 햄버거 버튼에 각각 16px을 직접 부여합니다. */
   .navbar .container-fluid { padding-left: 0; padding-right: 0; }
+
+  .navbar > .container-fluid > .navbar-header,
+  .navbar > .container-fluid > .navbar-collapse {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   .navbar-header { height: 64px; }
 
   .navbar-brand {
     height: 64px;
-    padding: 7px 14px;
+    padding: 7px 16px;
     display: flex;
     align-items: center;
   }
@@ -537,7 +557,7 @@ hr {
 
   /* 햄버거 버튼: 최소 44px 터치 타깃 */
   .navbar-toggle {
-    margin: 12px 14px 12px 0;
+    margin: 12px 16px 12px 0;
     padding: 10px 11px;
     border: 1px solid #d8d8d8;
     border-radius: 6px;
@@ -568,7 +588,7 @@ hr {
 
   .navbar-nav > li > a {
     margin-top: 0;
-    padding: 15px 20px;              /* 약 48px 높이 */
+    padding: 15px 16px;              /* 약 48px 높이, 본문 거터와 정렬 */
     font-size: 17px;
     border-bottom: 1px solid #f0f0f0;
   }
@@ -583,7 +603,7 @@ hr {
   .navbar-nav > .dropdown > a:after {
     content: "";
     position: absolute;
-    right: 22px;
+    right: 18px;
     top: 50%;
     width: 8px;
     height: 8px;
@@ -609,7 +629,7 @@ hr {
 
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    padding: 14px 20px 14px 40px;
+    padding: 14px 16px 14px 36px;
     font-size: 16px;
     color: #222;
     background-color: #fafafa;
@@ -719,7 +739,7 @@ hr {
     gap: 12px;
     justify-content: center;
     max-width: 100%;
-    padding: 0 2px;
+    padding: 0;
   }
 
   /* Liquid가 3개마다 만들어 둔 행 래퍼를 해제해 연속 배치 */
