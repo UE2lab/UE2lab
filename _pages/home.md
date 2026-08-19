@@ -5,9 +5,9 @@ excerpt: "UE2 at Korea University."
 sitemap: false
 permalink: /
 ---
-<br> 
+<br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diagram2.png" style="width: 1200px; height: auto;">
+<img src="{{ site.url }}{{ site.baseurl }}/images/diagram2.png" alt="UE2 Lab research scope" style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 0 auto;">
 
 The Urbane2 Lab is looking for Ph.D. and Integrated M.S-Ph.D. students who have strong initiative and ambition in research and development. If you are interested, please contact Prof. Yeonsook Heo (yeonsookheo@korea.ac.kr) [(more info)]({{ site.url }}{{ site.baseurl }}/position) **!**
 

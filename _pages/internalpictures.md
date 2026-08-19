@@ -44,6 +44,7 @@ permalink: /internalpictures/
 </div>
 
 <style>
+  /* ---------- 갤러리 그리드 ---------- */
   .custom-container-activities {
     display: flex;
     flex-wrap: wrap;
@@ -77,7 +78,8 @@ permalink: /internalpictures/
     object-fit: cover;      /* 중앙 자르기 */
     display: block;
   }
-  /* 썸네일 캡션: 이미지 아래 고정 */
+
+  /* ---------- 썸네일 캡션 (이미지 아래 고정) ---------- */
   .photos-info {
     text-align: center;
     padding: 10px;
@@ -86,31 +88,40 @@ permalink: /internalpictures/
     position: static;
     margin-top: 6px;
     width: 100%;
+    height: auto;
     opacity: 1;
     transition: none;
   }
+  .photos-info p {
+    color: #fff;            /* 어두운 배경 위 흰 글씨로 대비 확보 */
+    text-shadow: none;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    width: auto;
+    word-break: break-word;
+  }
 
-  /* 모달 */
+  /* ---------- 모달 (사진 확대) ---------- */
   .modal {
-    display: none;              /* JS가 'flex'로 변경 */
     position: fixed;
     inset: 0;
     z-index: 1000;
     background: rgba(0,0,0,0.8);
     overflow: auto;
-    display: flex;
+    display: none;              /* JS가 'flex'로 변경 */
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   .modal-content {
     display: block;
-    max-width: 90vw;            /* 다양한 비율 대응 */
+    max-width: 90vw;
     max-height: 80vh;
     width: auto;
     height: auto;
-    object-fit: contain;        /* 잘리지 않게 */
-    margin: 0 5px 10px;         /* 아래 캡션 간격 */
+    object-fit: contain;
+    margin: 0 5px 10px;
     position: static;
   }
   .modal-caption {
@@ -119,7 +130,7 @@ permalink: /internalpictures/
     max-width: 90vw;
     color: #fff;
     text-align: center;
-    font-size: 20px;            /* 필요 시 24px */
+    font-size: 20px;
     font-weight: 700;
     background: rgba(0,0,0,0.6);
     padding: 10px;
@@ -133,8 +144,42 @@ permalink: /internalpictures/
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    opacity: 1;          /* Bootstrap 3의 .close 기본 opacity:.2 무력화 */
+    text-shadow: none;
+    z-index: 1;
   }
-  .close:hover { color: #ddd; }
+  .close:hover, .close:focus { color: #ddd; opacity: 1; }
+
+  /* ---------- 태블릿 (768 ~ 991px) ---------- */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .custom-container-activities { padding: 10px 0; gap: 14px; }
+    .student-col { max-width: none; flex: 0 0 calc(33.3333% - 10px); margin: 0; }
+    .student-row { display: contents; }
+    .activity-image-size { height: 170px; }
+    .photos-info p { font-size: 13px; }
+  }
+
+  /* ---------- 모바일 (<= 767px) ---------- */
+  @media (max-width: 767px) {
+    .custom-container-activities { padding: 4px 0 12px; gap: 10px; }
+    /* Liquid가 3개마다 만든 행 래퍼를 해제해 2열로 연속 배치 */
+    .student-row { display: contents; }
+    .student-col {
+      max-width: calc(50% - 5px);
+      flex: 0 0 calc(50% - 5px);
+      margin: 0;
+      border-width: 1px;
+      border-radius: 8px;
+    }
+    .student-col:hover { transform: none; box-shadow: none; }
+    .activity-image-size { height: 130px; }
+    .photos-info { padding: 7px 6px; margin-top: 0; }
+    .photos-info p { font-size: 11.5px; line-height: 1.35; }
+
+    .modal-content { max-width: 94vw; max-height: 66vh; margin: 0 0 10px; }
+    .modal-caption { font-size: 14px; max-width: 94vw; padding: 8px 10px; }
+    .close { top: 8px; right: 12px; font-size: 34px; padding: 2px 10px; }
+  }
 </style>
 
 <script>
