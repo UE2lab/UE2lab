@@ -19,8 +19,35 @@
   </div>
 </div>
 
-<!-- jQuery는 head.html에서 한 번만 로드합니다 (기존에 1.11.3이 3.5.1을 덮어쓰고 있었음) -->
+<!-- jQuery는 head.html에서 3.5.1 한 번만 로드합니다.
+     Bootstrap은 3.4.1 이상이어야 jQuery 3.x와 함께 동작합니다
+     (3.3.6은 jQuery 3에서 예외를 던지며 모든 JS 기능이 정지합니다). -->
 <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
+
+<script>
+(function () {
+  if (typeof jQuery === 'undefined') return;
+
+  // Bootstrap JS가 정상 로드되지 않았으면(버전 불일치 등) 햄버거 메뉴가 죽습니다.
+  // 그런 경우를 대비한 최소 동작 폴백입니다.
+  if (!jQuery.fn.collapse) {
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest && e.target.closest('.navbar-toggle');
+      if (!btn) return;
+      e.preventDefault();
+      var nav = document.getElementById('ue2-navbar');
+      if (nav) nav.classList.toggle('in');
+    });
+    document.addEventListener('click', function (e) {
+      var t = e.target.closest && e.target.closest('.navbar-nav > .dropdown > .dropdown-toggle');
+      if (!t) return;
+      e.preventDefault();
+      t.parentNode.classList.toggle('open');
+    });
+    return;
+  }
+})();
+</script>
 
 <script>
 (function ($) {
@@ -47,7 +74,7 @@
     // 모바일: 실제 페이지 링크를 누르면 펼쳐진 내비게이션을 자동으로 닫음
     $('#ue2-navbar').on('click', 'a', function () {
       var href = $(this).attr('href');
-      if (href && href !== '#' && $('.navbar-toggle').is(':visible')) {
+      if (href && href !== '#' && $('.navbar-toggle').is(':visible') && $.fn.collapse) {
         $('#ue2-navbar').collapse('hide');
       }
     });
