@@ -1,24 +1,25 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
-  
+
 	  <div class="navbar-header">
-		<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="true">
+		<button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="ue2-navbar">
 		  <span class="sr-only">Toggle navigation</span>
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
-		</button> 
-		<a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/"><img src="{{ site.url }}{{ site.baseurl }}/images/Lab_logo_final2.png" height="75px"></a>
+		</button>
+		<a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/"><img src="{{ site.url }}{{ site.baseurl }}/images/Lab_logo_final2.png" height="75" alt="UE2 Lab"></a>
 
 	  </div>
-  <div class="collapse navbar-collapse navbar-right">
+
+  <div class="collapse navbar-collapse navbar-right" id="ue2-navbar">
     <ul class="nav navbar-nav">
         <li><a href="{{ site.url }}{{ site.baseurl }}/" style="font-weight: bold;">Home</a></li>
         <li><a href="{{ site.url }}{{ site.baseurl }}/research" style="font-weight: bold;">Research</a></li>
 
         <!-- People Dropdown -->
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">People</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">People</a>
             <ul class="dropdown-menu">
                 <li><a href="{{ site.url }}{{ site.baseurl }}/professor">Professor</a></li>
                 <li><a href="{{ site.url }}{{ site.baseurl }}/team">Researchers</a></li>
@@ -28,31 +29,29 @@
 
         <!-- Publications Dropdown -->
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">Publications</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">Publications</a>
             <ul class="dropdown-menu">
                 <li><a href="{{ site.url }}{{ site.baseurl }}/SCIE">SCIE Articles</a></li>
                 <li><a href="{{ site.url }}{{ site.baseurl }}/Conference">Conference Proceedings</a></li>
-	        <li><a href="{{ site.url }}{{ site.baseurl }}/Patents">Patents</a></li>
-                <li><a href="https://scholar.google.com/citations?user=o5iFANUAAAAJ&hl=ko&oi=ao" target="_blank">Google Scholar</a></li>
+                <li><a href="{{ site.url }}{{ site.baseurl }}/Patents">Patents</a></li>
+                <li><a href="https://scholar.google.com/citations?user=o5iFANUAAAAJ&hl=ko&oi=ao" target="_blank" rel="noopener">Google Scholar</a></li>
             </ul>
         </li>
 
         <!-- Activities Dropdown -->
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">Activities</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">Activities</a>
             <ul class="dropdown-menu">
                 <li><a href="{{ site.url }}{{ site.baseurl }}/externalpictures">Academic Events</a></li>
                 <li><a href="{{ site.url }}{{ site.baseurl }}/internalpictures">Lab Gatherings</a></li>
             </ul>
         </li>
 
-        <!-- New "Position" menu item -->
+        <!-- Position -->
         <li><a href="{{ site.url }}{{ site.baseurl }}/position" style="font-weight: bold;">Position</a></li>
     </ul>
 </div>
 
-
-	
 	  </div>
 	</div>
   </div>

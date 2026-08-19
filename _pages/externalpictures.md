@@ -43,6 +43,7 @@ permalink: /externalpictures/
 </div>
 
 <style>
+  /* ---------- 갤러리 그리드 ---------- */
   .custom-container-activities {
     display: flex;
     flex-wrap: wrap;
@@ -50,14 +51,12 @@ permalink: /externalpictures/
     justify-content: center;
     padding: 20px;
   }
-
   .student-row {
     display: flex;
     width: 100%;
     justify-content: space-around;
     margin-bottom: 20px;
   }
-
   .student-col {
     max-width: 300px;
     flex: 1;
@@ -68,110 +67,74 @@ permalink: /externalpictures/
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
   }
-
   .student-col:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
-
   .activity-image-size {
-    width: 100%; /* Set thumbnail width to 100% of the container */
-    height: 200px; /* Explicitly set thumbnail height */
-    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    width: 100%;
+    height: 200px;          /* 썸네일 높이 고정 */
+    object-fit: cover;      /* 중앙 자르기 */
     display: block;
   }
 
+  /* ---------- 썸네일 캡션 (이미지 아래 고정) ---------- */
   .photos-info {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
     position: static;
-    margin-top: 5px; 
-    /*bottom: 0;*/
+    margin-top: 6px;
     width: 100%;
-    /*opacity: 0;*/
+    height: auto;
     opacity: 1;
-    /*transition: opacity 0.3s;*/
     transition: none;
   }
-  
-  
-  .activity-image:hover .photos-info {
-    opacity: 1;
+  .photos-info p {
+    color: #fff;            /* 어두운 배경 위 흰 글씨로 대비 확보 */
+    text-shadow: none;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    width: auto;
+    word-break: break-word;
   }
-  
 
+  /* ---------- 모달 (사진 확대) ---------- */
   .modal {
-    display: none; /* Ensure modal is hidden initially */
     position: fixed;
+    inset: 0;
     z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    background: rgba(0,0,0,0.8);
     overflow: auto;
-    disply: flex;
-    flex-direction:column;
-    /*background-color: rgba(0, 0, 0, 0.8);*/
+    display: none;              /* JS가 'flex'로 변경 */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*padding: 0;*/
   }
-
   .modal-content {
-    max-width: 80%;
-    max-height: 80%;
-    margin: 0 5px 10px;
     display: block;
-    position:static;
-    /*
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);*/
+    max-width: 90vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0 5px 10px;
+    position: static;
   }
-
-
-   /* 모달 캡션: 이미지 바로 아래 
   .modal-caption {
     position: static;
-    margin: 0 5px 0;             /* 이미지와 간격은 위에서 10px로 충분 */
-    max-width: 80%;
-    width: auto;
+    margin: 0 5px 0;
+    max-width: 90vw;
     color: #fff;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    background: rgba(0,0,0,.6);
+    font-size: 20px;
+    font-weight: 700;
+    background: rgba(0,0,0,0.6);
     padding: 10px;
     border-radius: 8px;
   }
-  */
-  
-  .modal-caption {
-    color: white;
-    text-align: center;
-    margin-top: 5px; /* Reduce margin to bring it closer to the image */
-    font-size: 24px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 8px;
-    width: 80%;
-    position: static; /* relative; */
-    /* Ensure it stays directly below the image */
-  }
-  
-
-  
-  .modal-content {
-    margin-bottom: 1px; /* Add a small gap between the image and caption */
-  }
-  
-
-
-
   .close {
     position: absolute;
     top: 10px;
@@ -180,51 +143,42 @@ permalink: /externalpictures/
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    opacity: 1;          /* Bootstrap 3의 .close 기본 opacity:.2 무력화 */
+    text-shadow: none;
+    z-index: 1;
+  }
+  .close:hover, .close:focus { color: #ddd; opacity: 1; }
+
+  /* ---------- 태블릿 (768 ~ 991px) ---------- */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .custom-container-activities { padding: 10px 0; gap: 14px; }
+    .student-col { max-width: none; flex: 0 0 calc(33.3333% - 10px); margin: 0; }
+    .student-row { display: contents; }
+    .activity-image-size { height: 170px; }
+    .photos-info p { font-size: 13px; }
   }
 
-  .close:hover {
-    color: #ddd;
+  /* ---------- 모바일 (<= 767px) ---------- */
+  @media (max-width: 767px) {
+    .custom-container-activities { padding: 4px 0 12px; gap: 10px; }
+    /* Liquid가 3개마다 만든 행 래퍼를 해제해 2열로 연속 배치 */
+    .student-row { display: contents; }
+    .student-col {
+      max-width: calc(50% - 5px);
+      flex: 0 0 calc(50% - 5px);
+      margin: 0;
+      border-width: 1px;
+      border-radius: 8px;
+    }
+    .student-col:hover { transform: none; box-shadow: none; }
+    .activity-image-size { height: 130px; }
+    .photos-info { padding: 7px 6px; margin-top: 0; }
+    .photos-info p { font-size: 11.5px; line-height: 1.35; }
+
+    .modal-content { max-width: 94vw; max-height: 66vh; margin: 0 0 10px; }
+    .modal-caption { font-size: 14px; max-width: 94vw; padding: 8px 10px; }
+    .close { top: 8px; right: 12px; font-size: 34px; padding: 2px 10px; }
   }
-
-  /* 모달 컨테이너 새로 추가한 부분임 */
-.modal {
-  display: none;            /* JS가 'flex'로 켭니다 */
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  background: rgba(0,0,0,.8);
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 다양한 비율의 사진 대응 + 이미지 아래로 캡션 붙이기 */
-.modal-content {
-  display: block;
-  max-width: 90vw;
-  max-height: 80vh;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  margin: 0 5px 10px;   /* 이미지 아래 여백 */
-  position: static;
-}
-
-.modal-caption {
-  position: static;
-  margin: 0 5px 0;
-  max-width: 90vw;
-  color: #fff;
-  text-align: center;
-  font-size: 20px;      /* 필요시 24px */
-  font-weight: 700;
-  background: rgba(0,0,0,.6);
-  padding: 10px;
-  border-radius: 8px;
-}
-
 </style>
 
   

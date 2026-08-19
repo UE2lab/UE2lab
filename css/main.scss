@@ -1,31 +1,65 @@
 ---
 ---
-    
+
 @import "bootstrap";
 
-img {
-    margin: 0px; 
-    border-radius:0%;
-}  
+/* ==========================================================================
+   UE2 Lab — main stylesheet
+   구조:
+     1. 전역 기본값
+     2. 공통 컴포넌트 (PC 기준, 기존 값 그대로 유지)
+     3. 데스크톱 전용 (min-width: 992px)
+     4. 태블릿      (768px ~ 991px)
+     5. 모바일      (max-width: 767px)   ← Bootstrap 3의 xs 브레이크포인트
+   ※ 992px 이상에서의 렌더링은 수정 전과 동일합니다.
+   ========================================================================== */
 
-body {
-	padding-top: 100px;
-  font-size: 18px;
+
+/* ==========================================================================
+   1. 전역 기본값
+   ========================================================================== */
+
+html {
+  -webkit-text-size-adjust: 100%;   /* iOS 가로모드에서 글자 임의 확대 방지 */
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
-table th {
-    color: black;
-  }
-  
-table td {
-    line-height: 1.2;
-  }
-  
+body {
+  padding-top: 100px;
+  font-size: 18px;
+  overflow-x: hidden;               /* 가로 스크롤 안전장치 */
+}
+
+img {
+  margin: 0px;
+  border-radius: 0%;
+  max-width: 100%;                  /* 인라인 width:1200px 등을 화면 폭 안으로 제한 */
+  height: auto;
+}
+
+/* height:auto 전역 규칙에서 제외해야 하는 이미지들 */
+.navbar-brand img { height: 75px; width: auto; max-width: none; }
+
+/* 고정 상단바에 가려지지 않도록 앵커 이동 지점 보정 (#project-1 등) */
+:target,
+[id^="project-"] { scroll-margin-top: 110px; }
+
+a { word-break: break-word; }
+
+table th { color: black; }
+table td { line-height: 1.2; }
+
+
+/* ==========================================================================
+   2. 공통 컴포넌트
+   ========================================================================== */
+
 .title-center {
   font-family: "Arial";
   color: black;
   text-align: center;
-  font-weight: bold;  
+  font-weight: bold;
   font-size: 44px;
   margin-bottom: 40px;
   margin-top: 30px;
@@ -35,52 +69,45 @@ table td {
   font-family: "Arial";
   color: black;
   text-align: center;
-  font-weight: bold;  
+  font-weight: bold;
   font-size: 48px;
   margin-bottom: 50px;
   margin-top: 50px;
 }
 
-
 figcaption {
-    text-align: right;
-    margin-top: -20px;
-    margin-bottom: 20px;
+  text-align: right;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
-
-
-/* Top navigation bar */
-
 p.byline {
-	text-align: center;
-	font-size: 18px;
-	line-height: 36px;
-	margin-top: -24px;
-	margin-bottom: 48px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+  margin-top: -24px;
+  margin-bottom: 48px;
 }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px; /* or 950px */
+  max-width: 1200px;
 }
-
 
 /* Grid overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
 .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-	padding-left: 16px;
-	padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   font-family: 'Arial';
 }
 
-/* Grid overrides */
 .col-sm-4 {
-	padding-left: 10px;
-	padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   border: 1px;
-  border-color:black;
+  border-color: black;
 }
 
 .row .col-md-4 {
@@ -88,14 +115,13 @@ p.byline {
   padding-right: 0px;
 }
 
-/* Carusel */
-
+/* Carousel */
 .carousel {
-    border-radius: 3px 3px 3px 3px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+  border-radius: 3px 3px 3px 3px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .carousel-inner img {
@@ -105,31 +131,27 @@ p.byline {
   object-position: top;
 }
 
+
+/* --------------------------------------------------------------------------
+   상단 네비게이션 바
+   -------------------------------------------------------------------------- */
+
 .navbar {
-    background-color: rgb(255, 255, 255);
-    font-size: 18px;
-    height: 90px;
-  }
-  
-.navbar-nav > li > a {
-    background-color: transparent;
-    margin-top: 25px;
-    color: black;
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
 }
 
-.navbar-default .navbar-nav > li > a {
-  color: #000000;
+.navbar-default {
+  border: none;
+  font-family: arial;
+  color: black;
 }
+
+.navbar-default .navbar-nav > li > a { color: #000000; }
 
 .navbar-default .navbar-nav .dropdown-menu li a {
   color: #000000;
   background-color: white;
-}
-
-.navbar-default {
-    border: none;
-    font-family: arial;
-    color: black;
 }
 
 .navbar-collapse {
@@ -138,23 +160,19 @@ p.byline {
   background-color: rgb(255, 255, 255);
 }
 
-.in {
-  border: transparent;
-}
-.navbar-collapse.in {
-  border: none;
-}
+.in { border: transparent; }
+.navbar-collapse.in { border: none; }
 
 .dropdown-menu > li > a {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    text-align: left;
-    font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  text-align: left;
+  font-size: 18px;
 }
-  
+
 .dropdown-menu {
-    border-color: transparent;
-    background-color: transparent;
+  border-color: transparent;
+  background-color: transparent;
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -162,13 +180,12 @@ p.byline {
   right: auto;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
+.navbar-nav > li > a:hover { background-color: transparent; }
 
-.navbar-nav > li > a:hover {
-  background-color: transparent;
-}
+
+/* --------------------------------------------------------------------------
+   호버 정보 오버레이 / 인물 그리드 / 논문 그리드
+   -------------------------------------------------------------------------- */
 
 .paper-info {
   display: none;
@@ -179,6 +196,16 @@ p.byline {
   height: 100%;
   background-color: white;
 }
+
+.paper-info p {
+  font-size: 14px;
+  color: black;
+  opacity: 1;
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 90%;
+}
+
 .photos-info {
   display: none;
   position: absolute;
@@ -198,26 +225,10 @@ p.byline {
   font-weight: bold;
 }
 
-.paper-info p {
-  font-size: 14px;
-  color: black;
-  opacity: 1;
-  padding-left: 20px;
-  padding-top: 10px;
-  width: 90%;
-}
+.student-image  { position: relative; cursor: pointer; }
+.activity-image { position: relative; cursor: pointer; }
 
-.student-image {
-  position: relative;
-  cursor: pointer;
-}
-.activity-image {
-  position: relative;
-  cursor: pointer;
-}
-.research-image {
-  width: 1000px;
-}
+.research-image { width: 1000px; }
 
 .student-image-size {
   width: 250px; height: 300px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
@@ -226,9 +237,7 @@ p.byline {
   width: 380px; height: 450px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
 }
 
-.student-image:hover .overlay {
-  opacity: 1;
-}
+.student-image:hover .overlay { opacity: 1; }
 
 .overlay {
   position: absolute;
@@ -266,12 +275,8 @@ p.byline {
   padding-right: 0px;
 }
 
-.student-col:last-child {
-  margin-right: 0;
-}
-.student-row:last-child {
-  margin-bottom: 30px;
-}
+.student-col:last-child { margin-right: 0; }
+.student-row:last-child { margin-bottom: 30px; }
 
 .publication-row {
   display: flex;
@@ -280,20 +285,15 @@ p.byline {
 }
 
 .publication-col {
-  flex: 0 0 calc(33.333% - 200px);
+  flex: 0 0 calc(33.333% - 20px);   /* 기존 -200px 는 좁은 화면에서 음수가 되어 레이아웃이 붕괴함 */
   margin-bottom: 0px;
   margin-right: 0px;
   padding-bottom: 0px;
   padding-right: 0px;
 }
 
-.publication-col:last-child {
-  margin-right: 0;
-}
-.publication-row:last-child {
-  margin-bottom: 30px;
-}
-
+.publication-col:last-child { margin-right: 0; }
+.publication-row:last-child { margin-bottom: 30px; }
 
 .custom-container-student {
   max-width: 800px;
@@ -301,6 +301,7 @@ p.byline {
   margin-right: auto;
   padding: 0px;
 }
+
 .custom-container-activities {
   max-width: 1200px;
   margin-left: auto;
@@ -315,18 +316,22 @@ p.byline {
   padding: 0px;
 }
 
-.job-title, .job-date {
-  display: inline-block;
-}
 
-.job-title {
-  width: calc(70% - 10px); 
-}
+/* --------------------------------------------------------------------------
+   교수 소개 페이지
+   -------------------------------------------------------------------------- */
 
-.job-date {
-  width: 200px;
-  text-align: right;
-}
+.job-title, .job-date { display: inline-block; }
+.job-title { width: calc(70% - 10px); }
+.job-date  { width: 200px; text-align: right; }
+
+.prof-photo { height: 400px; margin: 70px 100px; }
+.prof-bio   { padding-left: 70px; }
+
+
+/* --------------------------------------------------------------------------
+   기타
+   -------------------------------------------------------------------------- */
 
 hr {
   color: 0.05px solid grey;
@@ -338,6 +343,26 @@ hr {
   padding-bottom: 2px;
   padding-right: 20px;
 }
+
+/* 넓은 표를 감싸는 래퍼: 좁은 화면에서 페이지 전체가 아니라 표만 스크롤 */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.responsive-table {
+  width: 100%;
+  max-width: 1200px;
+  font-size: 18px;
+}
+
+.rule-top, .rule-bottom {
+  width: 100%;
+  max-width: 1200px;
+  border-width: 2px;
+}
+.rule-bottom { margin-bottom: 140px; }
 
 .modal {
   display: none;
@@ -367,78 +392,481 @@ hr {
 }
 
 
+/* ==========================================================================
+   3. 데스크톱 전용 (min-width: 992px)
+      — 아래 값들은 PC에서만 적용되어야 하는 것들입니다.
+        (기존에는 전역이라 모바일에서 상단바가 깨지는 원인이었음)
+   ========================================================================== */
 
-@media (max-width: 968px) {
-  .activity-image-size{
-    width: 28vw; height: 34vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
-  }
-  .student-image-size{
-    width: 28vw; height: 34vw; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
-  } 
-  .student-image {
-    position: relative;
-    cursor: pointer;
-  }
-  .activity-image {
-    position: relative;
-    cursor: pointer;
-  } 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 28vw;
-    height: 34vw;
-    background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  .student-info {
-    font-size: 10px;
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    width: 28vw;
-    color: white;
-    padding-left: 5%;
-    display: none;
-    padding-right: 5%;
-    word-wrap: break-word;
-    }
-  .photos-info p {
-      font-size: 10px;
-      background-color: transparent;
-      color: black;
-      width: 28vw;
-      opacity: 1;
-      text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8), -1px -1px 4px rgba(255, 255, 255, 0.8), 1px -1px 4px rgba(255, 255, 255, 0.8), -1px 1px 4px rgba(255, 255, 255, 0.8);
-      font-weight: bold;
-      word-wrap: break-word;
-    }
+@media (min-width: 768px) {
 
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 15%;
-    height: 100%;
-    overflow: auto;
+  body { padding-top: 100px; }
+
+  .navbar { height: 90px; }
+
+  .navbar-nav > li > a {
     background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 60vw;
-  }
-  
-  .close {
+    margin-top: 25px;
     color: black;
-    float: right;
-    cursor: pointer;
   }
-  .research-image {
-    width: 80vw;
-  }  
+
+  /* PC: 마우스 호버 / 키보드 포커스로 하위 메뉴 표시
+     (탭·클릭 동작은 header.html의 data-toggle="dropdown"이 담당) */
+  .dropdown:hover > .dropdown-menu,
+  .dropdown:focus-within > .dropdown-menu { display: block; }
+}
+
+
+/* ==========================================================================
+   4. 태블릿 (768px ~ 991px)
+   ========================================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar-brand img { height: 60px; }
+  .navbar { height: 78px; }
+  .navbar-nav > li > a { margin-top: 19px; padding-left: 10px; padding-right: 10px; }
+  .navbar-collapse { font-size: 16px; }
+  .dropdown-menu > li > a { font-size: 16px; }
+  body { padding-top: 88px; }
+
+  .title-center  { font-size: 34px; margin-top: 24px; margin-bottom: 28px; }
+  .title2-center { font-size: 36px; margin-top: 32px; margin-bottom: 34px; }
+
+  /* 인물 / 사진 그리드: 고정 px 대신 유동 폭 3열 */
+  .custom-container-student { max-width: 100%; padding: 0 8px; }
+  .student-col { flex: 0 0 calc(33.3333% - 8px); max-width: calc(33.3333% - 8px); }
+  .student-row { gap: 12px; justify-content: center; }
+
+  .student-image-size,
+  .activity-image-size {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .overlay { width: 100%; height: 100%; }
+
+  .student-info {
+    font-size: 12px;
+    top: auto; bottom: 6px;
+    padding-left: 10px; padding-right: 10px;
+    word-wrap: break-word;
+  }
+
+  .photos-info   { left: 0; width: 100%; }
+  .photos-info p { font-size: 13px; width: auto; word-wrap: break-word; }
+
+  .research-image { width: 100%; }
+
+  .modal-content { width: auto; max-width: 88vw; max-height: 76vh; }
+
+  .prof-photo { height: 300px; margin: 24px auto 12px; display: block; }
+  .prof-bio   { padding-left: 20px !important; }
+
+  .job-title { width: calc(65% - 10px); }
+  .job-date  { width: 150px; font-size: 14px; }
+}
+
+
+/* ==========================================================================
+   5. 모바일 (max-width: 767px)
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+  /* ---------- 5-1. 기본 타이포 / 여백 ---------- */
+
+  body {
+    padding-top: 64px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  :target,
+  [id^="project-"] { scroll-margin-top: 76px; }
+
+  .container-fluid { padding-left: 14px; padding-right: 14px; }
+
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+  .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title-center {
+    font-size: 26px;
+    line-height: 1.25;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .title2-center {
+    font-size: 28px;
+    line-height: 1.25;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  h4 { font-size: 18px; line-height: 1.4; }
+
+
+  /* ---------- 5-2. 상단 네비게이션 바 ---------- */
+
+  .navbar {
+    height: auto;
+    min-height: 64px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  }
+
+  .navbar .container-fluid { padding-left: 0; padding-right: 0; }
+
+  .navbar-header { height: 64px; }
+
+  .navbar-brand {
+    height: 64px;
+    padding: 7px 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand img { height: 48px; }
+
+  /* 햄버거 버튼: 최소 44px 터치 타깃 */
+  .navbar-toggle {
+    margin: 12px 14px 12px 0;
+    padding: 10px 11px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: #333;
+    width: 22px;
+    height: 2px;
+  }
+
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus { background-color: #f2f2f2; }
+
+  /* 펼쳐진 메뉴: 화면을 넘으면 메뉴 내부에서 스크롤 */
+  .navbar-collapse {
+    max-height: calc(100vh - 64px);
+    max-height: calc(100dvh - 64px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ececec;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.10);
+  }
+
+  .navbar-nav { margin: 0; }
+
+  .navbar-nav > li > a {
+    margin-top: 0;
+    padding: 15px 20px;              /* 약 48px 높이 */
+    font-size: 17px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a:active { background-color: #f7f7f7; }
+
+  /* 드롭다운 부모: 펼침 화살표 */
+  .navbar-nav > .dropdown > a { position: relative; }
+
+  .navbar-nav > .dropdown > a:after {
+    content: "";
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -6px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+
+  .navbar-nav > .dropdown.open > a:after {
+    transform: rotate(-135deg);
+    margin-top: -2px;
+  }
+
+  /* 하위 메뉴 */
+  .navbar-nav .open .dropdown-menu {
+    background-color: #fafafa;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    padding: 14px 20px 14px 40px;
+    font-size: 16px;
+    color: #222;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ededed;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  .navbar-nav .open .dropdown-menu > li:last-child > a { border-bottom: none; }
+
+
+  /* ---------- 5-3. 표 → 카드형 목록 ---------- */
+  /* 5~7열짜리 표를 좁은 화면에서 항목별 카드로 재배치합니다.
+     각 <td>의 data-label 속성이 항목 이름으로 표시됩니다.         */
+
+  .table-wrap { overflow-x: visible; }
+
+  .rule-top    { display: none; }
+  .rule-bottom { border: 0; margin-bottom: 40px; }
+
+  .responsive-table,
+  .responsive-table tbody,
+  .responsive-table tr,
+  .responsive-table td {
+    display: block;
+    width: auto !important;
+  }
+
+  .responsive-table { font-size: 15px; }
+
+  .responsive-table thead { display: none; }
+
+  .responsive-table tbody tr {
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 14px 15px 13px;
+    margin-bottom: 12px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  }
+
+  .responsive-table tbody td,
+  .responsive-table tbody td.project-cell {
+    padding: 4px 0 !important;
+    border: 0;
+    line-height: 1.45;
+    word-break: break-word;
+  }
+
+  .responsive-table tbody td:before {
+    content: attr(data-label);
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 1px;
+  }
+
+  /* 번호 셀: 배지 형태 */
+  .responsive-table tbody td.cell-no,
+  .responsive-table tbody td.cell-no.project-cell {
+    display: inline-block !important;
+    width: auto !important;
+    padding: 2px 11px !important;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #841D1E;
+    background: #f6eeee;
+    border-radius: 999px;
+  }
+
+  .responsive-table tbody td.cell-no:before {
+    content: "No. ";
+    display: inline;
+    font-size: 12px;
+    color: #841D1E;
+    letter-spacing: 0;
+    margin: 0;
+    text-transform: none;
+  }
+
+  .responsive-table tbody td.cell-no a { color: #841D1E; }
+
+  /* 제목 셀: 카드의 헤드라인 */
+  .responsive-table tbody td.cell-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.38;
+    margin-bottom: 8px;
+    color: #111;
+  }
+
+  .responsive-table tbody td.cell-title:before { display: none; }
+
+  /* 값이 비어 있는 항목은 라벨까지 숨김 */
+  .responsive-table tbody td:empty { display: none !important; }
+
+
+  /* ---------- 5-4. 인물 그리드 (Researchers / Alumni) ---------- */
+
+  .custom-container-student {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 2px;
+  }
+
+  /* Liquid가 3개마다 만들어 둔 행 래퍼를 해제해 연속 배치 */
+  .student-row { display: contents; }
+
+  .student-col {
+    flex: 0 0 calc(50% - 6px);
+    max-width: calc(50% - 6px);
+    margin: 0 0 6px;
+  }
+
+  .student-image-size {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .overlay { display: none; }
+
+  /* 호버가 없는 기기이므로 이름·소속·이메일을 사진 아래 상시 노출 */
+  .student-info {
+    display: block !important;
+    position: static;
+    width: 100%;
+    color: #222;
+    padding: 7px 2px 0;
+    font-size: 12.5px;
+    line-height: 1.35;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .student-info p { margin: 0 0 1px; }
+  .student-info p:first-child { font-weight: 700; font-size: 13.5px; }
+  .student-info p:nth-child(3) { color: #666; font-size: 11.5px; font-weight: 400; }
+
+  .student-image { transform: none !important; }
+
+  /* 논문 그리드 */
+  .publication-row { flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+  .publication-col { flex: 0 0 calc(50% - 6px); max-width: calc(50% - 6px); }
+  .paper-info p { font-size: 12px; padding-left: 8px; }
+
+
+  /* ---------- 5-5. Research 상세 ---------- */
+
+  .research-image { width: 100%; }
+  .project-cell   { padding-right: 0; }
+
+
+  /* ---------- 5-6. Professor 페이지 ---------- */
+
+  .prof-photo {
+    height: auto;
+    width: 62%;
+    max-width: 230px;
+    margin: 18px auto 6px;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .prof-bio { padding-left: 0 !important; }
+
+  .job-title, .job-date {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .job-date {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 2px;
+  }
+
+
+  /* ---------- 5-7. Position 페이지 ---------- */
+
+  .container1, .container2, .container3, .container4 {
+    padding: 16px !important;
+    margin-bottom: 20px !important;
+  }
+
+
+  /* ---------- 5-8. 모달 (사진 확대) ---------- */
+
+  .modal-content { max-width: 94vw; max-height: 68vh; width: auto; }
+
+  .close {
+    font-size: 34px;
+    padding: 4px 12px;
+    margin-right: 0;
+  }
+
+
+  /* ---------- 5-9. 푸터 ---------- */
+
+  #footer {
+    padding-left: 0 !important;
+    font-size: 14px !important;
+  }
+
+  #footer .panel-footer { padding: 18px 16px 22px; }
+
+  #footer .container-fluid { padding-left: 0; padding-right: 0; }
+
+  #footer .col-sm-4 {
+    padding: 0 0 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #eee;
+    line-height: 1.5;
+  }
+
+  #footer .col-sm-4:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #footer p { margin-bottom: 0; }
+
+
+  /* ---------- 5-10. 캐러셀 (현재 주석 처리되어 있으나 대비) ---------- */
+
+  .carousel { margin-left: 0; margin-right: 0; }
+  .carousel-inner img { width: 100%; height: auto; }
+}
+
+
+/* ==========================================================================
+   6. 접근성 / 사용자 환경 설정
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *:before, *:after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #841D1E;
+  outline-offset: 2px;
 }

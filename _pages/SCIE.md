@@ -15,15 +15,31 @@ permalink: /SCIE/
   }
 </style>
 
-<hr style="width: 1200px; border-width: 2px;">
-<table style="width: 1200px; font-size: 18px;">
+<div class="table-wrap">
+<hr class="rule-top">
+<table class="responsive-table">
+  <thead>
   <tr style="font-size: 20px; font-family: Arial">
-    <th>No.<hr></th><th>Paper Title<hr></th><th>Year<hr></th><th>Authors<hr></th><th>Journal<hr></th>
+    <th style="width: 70px;">No.<hr></th><th>Paper Title<hr></th><th style="width: 80px;">Year<hr></th><th style="width: 250px;">Authors<hr></th><th style="width: 200px;">Journal<hr></th>
   </tr>
+  </thead>
+  <tbody>
 {% for paper in site.data.SCIE %}
   <tr>
-    <td class="project-cell" style="width: 70px;"><a href="{{ paper.link.url }}" target="_blank">{{ paper.number }}</a>.</td><td class="project-cell">{{ paper.title }}</td><td class="project-cell" style="width: 80px;">{{ paper.description }}</td><td class="project-cell" style="width: 250px;">{{ paper.authors }}</td><td class="project-cell" style="width: 200px;">{{ paper.link.display }}</td>
+    <td class="project-cell cell-no" data-label="No." style="width: 70px;"><a href="{{ paper.link.url }}" target="_blank" rel="noopener">{{ paper.number }}</a>.</td><td class="project-cell cell-title" data-label="Paper Title"><a href="{{ paper.link.url }}" target="_blank" rel="noopener" class="title-link">{{ paper.title }}</a></td><td class="project-cell" data-label="Year" style="width: 80px;">{{ paper.description }}</td><td class="project-cell" data-label="Authors" style="width: 250px;">{{ paper.authors }}</td><td class="project-cell" data-label="Journal" style="width: 200px;">{{ paper.link.display }}</td>
   </tr>
 {% endfor %}
+  </tbody>
 </table>
-<hr style="width: 1200px; border-width: 2px; margin-bottom: 140px;">
+<hr class="rule-bottom">
+</div>
+
+<style>
+  /* PC에서는 제목 링크를 본문처럼 보이게 유지 (기존과 동일한 모양) */
+  .title-link { color: inherit; text-decoration: none; }
+  .title-link:hover, .title-link:focus { color: inherit; text-decoration: underline; }
+  @media (max-width: 767px) {
+    /* 모바일에서는 제목 전체가 논문 링크가 되어 탭하기 쉬움 */
+    .title-link { color: #841D1E; }
+  }
+</style>

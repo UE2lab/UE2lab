@@ -19,5 +19,39 @@
   </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- jQuery는 head.html에서 한 번만 로드합니다 (기존에 1.11.3이 3.5.1을 덮어쓰고 있었음) -->
 <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
+
+<script>
+(function ($) {
+  $(function () {
+
+    var isDesktop = function () {
+      return window.matchMedia('(min-width: 768px)').matches;
+    };
+
+    // PC: 상위 메뉴에 마우스를 올리면 하위 메뉴가 열리고, 벗어나면 닫힘
+    // (모바일에서는 data-toggle="dropdown"에 의해 탭으로 열립니다)
+    $('.navbar-nav > .dropdown')
+      .on('mouseenter', function () {
+        if (isDesktop()) {
+          $(this).addClass('open').children('.dropdown-toggle').attr('aria-expanded', 'true');
+        }
+      })
+      .on('mouseleave', function () {
+        if (isDesktop()) {
+          $(this).removeClass('open').children('.dropdown-toggle').attr('aria-expanded', 'false');
+        }
+      });
+
+    // 모바일: 실제 페이지 링크를 누르면 펼쳐진 내비게이션을 자동으로 닫음
+    $('#ue2-navbar').on('click', 'a', function () {
+      var href = $(this).attr('href');
+      if (href && href !== '#' && $('.navbar-toggle').is(':visible')) {
+        $('#ue2-navbar').collapse('hide');
+      }
+    });
+
+  });
+})(jQuery);
+</script>
