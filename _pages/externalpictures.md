@@ -1,41 +1,64 @@
 ---
-title: "UE2 Lab - Events & Workshop"
+title: "UE2 Lab - External Pictures"
 layout: gridlay
-excerpt: "UE2 Lab -- Events & Workshop"
+excerpt: "UE2 Lab -- External Pictures"
 permalink: /externalpictures/
 ---
 
-
 <p class="title-center">Academic Events</p>
 
-<div class="modal" style="display: none; align-items: center; justify-content: center; flex-direction: column;">
-  <span class="close" aria-label="Close">&times;</span>
-  <img class="modal-content" alt="">
+<!-- 앨범 모달 -->
+<div class="modal" style="display: none;" data-single="true">
+  <span class="close" aria-label="닫기">&times;</span>
+  <div class="modal-stage">
+    <button type="button" class="modal-nav modal-prev" aria-label="이전 사진">&#10094;</button>
+    <img class="modal-content" alt="">
+    <button type="button" class="modal-nav modal-next" aria-label="다음 사진">&#10095;</button>
+  </div>
   <p class="modal-caption"></p>
+  <p class="modal-counter"></p>
 </div>
 
-
-
-<div class="custom-container-activities">
+<!-- markdown="0" 로 내부 HTML 이스케이프 방지 -->
+<div class="custom-container-activities" markdown="0">
 {% assign pictures = site.data.Externalphotos %}
 {% assign counter = 0 %}
 {% for picture in pictures %}
-{% if counter == 0 %}
-<div class="student-row">
-{% endif %}
-<div class="student-col">
-  <div class="activity-image" style="position: relative; margin: 0px; padding: 0px;">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ picture.image }}" class="activity-image-size" alt="{{ picture.title }}">
-  <div class="photos-info">
-  <p style="text-align: center;">{{ picture.title }} {{ picture.date }}</p>
+  {% if counter == 0 %}
+  <div class="student-row">
+  {% endif %}
+
+  {% comment %} images: 목록이 있으면 앨범, 없으면 기존과 동일한 단일 사진 {% endcomment %}
+  {% if picture.images %}
+    {% assign shots = picture.images %}
+  {% else %}
+    {% assign shots = picture.image | split: "@@never@@" %}
+  {% endif %}
+  {% if picture.image %}{% assign thumb = picture.image %}{% else %}{% assign thumb = shots | first %}{% endif %}
+  {% capture album %}{% for im in shots %}{{ site.url }}{{ site.baseurl }}/images/activities/{{ im }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
+
+  <div class="student-col">
+    <div class="activity-image"
+         role="button" tabindex="0"
+         data-title="{{ picture.title | escape }}"
+         data-date="{{ picture.date | escape }}"
+         data-images="{{ album }}"
+         style="position: relative; margin: 0; padding: 0;">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ thumb }}" class="activity-image-size" alt="{{ picture.title }}" loading="lazy">
+      {% if shots.size > 1 %}
+      <span class="album-badge"><i class="album-badge-icon"></i>{{ shots.size }}</span>
+      {% endif %}
+      <div class="photos-info">
+        <p style="text-align: center;">{{ picture.title }} {{ picture.date }}</p>
+      </div>
+    </div>
   </div>
+
+  {% assign counter = counter | plus: 1 %}
+  {% if counter == 3 %}
   </div>
-</div>
-{% assign counter = counter | plus: 1 %}
-{% if counter == 3 %}
-</div>
-{% assign counter = 0 %}
-{% endif %}
+  {% assign counter = 0 %}
+  {% endif %}
 {% endfor %}
 {% if counter != 0 %}
 </div>
@@ -71,11 +94,49 @@ permalink: /externalpictures/
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
+  .activity-image:focus-visible { outline: 3px solid #841D1E; outline-offset: -3px; }
   .activity-image-size {
     width: 100%;
     height: 200px;          /* 썸네일 높이 고정 */
     object-fit: cover;      /* 중앙 자르기 */
     display: block;
+  }
+
+  /* ---------- 앨범 배지 (사진 여러 장일 때만 표시) ---------- */
+  .album-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(0,0,0,0.72);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 5px 10px 5px 8px;
+    border-radius: 999px;
+    pointer-events: none;
+  }
+  .album-badge-icon {
+    position: relative;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 0 7px 0 2px;
+    border: 1.5px solid currentColor;
+    border-radius: 2px;
+  }
+  .album-badge-icon::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 9px;
+    height: 9px;
+    border: 1.5px solid currentColor;
+    border-radius: 2px;
+    background: rgba(0,0,0,0.72);
   }
 
   /* ---------- 썸네일 캡션 (이미지 아래 고정) ---------- */
@@ -101,28 +162,63 @@ permalink: /externalpictures/
     word-break: break-word;
   }
 
-  /* ---------- 모달 (사진 확대) ---------- */
+  /* ---------- 모달 (사진 확대 / 앨범) ---------- */
   .modal {
     position: fixed;
     inset: 0;
     z-index: 1000;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.85);
     overflow: auto;
     display: none;              /* JS가 'flex'로 변경 */
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  .modal-stage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 70px;
+  }
   .modal-content {
     display: block;
-    max-width: 90vw;
-    max-height: 80vh;
+    max-width: 100%;
+    max-height: 76vh;
     width: auto;
     height: auto;
     object-fit: contain;
-    margin: 0 5px 10px;
+    margin: 0 0 10px;
     position: static;
+    border-radius: 4px;
   }
+  .modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: background 0.2s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .modal-nav:hover, .modal-nav:focus { background: rgba(255,255,255,0.35); outline: none; }
+  .modal-prev { left: 8px; }
+  .modal-next { right: 8px; }
+  .modal[data-single="true"] .modal-nav { display: none; }
+  .modal[data-single="true"] .modal-stage { padding: 0 10px; }
+
   .modal-caption {
     position: static;
     margin: 0 5px 0;
@@ -135,6 +231,15 @@ permalink: /externalpictures/
     padding: 10px;
     border-radius: 8px;
   }
+  .modal-counter {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    margin: 10px 0 0;
+  }
+  .modal[data-single="true"] .modal-counter { display: none; }
+
   .close {
     position: absolute;
     top: 10px;
@@ -145,7 +250,7 @@ permalink: /externalpictures/
     cursor: pointer;
     opacity: 1;          /* Bootstrap 3의 .close 기본 opacity:.2 무력화 */
     text-shadow: none;
-    z-index: 1;
+    z-index: 3;
   }
   .close:hover, .close:focus { color: #ddd; opacity: 1; }
 
@@ -156,6 +261,7 @@ permalink: /externalpictures/
     .student-row { display: contents; }
     .activity-image-size { height: 170px; }
     .photos-info p { font-size: 13px; }
+    .modal-stage { padding: 0 60px; }
   }
 
   /* ---------- 모바일 (<= 767px) ---------- */
@@ -172,49 +278,106 @@ permalink: /externalpictures/
     }
     .student-col:hover { transform: none; box-shadow: none; }
     .activity-image-size { height: 130px; }
+    .album-badge { top: 5px; right: 5px; font-size: 11px; padding: 4px 8px 4px 6px; }
     .photos-info { padding: 7px 6px; margin-top: 0; }
     .photos-info p { font-size: 11.5px; line-height: 1.35; }
 
-    .modal-content { max-width: 94vw; max-height: 66vh; margin: 0 0 10px; }
+    .modal-stage { padding: 0 4px; }
+    .modal-content { max-height: 66vh; margin: 0 0 10px; }
+    .modal-nav { width: 44px; height: 44px; font-size: 20px; background: rgba(0,0,0,0.45); }
+    .modal-prev { left: 2px; }
+    .modal-next { right: 2px; }
     .modal-caption { font-size: 14px; max-width: 94vw; padding: 8px 10px; }
+    .modal-counter { font-size: 13px; margin-top: 8px; }
     .close { top: 8px; right: 12px; font-size: 34px; padding: 2px 10px; }
   }
 </style>
 
-  
 <script>
- document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.querySelector('.modal');
-  const modalImg = document.querySelector('.modal-content');
-  const modalCaption = document.querySelector('.modal-caption');
-  const closeBtn = document.querySelector('.close');
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.querySelector('.modal');
+  if (!modal) return;
 
-  // Ensure modal is hidden on page load
+  var img      = modal.querySelector('.modal-content');
+  var caption  = modal.querySelector('.modal-caption');
+  var counter  = modal.querySelector('.modal-counter');
+  var closeBtn = modal.querySelector('.close');
+  var prevBtn  = modal.querySelector('.modal-prev');
+  var nextBtn  = modal.querySelector('.modal-next');
+
+  var album = [];
+  var index = 0;
+  var title = '';
+
   modal.style.display = 'none';
 
-  document.querySelectorAll('.activity-image').forEach(item => {
-    item.addEventListener('click', function() {
-      modal.style.display = 'flex';
-      modalImg.src = this.querySelector('.activity-image-size').src;
- modalCaption.textContent = this.querySelector('.photos-info p:first-of-type').textContent;
+  function preload(i) {
+    if (album[i]) { var p = new Image(); p.src = album[i]; }
+  }
 
+  function show(i) {
+    if (!album.length) return;
+    index = (i % album.length + album.length) % album.length;   // 끝에서 처음으로 순환
+    img.src = album[index];
+    img.alt = title + ' (' + (index + 1) + '/' + album.length + ')';
+    counter.textContent = album.length > 1 ? (index + 1) + ' / ' + album.length : '';
+    preload(index + 1 < album.length ? index + 1 : 0);
+    preload(index - 1 >= 0 ? index - 1 : album.length - 1);
+  }
 
-      document.body.style.overflow = 'hidden'; // Disable scrolling
-    });
-  });
+  function openAlbum(card) {
+    var raw = card.getAttribute('data-images') || '';
+    album = raw.split('|').filter(function (s) { return s.length > 0; });
+    if (!album.length) return;
+    title = card.getAttribute('data-title') || '';
+    var date = card.getAttribute('data-date') || '';
+    caption.textContent = (title + ' ' + date).trim();
+    modal.setAttribute('data-single', album.length > 1 ? 'false' : 'true');
+    show(0);
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
 
   function closeModal() {
     modal.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Enable scrolling again
+    document.body.style.overflow = '';
   }
 
-  closeBtn.addEventListener('click', closeModal);
-  modal.addEventListener('click', function(event) {
-    if (event.target === modal) {
-      closeModal();
-    }
+  function isOpen() { return modal.style.display === 'flex'; }
+
+  document.querySelectorAll('.activity-image').forEach(function (card) {
+    card.addEventListener('click', function () { openAlbum(this); });
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openAlbum(this); }
+    });
   });
+
+  prevBtn.addEventListener('click', function (e) { e.stopPropagation(); show(index - 1); });
+  nextBtn.addEventListener('click', function (e) { e.stopPropagation(); show(index + 1); });
+  closeBtn.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal || e.target.classList.contains('modal-stage')) closeModal();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (!isOpen()) return;
+    if (e.key === 'Escape')          closeModal();
+    else if (e.key === 'ArrowLeft')  show(index - 1);
+    else if (e.key === 'ArrowRight') show(index + 1);
+  });
+
+  // 모바일 스와이프
+  var x0 = null, y0 = null;
+  modal.addEventListener('touchstart', function (e) {
+    x0 = e.touches[0].clientX; y0 = e.touches[0].clientY;
+  }, { passive: true });
+  modal.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    var dy = e.changedTouches[0].clientY - y0;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) show(index + (dx < 0 ? 1 : -1));
+    x0 = y0 = null;
+  }, { passive: true });
 });
-
-
 </script>
