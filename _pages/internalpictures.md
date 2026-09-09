@@ -38,12 +38,7 @@ permalink: /internalpictures/
   {% capture album %}{% for im in shots %}{{ site.url }}{{ site.baseurl }}/images/activities/{{ im }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
 
   <div class="student-col">
-    <div class="activity-image"
-         role="button" tabindex="0"
-         data-title="{{ picture.title | escape }}"
-         data-date="{{ picture.date | escape }}"
-         data-images="{{ album }}"
-         style="position: relative; margin: 0; padding: 0;">
+    <div class="activity-image" role="button" tabindex="0" data-title="{{ picture.title | escape }}" data-date="{{ picture.date | escape }}" data-images="{{ album }}" style="position: relative; margin: 0; padding: 0;">
       <img src="{{ site.url }}{{ site.baseurl }}/images/activities/{{ thumb }}" class="activity-image-size" alt="{{ picture.title }}" loading="lazy">
       {% if shots.size > 1 %}
       <span class="album-badge"><i class="album-badge-icon"></i>{{ shots.size }}</span>
@@ -94,6 +89,13 @@ permalink: /internalpictures/
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
+  /* iOS Safari는 cursor:pointer 가 걸린 요소에만 탭을 click 으로 변환합니다 */
+  .activity-image {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.08);
+  }
+  .activity-image-size,
+  .photos-info { cursor: pointer; }
   .activity-image:focus-visible { outline: 3px solid #841D1E; outline-offset: -3px; }
   .activity-image-size {
     width: 100%;
@@ -141,6 +143,7 @@ permalink: /internalpictures/
 
   /* ---------- 썸네일 캡션 (이미지 아래 고정) ---------- */
   .photos-info {
+    display: block;         /* main.scss 의 .photos-info{display:none} 무력화 */
     text-align: center;
     padding: 10px;
     background: rgba(0,0,0,0.7);
@@ -293,91 +296,4 @@ permalink: /internalpictures/
   }
 </style>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var modal = document.querySelector('.modal');
-  if (!modal) return;
-
-  var img      = modal.querySelector('.modal-content');
-  var caption  = modal.querySelector('.modal-caption');
-  var counter  = modal.querySelector('.modal-counter');
-  var closeBtn = modal.querySelector('.close');
-  var prevBtn  = modal.querySelector('.modal-prev');
-  var nextBtn  = modal.querySelector('.modal-next');
-
-  var album = [];
-  var index = 0;
-  var title = '';
-
-  modal.style.display = 'none';
-
-  function preload(i) {
-    if (album[i]) { var p = new Image(); p.src = album[i]; }
-  }
-
-  function show(i) {
-    if (!album.length) return;
-    index = (i % album.length + album.length) % album.length;   // 끝에서 처음으로 순환
-    img.src = album[index];
-    img.alt = title + ' (' + (index + 1) + '/' + album.length + ')';
-    counter.textContent = album.length > 1 ? (index + 1) + ' / ' + album.length : '';
-    preload(index + 1 < album.length ? index + 1 : 0);
-    preload(index - 1 >= 0 ? index - 1 : album.length - 1);
-  }
-
-  function openAlbum(card) {
-    var raw = card.getAttribute('data-images') || '';
-    album = raw.split('|').filter(function (s) { return s.length > 0; });
-    if (!album.length) return;
-    title = card.getAttribute('data-title') || '';
-    var date = card.getAttribute('data-date') || '';
-    caption.textContent = (title + ' ' + date).trim();
-    modal.setAttribute('data-single', album.length > 1 ? 'false' : 'true');
-    show(0);
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModal() {
-    modal.style.display = 'none';
-    document.body.style.overflow = '';
-  }
-
-  function isOpen() { return modal.style.display === 'flex'; }
-
-  document.querySelectorAll('.activity-image').forEach(function (card) {
-    card.addEventListener('click', function () { openAlbum(this); });
-    card.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openAlbum(this); }
-    });
-  });
-
-  prevBtn.addEventListener('click', function (e) { e.stopPropagation(); show(index - 1); });
-  nextBtn.addEventListener('click', function (e) { e.stopPropagation(); show(index + 1); });
-  closeBtn.addEventListener('click', closeModal);
-
-  modal.addEventListener('click', function (e) {
-    if (e.target === modal || e.target.classList.contains('modal-stage')) closeModal();
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (!isOpen()) return;
-    if (e.key === 'Escape')          closeModal();
-    else if (e.key === 'ArrowLeft')  show(index - 1);
-    else if (e.key === 'ArrowRight') show(index + 1);
-  });
-
-  // 모바일 스와이프
-  var x0 = null, y0 = null;
-  modal.addEventListener('touchstart', function (e) {
-    x0 = e.touches[0].clientX; y0 = e.touches[0].clientY;
-  }, { passive: true });
-  modal.addEventListener('touchend', function (e) {
-    if (x0 === null) return;
-    var dx = e.changedTouches[0].clientX - x0;
-    var dy = e.changedTouches[0].clientY - y0;
-    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) show(index + (dx < 0 ? 1 : -1));
-    x0 = y0 = null;
-  }, { passive: true });
-});
-</script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/album.js"></script>
