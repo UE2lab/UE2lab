@@ -8,15 +8,17 @@ permalink: /externalpictures/
 <p class="title-center">Academic Events</p>
 
 <!-- 앨범 모달 -->
-<div class="modal" style="display: none;" data-single="true">
-  <span class="close" aria-label="닫기">&times;</span>
-  <div class="modal-stage">
-    <button type="button" class="modal-nav modal-prev" aria-label="이전 사진">&#10094;</button>
-    <img class="modal-content" alt="">
-    <button type="button" class="modal-nav modal-next" aria-label="다음 사진">&#10095;</button>
-  </div>
-  <p class="modal-caption"></p>
-  <p class="modal-counter"></p>
+<!-- markdown="0" 필수: _config.yml 의 kramdown parse_block_html:true 가
+     블록 HTML 내부를 마크다운으로 파싱해 4칸 들여쓴 줄을 코드블록으로 만듭니다 -->
+<div class="modal" style="display: none;" data-single="true" markdown="0">
+<span class="close" aria-label="닫기">&times;</span>
+<div class="modal-stage">
+<button type="button" class="modal-nav modal-prev" aria-label="이전 사진">&#10094;</button>
+<img class="modal-content" alt="">
+<button type="button" class="modal-nav modal-next" aria-label="다음 사진">&#10095;</button>
+</div>
+<p class="modal-caption"></p>
+<p class="modal-counter"></p>
 </div>
 
 <!-- markdown="0" 로 내부 HTML 이스케이프 방지 -->
