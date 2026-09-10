@@ -1,6 +1,7 @@
 - name: Tageui Hong
   photo: Tageui Hong.jpg
-  info: Integrated Master & PhD program
+  role: Postdoc
+  info: Postdoctoral Fellow
   email: tageui@korea.ac.kr
   number_educ: 2
   education1: Urban climate, building energy simulation, energy systems
@@ -8,13 +9,15 @@
 
 - name: Gigih Rahmandhani Setyantho
   photo: Gigih Rahmandhani Setyantho.jpg
-  info: PhD program
+  role: Postdoc
+  info: Postdoctoral Fellow
   email: setyanthogr@korea.ac.kr
   number_educ: 1
   education1: Urban climate, building simulation
 
 - name: JiHyeon Cho
   photo: Ji Hyeon Cho.jpg
+  role: Graduate
   info: PhD program
   email: jihyeoncho@korea.ac.kr
   number_educ: 2
@@ -23,6 +26,7 @@
 
 - name: Hanjoo Kim
   photo: Hanjoo Kim.jfif
+  role: Graduate
   info: Integrated Master & PhD program
   email: joo0970@korea.ac.kr
   number_educ: 1
@@ -30,6 +34,7 @@
 
 - name: Hyungbin Joo
   photo: Hyungbin Joo.jpg
+  role: Graduate
   info:  Integrated Master & PhD program
   email: spok61@naver.com
   number_educ: 1
@@ -37,6 +42,7 @@
 
 - name: Geonho Jang 
   photo: Geonho Jang.JPG
+  role: Graduate
   info: Master program
   email: ted3414@korea.ac.kr
   number_educ: 1
@@ -44,6 +50,7 @@
 
 - name: Bak Jang Hyeon
   photo: bak jang hyeon_UE2.jpeg
+  role: Graduate
   info: Master program
   email: bzh20001003@gmail.com
   number_educ: 1
@@ -51,6 +58,7 @@
 
 - name: Jinsung Park
   photo: Park_Jinsung_UE2.jpeg
+  role: Graduate
   info: Master program
   email: 8jsnoopy8@gmail.com
   number_educ: 1
