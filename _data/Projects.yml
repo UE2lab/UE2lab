@@ -26,6 +26,14 @@
 
 
 # Past projects
+- title: Data-Driven Renewable Energy Design and Operation Optimization for Net-Zero Building Communities
+  number: P8
+  image: SoftwareECom.png
+  year: 2024-2025
+  funding: Korea Agency for Infrastructure Technology Advancement (KAIA)
+  introduction: This project is a Korea-UK collaborative research project (2024-2025), funded by the Korea Agency for Infrastructure Technology Advancement (KAIA).
+  description: The objective of our research is to develop SoftwareECom, a data-driven software platform for renewable energy design and operation optimization in building communities. We have been developing integrated modules for building energy demand forecasting, PV design optimization, renewable energy network design and operation optimization, and load-responsive fuel cell operation optimization. In addition, the project aims to develop and demonstrate a solid oxide fuel cell (SOFC) system integrated with the optimization software to provide customized net-zero energy solutions for building communities.
+
 - title: 3D Urban Microclimate Prediction System
   number: P7
   image: C3.png
