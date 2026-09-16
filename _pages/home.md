@@ -7,7 +7,20 @@ permalink: /
 ---
 <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diagram2.png" alt="UE2 Lab research scope" style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 0 auto;">
+<style>
+  /* 원본이 1280x605 이므로 그 이상으로 늘리면 흐려집니다.
+     더 크게 보이게 하려면 diagram2.png 를 2560px 폭으로 다시 내보내고
+     아래 max-width 를 1760px 까지 올리면 됩니다. */
+  .home-diagram {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/diagram2.png" alt="UE2 Lab research scope" class="home-diagram">
 
 The Urbane2 Lab is looking for Ph.D. and Integrated M.S-Ph.D. students who have strong initiative and ambition in research and development. If you are interested, please contact Prof. Yeonsook Heo (yeonsookheo@korea.ac.kr) [(more info)]({{ site.url }}{{ site.baseurl }}/position) **!**
 

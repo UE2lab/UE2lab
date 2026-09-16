@@ -46,7 +46,7 @@ permalink: /research/
   /* ===== 프로젝트 아코디언 ===== */
 
   .project-toolbar {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto 10px;
     text-align: right;
   }
@@ -66,7 +66,7 @@ permalink: /research/
   .project-toggle-all:focus-visible { outline: 2px solid #841D1E; outline-offset: 2px; }
 
   .project-accordion {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto 90px;
   }
 
@@ -176,7 +176,7 @@ permalink: /research/
   }
   .project-figure img {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;   /* 연구 그림 원본 중 가장 작은 것이 961px 폭입니다 */
     height: auto;
   }
 
@@ -245,6 +245,32 @@ permalink: /research/
     .project-body { padding: 2px 0 26px; }
     .project-intro, .project-desc { font-size: 15px; line-height: 1.6; }
     .project-figure { margin: 18px 0; }
+  }
+
+  /* ===== 대형 화면 ===== */
+  @media (min-width: 1400px) {
+    .project-thead,
+    .project-head { grid-template-columns: 88px minmax(0, 1fr) 130px 380px 30px; gap: 20px; }
+    .project-thead { font-size: 21px; }
+    .project-thead .pcol-no,
+    .project-thead .pcol-period,
+    .project-thead .pcol-funding { font-size: 21px; }
+    .project-head { font-size: 19px; padding: 21px 6px; }
+    .pcol-period, .pcol-funding { font-size: 16px; }
+    .project-intro, .project-desc { font-size: 19px; }
+  }
+
+  @media (min-width: 1900px) {
+    .project-thead,
+    .project-head { grid-template-columns: 96px minmax(0, 1fr) 145px 430px 32px; gap: 24px; }
+    .project-thead { font-size: 23px; }
+    .project-thead .pcol-no,
+    .project-thead .pcol-period,
+    .project-thead .pcol-funding { font-size: 23px; }
+    .project-head { font-size: 21px; padding: 24px 6px; }
+    .pcol-period, .pcol-funding { font-size: 17px; }
+    .project-intro, .project-desc { font-size: 20px; }
+    .project-figure img { max-width: 1200px; }
   }
 
   @media (prefers-reduced-motion: reduce) {

@@ -92,7 +92,7 @@ p.byline {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px;
+  max-width: 1200px;   /* 큰 화면에서의 확장은 아래 "6. 대형 화면" 절 참고 */
 }
 
 /* Grid overrides */
@@ -231,7 +231,12 @@ p.byline {
 .research-image { width: 1000px; }
 
 .student-image-size {
-  width: 250px; height: 300px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 6;
+  max-width: 354px;            /* 원본 사진 가로 해상도. 넘기면 흐려집니다 */
+  object-fit: cover; object-position: center; margin: 0px; padding: 0px;
+  display: block;
 }
 .activity-image-size {
   width: 380px; height: 450px; object-fit: cover; object-position: center; margin: 0px; padding: 0px;
@@ -243,8 +248,8 @@ p.byline {
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -296,21 +301,21 @@ p.byline {
 .publication-row:last-child { margin-bottom: 30px; }
 
 .custom-container-student {
-  max-width: 800px;
+  max-width: 880px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
 }
 
 .custom-container-activities {
-  max-width: 1200px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
 }
 
 .custom-container-paper {
-  max-width: 1200px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
@@ -353,13 +358,13 @@ hr {
 
 .responsive-table {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   font-size: 18px;
 }
 
 .rule-top, .rule-bottom {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   border-width: 2px;
 }
 .rule-bottom { margin-bottom: 140px; }
@@ -873,8 +878,78 @@ hr {
 }
 
 
+
 /* ==========================================================================
-   6. 접근성 / 사용자 환경 설정
+   6. 대형 화면 — 넓은 모니터에서 가용 공간 활용
+      화면이 커질수록 콘텐츠 폭과 글자 크기가 함께 커집니다.
+      이미지는 원본 해상도를 넘지 않도록 각자 상한을 둡니다(넘으면 흐려짐).
+   ========================================================================== */
+
+/* --- 1440px급 (일반 노트북 외장 모니터, QHD 창 최대화) --- */
+@media (min-width: 1400px) {
+  .container-fluid { max-width: 1320px; }
+
+  body { font-size: 19px; }
+
+  .title-center  { font-size: 50px; margin-top: 36px; margin-bottom: 44px; }
+  .title2-center { font-size: 54px; }
+
+  .custom-container-student { max-width: 1000px; }
+
+  .responsive-table { font-size: 19px; }
+
+  .navbar { font-size: 19px; }
+  .navbar-collapse { font-size: 19px; }
+  .dropdown-menu > li > a { font-size: 19px; }
+
+  #footer { font-size: 88% !important; }
+}
+
+/* --- 1600px급 --- */
+@media (min-width: 1600px) {
+  .container-fluid { max-width: 1460px; }
+
+  .custom-container-student { max-width: 1080px; }
+
+  .title-center  { font-size: 54px; }
+  .title2-center { font-size: 58px; }
+}
+
+/* --- 1900px급 (FHD 이상 데스크톱 모니터) --- */
+@media (min-width: 1900px) {
+  .container-fluid { max-width: 1600px; }
+
+  body { font-size: 20px; }
+
+  .title-center  { font-size: 58px; margin-top: 44px; margin-bottom: 50px; }
+  .title2-center { font-size: 62px; }
+
+  .responsive-table { font-size: 20px; }
+
+  .custom-container-student { max-width: 1120px; }
+
+  .navbar { font-size: 20px; height: 100px; }
+  .navbar-nav > li > a { margin-top: 30px; }
+  .navbar-brand img { height: 84px; }
+  body { padding-top: 112px; }
+  .navbar-collapse { font-size: 20px; }
+  .dropdown-menu > li > a { font-size: 20px; }
+
+  :target, [id^="project-"] { scroll-margin-top: 124px; }
+}
+
+/* --- 2400px급 (4K 모니터 최대화) --- */
+@media (min-width: 2400px) {
+  .container-fluid { max-width: 1760px; }
+  body { font-size: 21px; }
+  .title-center  { font-size: 62px; }
+  .title2-center { font-size: 66px; }
+  .custom-container-student { max-width: 1180px; }
+}
+
+
+/* ==========================================================================
+   7. 접근성 / 사용자 환경 설정
    ========================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
