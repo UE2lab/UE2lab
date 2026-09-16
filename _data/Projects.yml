@@ -26,11 +26,21 @@
 
 
 # Past projects
+- title: 'Towards Sustainable Cooling: Mixed-Mode Ventilation as a Climate Adaptation Solution'
+  number: P9
+  image: MMV_OCC.jpg
+  year: 2024-2025
+  funding: KU-NUS Strategic Partner Funds
+  collaboration: Korea-Singapore Joint Research Project (KU-NUS)
+  introduction: This project is a Korea University-National University of Singapore (KU-NUS) collaborative research project (2024-2025), funded by the KU-NUS Strategic Partner Funds.
+  description: The objective of our research is to develop and demonstrate an adaptive mixed-mode ventilation (MMV) control strategy that integrates natural ventilation, air-conditioning, ceiling fans, and occupant-centric control (OCC). The project combines dynamic control strategies developed by the KU team with building performance modeling and measurement and verification capabilities of the NUS team. We have been developing adaptive control algorithms and occupant feedback interfaces for ceiling fan and MMV operation, followed by deployment in an existing MMV testbed in Singapore. Field experiments will evaluate the effects of the proposed control strategy on building energy use and occupant thermal comfort under tropical climate conditions.
+
 - title: Data-Driven Renewable Energy Design and Operation Optimization for Net-Zero Building Communities
   number: P8
   image: SoftwareECom.png
   year: 2024-2025
   funding: Korea Agency for Infrastructure Technology Advancement (KAIA)
+  collaboration: Korea-UK Joint Research Project
   introduction: This project is a Korea-UK collaborative research project (2024-2025), funded by the Korea Agency for Infrastructure Technology Advancement (KAIA).
   description: The objective of our research is to develop SoftwareECom, a data-driven software platform for renewable energy design and operation optimization in building communities. We have been developing integrated modules for building energy demand forecasting, PV design optimization, renewable energy network design and operation optimization, and load-responsive fuel cell operation optimization. In addition, the project aims to develop and demonstrate a solid oxide fuel cell (SOFC) system integrated with the optimization software to provide customized net-zero energy solutions for building communities.
 
