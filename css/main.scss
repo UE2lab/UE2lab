@@ -330,8 +330,16 @@ p.byline {
 .job-title { width: calc(70% - 10px); }
 .job-date  { width: 200px; text-align: right; }
 
-.prof-photo { height: 400px; margin: 70px 100px; }
-.prof-bio   { padding-left: 70px; }
+/* 교수 사진: 원본이 550x733 이므로 550px 폭까지는 손실 없이 확대 가능.
+   고정 높이 대신 열 폭을 채우도록 해 화면이 커지면 사진도 함께 커집니다. */
+.prof-photo {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+  margin: 18px auto 12px;
+}
+.prof-bio   { padding-left: 56px; }
 
 
 /* --------------------------------------------------------------------------
@@ -469,7 +477,7 @@ hr {
 
   .modal-content { width: auto; max-width: 88vw; max-height: 76vh; }
 
-  .prof-photo { height: 300px; margin: 24px auto 12px; display: block; }
+  .prof-photo { width: 100%; max-width: 100%; height: auto; margin: 20px auto 12px; display: block; }
   .prof-bio   { padding-left: 20px !important; }
 
   .job-title { width: calc(65% - 10px); }
@@ -803,8 +811,8 @@ hr {
 
   .prof-photo {
     height: auto;
-    width: 62%;
-    max-width: 230px;
+    width: 74%;
+    max-width: 320px;
     margin: 18px auto 6px;
     display: block;
     border-radius: 10px;
@@ -908,6 +916,9 @@ hr {
 /* --- 1600px급 --- */
 @media (min-width: 1600px) {
   .container-fluid { max-width: 1460px; }
+
+  .prof-photo { max-width: 550px; }   /* 원본 해상도 상한 */
+  .prof-bio   { padding-left: 64px; }
 
   .custom-container-student { max-width: 1080px; }
 
