@@ -259,6 +259,19 @@ permalink: /externalpictures/
   }
   .close:hover, .close:focus { color: #ddd; opacity: 1; }
 
+  /* ---------- 대형 화면 ---------- */
+  @media (min-width: 1400px) {
+    .student-col { max-width: 380px; }
+    .activity-image-size { height: 250px; }
+    .photos-info p { font-size: 15px; }
+  }
+  @media (min-width: 1900px) {
+    .student-col { max-width: 440px; }
+    .activity-image-size { height: 290px; }
+    .photos-info p { font-size: 16px; }
+    .modal-content { max-height: 80vh; }
+  }
+
   /* ---------- 태블릿 (768 ~ 991px) ---------- */
   @media (min-width: 768px) and (max-width: 991px) {
     .custom-container-activities { padding: 10px 0; gap: 14px; }

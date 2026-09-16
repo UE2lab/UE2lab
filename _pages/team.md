@@ -77,7 +77,7 @@ permalink: /team/
 <style>
   /* 섹션 제목 (Postdoctoral Fellows / Graduate Students) */
   .section-heading {
-    max-width: 800px;
+    max-width: 880px;
     margin: 46px auto 22px;
     padding-bottom: 9px;
     border-bottom: 2px solid #841D1E;
@@ -96,6 +96,19 @@ permalink: /team/
 
   @media (min-width: 768px) and (max-width: 991px) {
     .section-heading { max-width: 100%; font-size: 22px; margin: 34px 8px 18px; }
+  }
+
+  @media (min-width: 1400px) {
+    .section-heading { max-width: 1000px; font-size: 28px; margin-top: 54px; }
+  }
+  @media (min-width: 1600px) {
+    .section-heading { max-width: 1080px; font-size: 30px; }
+  }
+  @media (min-width: 1900px) {
+    .section-heading { max-width: 1120px; font-size: 32px; }
+  }
+  @media (min-width: 2400px) {
+    .section-heading { max-width: 1180px; }
   }
 
   @media (max-width: 767px) {
