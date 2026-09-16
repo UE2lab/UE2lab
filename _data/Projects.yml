@@ -1,3 +1,12 @@
+- title: Digital Twin-enabled Shared ESS Operation for DERs
+  number: C3
+  image: DER_Twin.png
+  year: 2026-2029
+  funding: Korea Institute of Energy Technology Evaluation and Planning (KETEP)
+  collaboration: Korea-Singapore Joint Research Project
+  introduction: This project is a 4-year project (2026-2029), funded by Korea Institute of Energy Technology Evaluation and Planning.
+  description: The objective of our research is to develop a digital twin-based platform that coordinates distributed energy resources around shared energy storage systems (ESS) to relieve load stress on distribution feeders and local communities. As part of a Korea-Singapore joint research program, we are developing a probabilistic day-ahead load forecasting model at the feeder level that accounts for the uncertainties in demand and PV generation. In addition, we will develop day-ahead charging and discharging scheduling algorithms for shared ESS, together with PV and vehicle-to-grid resources, and validate them through the DER-Twin platform at a shared ESS site in Korea and in a virtual Singapore environment.
+
 # Current projects
 - title: Data Analysis Framework for Energy Benchmarking of Existing Buildings
   number: C2
