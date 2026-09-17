@@ -170,9 +170,9 @@ permalink: /research/
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 10px 0 14px;
-    font-size: 16px;
+    gap: 11px;
+    margin: 10px 0 16px;
+    font-size: 19px;
     color: #841D1E;
     font-weight: 600;
   }
@@ -182,7 +182,7 @@ permalink: /research/
     border: 1px solid #d9bcbc;
     border-radius: 999px;
     background: #f9f2f2;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -270,8 +270,8 @@ permalink: /research/
 
     .project-body { padding: 2px 0 26px; }
     .project-intro, .project-desc { font-size: 15px; line-height: 1.6; }
-    .project-collab { font-size: 14px; gap: 8px; margin: 6px 0 12px; }
-    .collab-label { font-size: 11px; padding: 2px 9px; }
+    .project-collab { font-size: 16px; gap: 8px; margin: 6px 0 12px; }
+    .collab-label { font-size: 12px; padding: 3px 10px; }
     .project-figure { margin: 18px 0; }
   }
 
@@ -286,7 +286,7 @@ permalink: /research/
     .project-head { font-size: 19px; padding: 21px 6px; }
     .pcol-period, .pcol-funding { font-size: 16px; }
     .project-intro, .project-desc { font-size: 19px; }
-    .project-collab { font-size: 17px; }
+    .project-collab { font-size: 21px; }
   }
 
   @media (min-width: 1900px) {
@@ -299,7 +299,7 @@ permalink: /research/
     .project-head { font-size: 21px; padding: 24px 6px; }
     .pcol-period, .pcol-funding { font-size: 17px; }
     .project-intro, .project-desc { font-size: 20px; }
-    .project-collab { font-size: 18px; }
+    .project-collab { font-size: 22px; }
     .project-figure img { max-width: 1200px; }
   }
 

@@ -7,16 +7,16 @@ permalink: /professor/
 ---
 
 <p style="margin-bottom: 18px; margin-top: 20px;">
-  <strong style="font-size: 26px;">Yeonsook Heo</strong><br>
-  <strong style="font-size: 22px;">Professor</strong><br><br>
-  <span style="font-size: 18px;">School of Civil, Architectural, and Environmental Engineering, Korea University<br>
+  <strong style="font-size: 30px;">Yeonsook Heo</strong><br>
+  <strong style="font-size: 25px;">Professor</strong><br><br>
+  <span style="font-size: 20px;">School of Civil, Architectural, and Environmental Engineering, Korea University<br>
   Email: <a href="mailto:yeonsookheo@korea.ac.kr">yeonsookheo@korea.ac.kr</a><br>
   Phone: +82 (0)2-3290-4867</span>
 </p>
 
 <hr>
-<p style="font-size: 16px;">
-<strong style="font-size: 16px;">PROFESSIONAL EXPERIENCE</strong><br>
+<p style="font-size: 18px;">
+<strong style="font-size: 20px;">PROFESSIONAL EXPERIENCE</strong><br>
 <span class="job-title"><b>Korea University</b>, Seoul, Korea</span><span class="job-date">Sep. 2023 - Present</span><br>
 Professor, School of Civil, Architectural, and Environmental Engineering<br>
 <span class="job-title"><b>Korea University</b>, Seoul, Korea</span><span class="job-date">Sep. 2018 - Aug. 2023</span><br>
@@ -28,8 +28,8 @@ Postdoctoral Fellow<br>
 </p>
 
 
-<p style="font-size: 16px;">
-<strong style="font-size: 16px;">EDUCATION</strong><br>
+<p style="font-size: 18px;">
+<strong style="font-size: 20px;">EDUCATION</strong><br>
 <span class="job-title"><b>Georgia Institute of Technology</b>, Atlanta, Georgia, USA</span><span class="job-date">Dec. 2011</span><br>
 Ph.D., College of Architecture (Building Technology)<br>
 
