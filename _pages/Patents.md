@@ -13,17 +13,14 @@ permalink: /Patents/
     margin: 0;
     border-color: black;
   }
-  .patent-table { font-size: 16px; }
-  @media (max-width: 767px) {
-    .patent-table { font-size: 15px; }
-  }
+  /* 글자 크기는 .responsive-table(=SCIE/Conference)와 동일하게 상속받습니다 */
 </style>
 
 <div class="table-wrap">
 <hr class="rule-top">
 <table class="responsive-table patent-table">
   <thead>
-  <tr style="font-size: 18px; font-family: Arial">
+  <tr style="font-size: 20px; font-family: Arial">
     <th style="width: 50px;">No.<hr></th>
     <th style="width: 350px;">Patent Title<hr></th>
     <th style="width: 200px;">Inventor<hr></th>

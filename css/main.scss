@@ -256,7 +256,7 @@ p.byline {
 }
 
 .student-info {
-  font-size: 14px;
+  font-size: 16px;
   position: absolute;
   top: 67%;
   left: 0%;
@@ -328,7 +328,7 @@ p.byline {
 
 .job-title, .job-date { display: inline-block; }
 .job-title { width: calc(70% - 10px); }
-.job-date  { width: 200px; text-align: right; }
+.job-date  { width: 220px; text-align: right; }
 
 /* 교수 사진: 원본이 550x733 이므로 550px 폭까지는 손실 없이 확대 가능.
    고정 높이 대신 열 폭을 채우도록 해 화면이 커지면 사진도 함께 커집니다. */
@@ -345,6 +345,27 @@ p.byline {
 /* --------------------------------------------------------------------------
    기타
    -------------------------------------------------------------------------- */
+
+/* ---- 푸터 ----
+   기존에는 .col-sm-4 만 Arial 지정에서 빠져 있어 본문과 다른 폰트로 보였습니다. */
+#footer {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  border-top: 1px solid lightgrey;
+  border-bottom: none;
+}
+#footer .panel-footer { background-color: transparent; padding: 22px 0 26px; }
+#footer p { margin: 0; }
+#footer .footer-row-top { margin-bottom: 12px; }
+#footer .footer-left  { text-align: left; }
+#footer .footer-right { text-align: right; }
+#footer .footer-address {
+  text-align: left;
+  padding-top: 12px;
+  border-top: 1px solid #ececec;
+  color: #555;
+}
 
 hr {
   color: 0.05px solid grey;
@@ -464,7 +485,7 @@ hr {
   .overlay { width: 100%; height: 100%; }
 
   .student-info {
-    font-size: 12px;
+    font-size: 14px;
     top: auto; bottom: 6px;
     padding-left: 10px; padding-right: 10px;
     word-wrap: break-word;
@@ -481,7 +502,7 @@ hr {
   .prof-bio   { padding-left: 20px !important; }
 
   .job-title { width: calc(65% - 10px); }
-  .job-date  { width: 150px; font-size: 14px; }
+  .job-date  { width: 170px; font-size: 16px; }
 }
 
 
@@ -783,15 +804,15 @@ hr {
     width: 100%;
     color: #222;
     padding: 7px 2px 0;
-    font-size: 12.5px;
-    line-height: 1.35;
+    font-size: 14px;
+    line-height: 1.4;
     text-align: center;
     word-break: break-word;
   }
 
   .student-info p { margin: 0 0 1px; }
-  .student-info p:first-child { font-weight: 700; font-size: 13.5px; }
-  .student-info p:nth-child(3) { color: #666; font-size: 11.5px; font-weight: 400; }
+  .student-info p:first-child { font-weight: 700; font-size: 15px; }
+  .student-info p:nth-child(3) { color: #666; font-size: 13px; font-weight: 400; }
 
   .student-image { transform: none !important; }
 
@@ -827,7 +848,7 @@ hr {
   }
 
   .job-date {
-    font-size: 13px;
+    font-size: 14px;
     color: #666;
     margin-bottom: 2px;
   }
@@ -856,25 +877,20 @@ hr {
 
   #footer {
     padding-left: 0 !important;
-    font-size: 14px !important;
+    font-size: 14px;
   }
 
-  #footer .panel-footer { padding: 18px 16px 22px; }
+  #footer .footer-left,
+  #footer .footer-right,
+  #footer .footer-address { text-align: left; }
+
+  #footer .footer-right { margin-top: 10px; }
+
+  #footer .panel-footer { padding: 18px 0 22px; }
 
   #footer .container-fluid { padding-left: 0; padding-right: 0; }
 
-  #footer .col-sm-4 {
-    padding: 0 0 14px;
-    margin-bottom: 14px;
-    border-bottom: 1px solid #eee;
-    line-height: 1.5;
-  }
-
-  #footer .col-sm-4:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
+  #footer .footer-row-top { margin-bottom: 8px; }
 
   #footer p { margin-bottom: 0; }
 
@@ -905,12 +921,13 @@ hr {
   .custom-container-student { max-width: 1000px; }
 
   .responsive-table { font-size: 19px; }
+  .student-info { font-size: 17px; }
+  #footer { font-size: 16px; }
 
   .navbar { font-size: 19px; }
   .navbar-collapse { font-size: 19px; }
   .dropdown-menu > li > a { font-size: 19px; }
 
-  #footer { font-size: 88% !important; }
 }
 
 /* --- 1600px급 --- */
@@ -936,6 +953,8 @@ hr {
   .title2-center { font-size: 62px; }
 
   .responsive-table { font-size: 20px; }
+  .student-info { font-size: 18px; }
+  #footer { font-size: 17px; }
 
   .custom-container-student { max-width: 1120px; }
 

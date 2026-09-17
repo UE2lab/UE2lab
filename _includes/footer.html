@@ -1,24 +1,88 @@
-<div id="footer" class="panel" style="font-size: 80%; padding-left:10%; border-top: 1px solid lightgrey; border-bottom: none;">
-  <div class="panel-footer" style="background-color: transparent;">
-	<div class="container-fluid">
-	  <div class="row">
-		<div class="col-sm-4">
-			<p>&copy 2024 Urban Energy & Environment Lab. Site made with <a href="https://jekyllrb.com">Jekyll</a>;  <a href="{{ site.url }}{{ site.baseurl }}/aboutwebsite.html">copy and modify it for your own research group.</a> Designed by JJ</p>
-		</div>
-		<div class="col-sm-4">
-			<p>We are part of the <a href="https://ace.korea.ac.kr/">School of Civil, Environmental and Architectural Engineering</a> at <a href="https://www.korea.ac.kr/">Korea University</a>.</p>
-		</div>
-		<div class="col-sm-4">
-			Contact: +82(0)2-3290-4867<br />
-			Engineering Hall, Korea University<br />
-			145, Anam-ro, Seongbuk-Gu, Seoul,<br />
-			Republic of Korea (<a href="https://www.google.nl/maps/place/Korea+University,+Research+Institute+and+Industry+Collaboration+Center/data=!4m14!1m7!3m6!1s0x357cbcbc8d707a77:0x15038aa80b575dc9!2sKorea+University!8m2!3d37.590799!4d127.0277773!16zL20vMDVwODl5!3m5!1s0x357cbd56db9dbd7b:0xc2b13620db7a264f!8m2!3d37.5835609!4d127.0253086!16s%2Fg%2F11ll8sw_d1?hl=en">Maps</a>)
-		</div>
-	  </div>
-	</div>
+<div id="footer" class="panel">
+  <div class="panel-footer">
+  <div class="container-fluid">
+
+    <div class="row footer-row-top">
+      <div class="col-sm-6 footer-left">
+        <p>&copy; {{ site.time | date: '%Y' }} Urban Energy &amp; Environment Lab, Korea University. Built with <a href="https://jekyllrb.com">Jekyll</a>.</p>
+      </div>
+      <div class="col-sm-6 footer-right">
+        <p>We are part of the <a href="https://ace.korea.ac.kr/">School of Civil, Environmental and Architectural Engineering</a> at <a href="https://www.korea.ac.kr/">Korea University</a>.</p>
+      </div>
+    </div>
+
+    <div class="row footer-row-bottom">
+      <div class="col-sm-12 footer-address">
+        <p>Engineering Hall, Korea University, 145 Anam-ro, Seongbuk-gu, Seoul, Republic of Korea (<a href="https://www.google.nl/maps/place/Korea+University,+Research+Institute+and+Industry+Collaboration+Center/data=!4m14!1m7!3m6!1s0x357cbcbc8d707a77:0x15038aa80b575dc9!2sKorea+University!8m2!3d37.590799!4d127.0277773!16zL20vMDVwODl5!3m5!1s0x357cbd56db9dbd7b:0xc2b13620db7a264f!8m2!3d37.5835609!4d127.0253086!16s%2Fg%2F11ll8sw_d1?hl=en">Maps</a>)</p>
+      </div>
+    </div>
+
+  </div>
   </div>
 </div>
+<!-- jQuery는 head.html에서 3.5.1 한 번만 로드합니다.
+     Bootstrap은 3.4.1 이상이어야 jQuery 3.x와 함께 동작합니다
+     (3.3.6은 jQuery 3에서 예외를 던지며 모든 JS 기능이 정지합니다). -->
+<script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
 
+<script>
+(function () {
+  if (typeof jQuery === 'undefined') return;
+
+  // Bootstrap JS가 정상 로드되지 않았으면(버전 불일치 등) 햄버거 메뉴가 죽습니다.
+  // 그런 경우를 대비한 최소 동작 폴백입니다.
+  if (!jQuery.fn.collapse) {
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest && e.target.closest('.navbar-toggle');
+      if (!btn) return;
+      e.preventDefault();
+      var nav = document.getElementById('ue2-navbar');
+      if (nav) nav.classList.toggle('in');
+    });
+    document.addEventListener('click', function (e) {
+      var t = e.target.closest && e.target.closest('.navbar-nav > .dropdown > .dropdown-toggle');
+      if (!t) return;
+      e.preventDefault();
+      t.parentNode.classList.toggle('open');
+    });
+    return;
+  }
+})();
+</script>
+
+<script>
+(function ($) {
+  $(function () {
+
+    var isDesktop = function () {
+      return window.matchMedia('(min-width: 768px)').matches;
+    };
+
+    // PC: 상위 메뉴에 마우스를 올리면 하위 메뉴가 열리고, 벗어나면 닫힘
+    // (모바일에서는 data-toggle="dropdown"에 의해 탭으로 열립니다)
+    $('.navbar-nav > .dropdown')
+      .on('mouseenter', function () {
+        if (isDesktop()) {
+          $(this).addClass('open').children('.dropdown-toggle').attr('aria-expanded', 'true');
+        }
+      })
+      .on('mouseleave', function () {
+        if (isDesktop()) {
+          $(this).removeClass('open').children('.dropdown-toggle').attr('aria-expanded', 'false');
+        }
+      });
+
+    // 모바일: 실제 페이지 링크를 누르면 펼쳐진 내비게이션을 자동으로 닫음
+    $('#ue2-navbar').on('click', 'a', function () {
+      var href = $(this).attr('href');
+      if (href && href !== '#' && $('.navbar-toggle').is(':visible') && $.fn.collapse) {
+        $('#ue2-navbar').collapse('hide');
+      }
+    });
+
+  });
+})(jQuery);
+</script>
 <!-- jQuery는 head.html에서 3.5.1 한 번만 로드합니다.
      Bootstrap은 3.4.1 이상이어야 jQuery 3.x와 함께 동작합니다
      (3.3.6은 jQuery 3에서 예외를 던지며 모든 JS 기능이 정지합니다). -->
