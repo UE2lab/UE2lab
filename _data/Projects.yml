@@ -1,3 +1,11 @@
+- title: 'Urban Morphology and Microclimate Indicators for Urban Buildings: Definition Review and Database Development'
+  number: C4
+  image: Urban_Indicators.png
+  year: 2026
+  funding: Korea Institute of Civil Engineering and Building Technology (KICT)
+  introduction: This project is a research service project (2026), commissioned by the Korea Institute of Civil Engineering and Building Technology (KICT).
+  description: The objective of our research is to define urban morphology and microclimate proxy indicators and to construct a grid-based microclimate database for building energy analysis. We are reviewing indicator definitions, physical meanings, and calculation methods, and examining their relevance to urban microclimate and building energy use through existing literature. We are also assessing data availability and the feasibility of GIS-based calculation in Korea. In addition, we apply a multi-layer urban canopy model to predict local air temperature and wind speed, while using our existing machine-learning model to predict street-level urban heat island intensity. These outputs will be integrated into a common spatial grid for Seoul. The resulting indicator documentation and database, with metadata on data sources, prediction conditions, and application limits, will support the incorporation of location-specific urban context into building energy datasets and analyses.
+
 - title: Digital Twin-enabled Shared ESS Operation for DERs
   number: C3
   image: DER_Twin.png
