@@ -1,3 +1,11 @@
+- title: Hybrid Physics-Machine Learning Model for Enhancing Urban Microclimate
+  number: C5
+  image: Hybrid_UCM_ML.jpg
+  year: 2026-2031
+  funding: National Research Foundation of Korea (NRF)
+  introduction: This project is a 5-year project (2026-2031), funded by the National Research Foundation of Korea (NRF).
+  description: This project aims to develop a hybrid physics–machine learning model to predict urban air temperature and wind speed, and support climate-responsive urban planning. The model integrates a calibrated physics-based model with data-driven approaches, supported by expanded urban microclimate datasets and urban spatial indicators. The hybrid physics–machine learning model framework will (1) support the development of an improved Local Climate Zone classification (LCZ+), enabling more detailed assessments of local heat vulnerability and urban ventilation conditions, and (2) inform location-specific strategies to improve urban thermal environments and urban ventilation, supporting climate-responsive planning and policy in Seoul. Furthermore, the hybrid model and LCZ+ framework will be evaluated across different climates and urban forms through international collaboration to assess their transferability and broader applicability.
+
 - title: 'Urban Morphology and Microclimate Indicators for Urban Buildings: Definition Review and Database Development'
   number: C4
   image: Urban_Indicators.png
