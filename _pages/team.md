@@ -47,7 +47,7 @@ permalink: /team/
 <div class="custom-container-student">
 {% assign counter = 0 %}
 {% for member in site.data.Students %}
-{% unless member.role == "Postdoc" %}
+{% unless member.role == "Postdoc" or member.role == "Visiting" %}
 {% if counter == 0 %}
 <div class="student-row">
 {% endif %}
@@ -73,6 +73,40 @@ permalink: /team/
 </div>
 {% endif %}
 </div>
+
+{% assign visitors = site.data.Students | where: "role", "Visiting" %}
+{% if visitors.size > 0 %}
+<p class="section-heading">Visiting Scholar</p>
+
+<div class="custom-container-student visiting-grid">
+{% assign counter = 0 %}
+{% for member in visitors %}
+{% if counter == 0 %}
+<div class="student-row">
+{% endif %}
+<div class="student-col">
+ <div class="student-image" style="position: relative; margin: 0px; padding: 0px;">
+ <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="student-image-size" alt="{{ member.name }}">
+ <div class="overlay"></div>
+ <div class="student-info">
+ <p>{{ member.name }}</p>
+ <p>{{ member.info }}</p>
+ {% if member.affiliation %}<p class="member-affil">{{ member.affiliation }}</p>{% endif %}
+ <p class="member-email">{{ member.email }}</p>
+ </div>
+ </div>
+</div>
+{% assign counter = counter | plus: 1 %}
+{% if counter == 3 %}
+</div>
+{% assign counter = 0 %}
+{% endif %}
+{% endfor %}
+{% if counter != 0 %}
+</div>
+{% endif %}
+</div>
+{% endif %}
 
 <style>
   /* 섹션 제목 (Postdoctoral Fellows / Graduate Students) */
@@ -119,6 +153,15 @@ permalink: /team/
       font-size: 19px;
       border-bottom-width: 2px;
     }
+  }
+  /* Visiting Scholar: 소속 줄이 하나 더 있어 정보 블록을 사진 아래쪽에 붙임 */
+  @media (min-width: 768px) {
+    .visiting-grid .student-info { top: auto; bottom: 12px; }
+  }
+  .visiting-grid .member-affil { font-style: italic; }
+  @media (max-width: 767px) {
+    .visiting-grid .student-info p.member-affil { color: #222; font-size: 13px; font-weight: 600; }
+    .visiting-grid .student-info p.member-email { color: #666; font-size: 13px; font-weight: 400; }
   }
 </style>
 
