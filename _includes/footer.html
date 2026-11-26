@@ -20,18 +20,26 @@
   </div>
   </div>
 </div>
+
 <!-- jQuery는 head.html에서 3.5.1 한 번만 로드합니다.
-     Bootstrap은 3.4.1 이상이어야 jQuery 3.x와 함께 동작합니다
-     (3.3.6은 jQuery 3에서 예외를 던지며 모든 JS 기능이 정지합니다). -->
+     Bootstrap은 3.4.1 이상이어야 jQuery 3.x와 함께 동작합니다.
+     ※ 이 파일에 bootstrap.min.js 를 두 번 넣지 마세요.
+        두 번 로드되면 드롭다운 탭이 '열기→즉시 닫기'로 처리되어 모바일 메뉴가 열리지 않습니다. -->
 <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
 
 <script>
 (function () {
-  if (typeof jQuery === 'undefined') return;
+  // 같은 스크립트가 실수로 두 번 들어가도 한 번만 실행되도록 방어
+  if (window.__ue2NavInit) return;
+  window.__ue2NavInit = true;
 
-  // Bootstrap JS가 정상 로드되지 않았으면(버전 불일치 등) 햄버거 메뉴가 죽습니다.
-  // 그런 경우를 대비한 최소 동작 폴백입니다.
-  if (!jQuery.fn.collapse) {
+  if (typeof jQuery === 'undefined') return;
+  var $ = jQuery;
+
+  var hasBootstrap = !!($.fn.collapse && $.fn.dropdown);
+
+  // Bootstrap JS가 로드되지 않았을 때를 대비한 최소 동작 폴백
+  if (!hasBootstrap) {
     document.addEventListener('click', function (e) {
       var btn = e.target.closest && e.target.closest('.navbar-toggle');
       if (!btn) return;
@@ -43,23 +51,19 @@
       var t = e.target.closest && e.target.closest('.navbar-nav > .dropdown > .dropdown-toggle');
       if (!t) return;
       e.preventDefault();
-      t.parentNode.classList.toggle('open');
+      var li = t.parentNode, wasOpen = li.classList.contains('open');
+      document.querySelectorAll('.navbar-nav > .dropdown.open').forEach(function (x) { x.classList.remove('open'); });
+      if (!wasOpen) li.classList.add('open');
     });
-    return;
   }
-})();
-</script>
 
-<script>
-(function ($) {
   $(function () {
-
     var isDesktop = function () {
       return window.matchMedia('(min-width: 768px)').matches;
     };
 
     // PC: 상위 메뉴에 마우스를 올리면 하위 메뉴가 열리고, 벗어나면 닫힘
-    // (모바일에서는 data-toggle="dropdown"에 의해 탭으로 열립니다)
+    // (모바일에서는 탭으로 열립니다)
     $('.navbar-nav > .dropdown')
       .on('mouseenter', function () {
         if (isDesktop()) {
@@ -75,74 +79,11 @@
     // 모바일: 실제 페이지 링크를 누르면 펼쳐진 내비게이션을 자동으로 닫음
     $('#ue2-navbar').on('click', 'a', function () {
       var href = $(this).attr('href');
-      if (href && href !== '#' && $('.navbar-toggle').is(':visible') && $.fn.collapse) {
-        $('#ue2-navbar').collapse('hide');
+      if (href && href !== '#' && $('.navbar-toggle').is(':visible')) {
+        if (hasBootstrap) { $('#ue2-navbar').collapse('hide'); }
+        else { $('#ue2-navbar').removeClass('in'); }
       }
     });
-
   });
-})(jQuery);
-</script>
-<!-- jQuery는 head.html에서 3.5.1 한 번만 로드합니다.
-     Bootstrap은 3.4.1 이상이어야 jQuery 3.x와 함께 동작합니다
-     (3.3.6은 jQuery 3에서 예외를 던지며 모든 JS 기능이 정지합니다). -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
-
-<script>
-(function () {
-  if (typeof jQuery === 'undefined') return;
-
-  // Bootstrap JS가 정상 로드되지 않았으면(버전 불일치 등) 햄버거 메뉴가 죽습니다.
-  // 그런 경우를 대비한 최소 동작 폴백입니다.
-  if (!jQuery.fn.collapse) {
-    document.addEventListener('click', function (e) {
-      var btn = e.target.closest && e.target.closest('.navbar-toggle');
-      if (!btn) return;
-      e.preventDefault();
-      var nav = document.getElementById('ue2-navbar');
-      if (nav) nav.classList.toggle('in');
-    });
-    document.addEventListener('click', function (e) {
-      var t = e.target.closest && e.target.closest('.navbar-nav > .dropdown > .dropdown-toggle');
-      if (!t) return;
-      e.preventDefault();
-      t.parentNode.classList.toggle('open');
-    });
-    return;
-  }
 })();
-</script>
-
-<script>
-(function ($) {
-  $(function () {
-
-    var isDesktop = function () {
-      return window.matchMedia('(min-width: 768px)').matches;
-    };
-
-    // PC: 상위 메뉴에 마우스를 올리면 하위 메뉴가 열리고, 벗어나면 닫힘
-    // (모바일에서는 data-toggle="dropdown"에 의해 탭으로 열립니다)
-    $('.navbar-nav > .dropdown')
-      .on('mouseenter', function () {
-        if (isDesktop()) {
-          $(this).addClass('open').children('.dropdown-toggle').attr('aria-expanded', 'true');
-        }
-      })
-      .on('mouseleave', function () {
-        if (isDesktop()) {
-          $(this).removeClass('open').children('.dropdown-toggle').attr('aria-expanded', 'false');
-        }
-      });
-
-    // 모바일: 실제 페이지 링크를 누르면 펼쳐진 내비게이션을 자동으로 닫음
-    $('#ue2-navbar').on('click', 'a', function () {
-      var href = $(this).attr('href');
-      if (href && href !== '#' && $('.navbar-toggle').is(':visible') && $.fn.collapse) {
-        $('#ue2-navbar').collapse('hide');
-      }
-    });
-
-  });
-})(jQuery);
 </script>
